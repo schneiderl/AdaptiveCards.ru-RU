@@ -1,0 +1,105 @@
+items:
+- name: Android
+  items:
+  - name: начало работы
+    href: android/getting-started.md
+  - name: Отрисовка карточек
+    href: android/render-a-card.md
+  - name: Действия
+    href: android/actions.md
+  - name: Конфигурация узла
+    href: android/host-config.md
+  - name: Адаптация стиля
+    href: android/native-styling.md
+  - name: Расширяемость
+    href: android/extensibility.md
+- name: iOS
+  items:
+  - name: начало работы
+    href: ios/getting-started.md
+  - name: Отрисовка карточек
+    href: ios/render-a-card.md
+  - name: Действия
+    href: ios/actions.md
+  - name: Конфигурация узла
+    href: ios/host-config.md
+  - name: Адаптация стиля
+    href: ios/native-styling.md
+  - name: Расширяемость
+    href: ios/extensibility.md
+- name: JavaScript
+  items:
+  - name: начало работы
+    href: javascript/getting-started.md
+  - name: Отрисовка карточек
+    href: javascript/render-a-card.md
+  - name: Действия
+    href: javascript/actions.md
+  - name: Конфигурация узла
+    href: javascript/host-config.md
+  - name: Адаптация стиля
+    href: javascript/native-styling.md
+  - name: Расширяемость
+    href: javascript/extensibility.md
+- name: .NET HTML
+  items:
+  - name: начало работы
+    href: net-html/getting-started.md
+  - name: Отрисовка карточек
+    href: net-html/render-a-card.md
+  - name: Действия
+    href: net-html/actions.md
+  - name: Конфигурация узла
+    href: net-html/host-config.md
+  - name: Адаптация стиля
+    href: net-html/native-styling.md
+  - name: Расширяемость
+    href: net-html/extensibility.md
+- name: .NET WPF
+  items:
+  - name: начало работы
+    href: net-wpf/getting-started.md
+  - name: Отрисовка карточек
+    href: net-wpf/render-a-card.md
+  - name: Действия
+    href: net-wpf/actions.md
+  - name: Конфигурация узла
+    href: net-wpf/host-config.md
+  - name: Адаптация стиля
+    href: net-wpf/native-styling.md
+  - name: Расширяемость
+    href: net-wpf/extensibility.md
+- name: Изображение .NET
+  items:
+  - name: начало работы
+    href: net-image/getting-started.md
+  - name: Отрисовка карточек
+    href: net-image/render-a-card.md
+  - name: Действия
+    href: net-image/actions.md
+  - name: Конфигурация узла
+    href: net-image/host-config.md
+  - name: Адаптация стиля
+    href: net-image/native-styling.md
+  - name: Расширяемость
+    href: net-image/extensibility.md
+- name: UWP
+  items:
+  - name: начало работы
+    href: uwp/getting-started.md
+  - name: Отрисовка карточек
+    href: uwp/render-a-card.md
+  - name: Действия
+    href: uwp/actions.md
+  - name: Конфигурация узла
+    href: uwp/host-config.md
+  - name: Адаптация стиля
+    href: uwp/native-styling.md
+  - name: Расширяемость
+    href: uwp/extensibility.md
+ms.openlocfilehash: 2576fb7239292897dcec3f44411d356731c5ab3c
+ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59552286"

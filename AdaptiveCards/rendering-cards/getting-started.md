@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 06/26/2017
 ms.topic: article
-ms.openlocfilehash: 0a9507c56a8bae9f038c220cdf55e34b2c3b0829
-ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
+ms.openlocfilehash: 0a5f99268ce483fddd99f4493b386db796c3e9d2
+ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59552926"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67138097"
 ---
 # <a name="rendering-cards-inside-your-application"></a>Подготовка к просмотру карты внутри приложения
 
@@ -24,7 +24,7 @@ ms.locfileid: "59552926"
 |Платформа|Установка|Сборка|Документы|Состояние|
 |---|---|---|---|---|
 | JavaScript | [![npm install](https://img.shields.io/npm/v/adaptivecards.svg)](https://www.npmjs.com/package/adaptivecards) | [Source](https://github.com/Microsoft/AdaptiveCards/tree/master/source/nodejs)| [Документация](../sdk/rendering-cards/javascript/getting-started.md) | ![Состояние сборки](https://img.shields.io/vso/build/Microsoft/56cf629e-8f3a-4412-acbc-bf69366c552c/20564.svg) |
-| WPF В .NET | [![Программа установки NuGet](https://img.shields.io/nuget/vpre/AdaptiveCards.Rendering.Wpf.svg)](https://www.nuget.org/packages/AdaptiveCards.Rendering.Wpf) | [Source](https://github.com/Microsoft/AdaptiveCards/tree/master/source/dotnet)| [Документация](../sdk/rendering-cards/net-wpf/getting-started.md) | ![Состояние сборки](https://img.shields.io/vso/build/Microsoft/56cf629e-8f3a-4412-acbc-bf69366c552c/20596.svg) |
+| .NET WPF | [![Программа установки NuGet](https://img.shields.io/nuget/vpre/AdaptiveCards.Rendering.Wpf.svg)](https://www.nuget.org/packages/AdaptiveCards.Rendering.Wpf) | [Source](https://github.com/Microsoft/AdaptiveCards/tree/master/source/dotnet)| [Документация](../sdk/rendering-cards/net-wpf/getting-started.md) | ![Состояние сборки](https://img.shields.io/vso/build/Microsoft/56cf629e-8f3a-4412-acbc-bf69366c552c/20596.svg) |
 | .NET HTML | [![Программа установки NuGet](https://img.shields.io/nuget/vpre/AdaptiveCards.Rendering.Html.svg)](https://www.nuget.org/packages/AdaptiveCards.Rendering.Html) | [Source](https://github.com/Microsoft/AdaptiveCards/tree/master/source/dotnet) | [Документация](../sdk/rendering-cards/net-html/getting-started.md) | ![Состояние сборки](https://img.shields.io/vso/build/Microsoft/56cf629e-8f3a-4412-acbc-bf69366c552c/20596.svg) |
 | Windows UWP | [![Программа установки NuGet](https://img.shields.io/nuget/vpre/AdaptiveCards.Rendering.Uwp.svg)](https://www.nuget.org/packages/AdaptiveCards.Rendering.Uwp) | [Source](https://github.com/Microsoft/AdaptiveCards/tree/master/source/uwp) | [Документация](../sdk/rendering-cards/uwp/getting-started.md) | ![Состояние сборки](https://img.shields.io/vso/build/Microsoft/56cf629e-8f3a-4412-acbc-bf69366c552c/20583.svg) |
 | Android | [![Maven Central](https://img.shields.io/maven-central/v/io.adaptivecards/adaptivecards-android.svg)](https://search.maven.org/#search%7Cga%7C1%7Ca%3A%22adaptivecards-android%22) | [Source](https://github.com/Microsoft/AdaptiveCards/tree/master/source/android) | [Документация](../sdk/rendering-cards/android/getting-started.md) | ![Состояние сборки](https://img.shields.io/vso/build/Microsoft/8d47e068-03c8-4cdc-aa9b-fc6929290322/17651.svg)
@@ -60,7 +60,7 @@ ms.locfileid: "59552926"
 
 ### <a name="customize-per-element-rendering"></a>Настройки отображения каждого элемента
 
-Каждый пакет SDK позволяет переопределять способ отрисовки любого элемента, или даже добавить поддержку совершенно новых элементов, определенных вами.  Например, можно изменить `Input.Date` модуля подготовки отчетов, создавать собственный пользовательский элемент управления не теряя остальной части выходных данных модуля подготовки отчетов. Или можно добавить поддержку для пользовательской `Rating` элемент вам определить.
+Каждый пакет SDK позволяет переопределять способ отрисовки любого элемента, или даже добавить поддержку совершенно новых элементов, определенных вами.  Например, можно изменить `Input.Date` модуля подготовки отчетов, создавать собственный пользовательский элемент управления не теряя остальной части выходных данных модуля подготовки отчетов. Или можно добавить поддержку для пользовательской `Rating` элемент, который определяется.
 
 
 

@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 05/16/2018
 ms.topic: article
-ms.openlocfilehash: 6c6e14108caefa8dd1ff854b29d4651fe9b2d15c
-ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
+ms.openlocfilehash: f879c164b3471347ba8fa058827b3d79b09be4cd
+ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59553486"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67138007"
 ---
 # <a name="future-work"></a>Дальнейшей работы
 
@@ -17,7 +17,7 @@ ms.locfileid: "59553486"
 
 ## <a name="roadmap"></a>Стратегия
 
-Вы увидите наших [текущий план (неконечного) здесь](https://github.com/Microsoft/AdaptiveCards/projects/8). Обратите внимание, что-то в данной статье, может быть изменена что это значение не гарантирует доставку.
+Вы увидите наших [текущий план (неконечного) здесь](https://portal.productboard.com/adaptivecards/1-adaptive-cards-portal/tabs/1-backlog). Обратите внимание, что-то в данной статье, может быть изменена что это значение не гарантирует доставку.
 
 ## <a name="future-ideas"></a>Будущие идеи
 

@@ -1,17 +1,17 @@
 ---
-title: Состояние модуля подготовки отчетов
+title: Состояние отрисовщика
 author: matthidinger
 ms.author: mahiding
 ms.date: 10/12/2018
 ms.topic: article
-ms.openlocfilehash: 303d5675f58bd2c870dcdf5718d508d2e3c78fca
-ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
+ms.openlocfilehash: bffa49012a8ebe686fc033f98b2438d2e9e959cc
+ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59553356"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67138037"
 ---
-# <a name="renderer-status"></a>Состояние модуля подготовки отчетов
+# <a name="renderer-status"></a>Состояние отрисовщика
 В таблицах ниже показаны текущее состояние каждого модуля подготовки отчетов, в зависимости от их общедоступные опубликованной версии.
 
 ### <a name="parsing"></a>Синтаксический анализ
@@ -43,7 +43,7 @@ ms.locfileid: "59553356"
 
 \* Чтобы свести к минимуму размер библиотеки и позволяет использовать их предпочтительный процессор Markdown потребляющие приложения, модуль подготовки отчетов HTML не включает встроенную поддержку Markdown. Модуль подготовки отчетов HTML будет использовать ИТ-Markdown автоматически, однако в том случае, если она загружается.
 
-### <a name="extensbility"></a>Extensbility
+### <a name="extensibility"></a>Расширение среды
 
 |Функция | HTML | .NET | UWP | iOS | Android |
 |--- | --- | --- | --- | --- | --- | --- |

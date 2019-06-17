@@ -1,57 +1,50 @@
-items:
 - name: Обзор
   href: index.md
 - name: начало работы
   items:
-  - name: Для разработчиков ботов
-    href: getting-started/bots.md
-  - name: Для разработчиков Windows
-    href: getting-started/windows.md
-  - name: Для разработчиков Outlook
-    href: getting-started/outlook.md
+    - name: Для разработчиков ботов
+      href: getting-started/bots.md
+    - name: Для разработчиков Windows
+      href: getting-started/windows.md
+    - name: Для разработчиков Outlook
+      href: getting-started/outlook.md
 - name: Разработка карточек
   items:
-  - name: начало работы
-    href: authoring-cards/getting-started.md
-  - name: Схема карточки
-    href: authoring-cards/card-schema.md
-  - name: Голосовые функции
-    href: authoring-cards/speech.md
-  - name: Текстовые функции
-    href: authoring-cards/text-features.md
+    - name: начало работы
+      href: authoring-cards/getting-started.md
+    - name: Схема карточки
+      href: 'https://adaptivecards.io/explorer'
+    - name: Голосовые функции
+      href: authoring-cards/speech.md
+    - name: Текстовые функции
+      href: authoring-cards/text-features.md
 - name: Отрисовка карточек
   items:
-  - name: начало работы
-    href: rendering-cards/getting-started.md
-  - name: Действия
-    href: rendering-cards/actions.md
-  - name: Конфигурация узла
-    href: rendering-cards/host-config.md
-  - name: Расширяемость
-    href: rendering-cards/extensibility.md
-  - name: Состояние отрисовщика
-    href: rendering-cards/renderer-status.md
-  - name: Реализация отрисовщика
-    href: rendering-cards/implement-a-renderer.md
+    - name: начало работы
+      href: rendering-cards/getting-started.md
+    - name: Действия
+      href: rendering-cards/actions.md
+    - name: Конфигурация узла
+      href: rendering-cards/host-config.md
+    - name: Расширяемость
+      href: rendering-cards/extensibility.md
+    - name: Состояние отрисовщика
+      href: rendering-cards/renderer-status.md
+    - name: Реализация отрисовщика
+      href: rendering-cards/implement-a-renderer.md
 - name: SDK
   items:
-  - name: Разработка карточек
-    href: sdk/authoring-cards/toc.yml
-  - name: Отрисовка карточек
-    href: sdk/rendering-cards/toc.yml
+    - name: Разработка карточек
+      href: sdk/authoring-cards/toc.yml
+    - name: Отрисовка карточек
+      href: sdk/rendering-cards/toc.yml
 - name: Ресурсы
   items:
-  - name: Принципы
-    href: resources/principles.md
-  - name: Партнеры
-    href: resources/partners.md
-  - name: Инструменты
-    href: resources/tools.md
-  - name: Стратегия
-    href: resources/future.md
-ms.openlocfilehash: 0d11154a56cef4b2814a28544ebf83b50081bfae
-ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59552346"
+    - name: Принципы
+      href: resources/principles.md
+    - name: Партнеры
+      href: resources/partners.md
+    - name: Инструменты
+      href: resources/tools.md
+    - name: Стратегия
+      href: resources/future.md

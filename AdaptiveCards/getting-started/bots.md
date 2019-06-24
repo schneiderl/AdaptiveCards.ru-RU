@@ -1,46 +1,46 @@
 ---
-title: Адаптивная карты для разработчиков программ-роботов
+title: Адаптивные карточки для разработчиков ботов
 author: matthidinger
 ms.author: mahiding
 ms.date: 05/30/2018
 ms.topic: article
 ms.openlocfilehash: 1acc30c0347ea5527de2af1fe74e605c7589cbc6
-ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
-ms.translationtype: MT
+ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/12/2019
+ms.lasthandoff: 06/17/2019
 ms.locfileid: "59553286"
 ---
-# <a name="adaptive-cards-for-bot-developers"></a>Адаптивная карты для разработчиков программ-роботов
+# <a name="adaptive-cards-for-bot-developers"></a>Адаптивные карточки для разработчиков ботов
 
-Адаптивная карты являются прекрасным решением для программ-роботов. Они позволяют создавать карточки один раз, который будет отображаться элегантно внутри нескольких приложений, таких как Microsoft Teams, собственные веб-сайта и многое другое.
+Адаптивные карточки отлично подходят для использования в ботах. Карточку можно создать один раз, после чего использовать ее на разных платформах, включая Microsoft Teams или свой веб-сайт и т. п.
 
 > [!NOTE]
-> Скайп не поддерживается в текущей предварительной версии. См. в разделе [статус партнера](../resources/partners.md) страницы для последней версии.
+> В текущей предварительной версии Skype не поддерживается. Новости см. на странице со сведениями о [поддерживаемых платформах](../resources/partners.md).
 
 ## <a name="try-it-out"></a>Попробуйте сами
 
-Щелкните следующую ссылку и [обратиться к наша программа-робот подводному](http://contososcubademo.azurewebsites.net/). Скажем `I'm looking for scuba` и с ее помощью вы забронировать поездку подводному своей мечты.  
+[Перейдите по этой ссылке и пообщайтесь с нашим ботом-аквалангистом](http://contososcubademo.azurewebsites.net/). Скажите ему: `I'm looking for scuba`, и он поможет вам заказать дайвинг-тур.  
 
-Все отклики bot создаются с использованием адаптивного карт.
+Все ответы бота созданы с использованием адаптивных карточек.
 
-[![Снимок экрана подводному чата](media/bots/scuba-chat.png)](http://contososcubademo.azurewebsites.net/)
+[![Снимок экрана с чатом о подводном плавании](media/bots/scuba-chat.png)](http://contososcubademo.azurewebsites.net/)
 
-**Получить код**: полный [Bot подводному Contoso исходный код](https://github.com/matthidinger/ContosoScubaBot
-) можно найти на сайте GitHub.
+**Скачайте код**. Полная версия [исходного кода бота-аквалангиста Contoso](https://github.com/matthidinger/ContosoScubaBot
+) доступна на сайте GitHub.
 
 
-## <a name="bot-framework-integration"></a>Интеграция Bot Framework
+## <a name="bot-framework-integration"></a>Интеграция с Bot Framework
 
-С помощью [Bot Framework](https://dev.botframework.com/) можно написать единый программ-роботов, которое сможет чата с пользователями в нескольких «каналы», например Скайп, Microsoft Teams, Facebook Messenger и т. д.
+[Bot Framework](https://dev.botframework.com/) позволяет создать бота для общения с пользователями, используя различные каналы коммуникации, такие как Skype, Microsoft Teams, Facebook Messenger и т. д.
 
 ## <a name="walkthrough"></a>Пошаговое руководство
 
-Это довольно проста, добавляемый инструмент Adaptive Cards бота.
+Добавить адаптивную карточку в бота довольно просто.
 
-### <a name="step-0-start-with-a-basic-message"></a>Шаг 0. Начните с базовых сообщений
+### <a name="step-0-start-with-a-basic-message"></a>Шаг 0. Начните с главного сообщения
 
-Ниже приведен стандартный Bot Framework `message` полезные данные, которые могут доставляться в любом канале и отображения текста для пользователя.
+Ниже приведены стандартные полезные данные `message` в Bot Framework, которые можно доставить пользователю по любому каналу коммуникации.
 
 ```json
 {
@@ -49,13 +49,13 @@ ms.locfileid: "59553286"
 }
 ```
 
-### <a name="step-1-add-an-adaptive-card-attachment"></a>Шаг 1. Добавить инструмент Adaptive Cards `attachment`
+### <a name="step-1-add-an-adaptive-card-attachment"></a>Шаг 1. Добавьте адаптивную карточку в виде `attachment`
 
-Чтобы добавить некоторые полноты больше всего текста, Bot Framework имеет смысл `attachments`. 
+Чтобы разнообразить сообщение, в Bot Framework реализована концепция `attachments`. 
 
-Давайте подключить инструмент Adaptive Cards, отображающий текст.
+Давайте добавим в сообщение адаптивную карточку, отображающую заданный текст.
 
-![Основные инструмент adaptive Cards](media/bots/hello-adaptivecards.png)
+![Простая адаптивная карточка](media/bots/hello-adaptivecards.png)
 
 ```json
 {
@@ -96,39 +96,39 @@ ms.locfileid: "59553286"
 }
 ```
 
-### <a name="step-2-build-even-richer-cards"></a>Шаг 2. Создание более широкие возможности карты 
+### <a name="step-2-build-even-richer-cards"></a>Шаг 2. Создайте расширенную карточку 
 
-Адаптивная карты предоставляют гораздо больше, чем просто настраиваемых текстовых. 
+Адаптивные карточки обеспечивают гораздо больше возможностей, чем отображение текста с заданным форматированием. 
 
-Можно выполнить следующие действия:  
+Можно сделать следующее. 
 
-* Добавление `Images` с вашей карты
-* Упорядочивайте свое содержимое с `Containers` и `Columns`
-* Добавьте несколько типов `Actions`
-* Собирать `Input` от пользователей
-* Иметь одну карту `show another card`
-* [Извлечь в обозревателе полную схему](http://adaptivecards.io/explorer/)! 
+* добавлять в карточку `Images`;
+* упорядочивать содержимое с помощью `Containers` и `Columns`;
+* добавлять разные типы `Actions`;
+* собирать `Input`, предоставляемые пользователями;
+* выполнять в карточке действие `show another card`.
+* [Ознакомьтесь с исчерпывающим обозревателем схемы](http://adaptivecards.io/explorer/). 
 
-## <a name="platform-sdks"></a>Пакеты SDK для платформы
+## <a name="platform-sdks"></a>Пакеты SDK для платформ
 
-Если ваш бот разрабатывается на основе .NET и NodeJS у нас есть библиотеки, чтобы сделать построение адаптивной карт еще проще.
+Если ваш бот создан с помощью .NET или NodeJS, вы можете воспользоваться библиотеками, упрощающими создание адаптивных карточек.
 
 Платформа|Установка|Узнайте больше
 --------|-------|----------
-.NET | `Install-Package AdaptiveCards -IncludePrerelease` | [Документация .NET Framework программ-роботов](https://docs.microsoft.com/en-us/bot-framework/dotnet/bot-builder-dotnet-add-rich-card-attachments)
-NodeJS | `npm install adaptivecards` | [Bot Framework NodeJS документы](https://docs.microsoft.com/en-us/bot-framework/nodejs/bot-builder-nodejs-send-rich-cards)
+.NET | `Install-Package AdaptiveCards -IncludePrerelease` | [Документация по .NET Framework для Bot Framework](https://docs.microsoft.com/en-us/bot-framework/dotnet/bot-builder-dotnet-add-rich-card-attachments)
+NodeJS | `npm install adaptivecards` | [Документация по NodeJS для Bot Framework](https://docs.microsoft.com/en-us/bot-framework/nodejs/bot-builder-nodejs-send-rich-cards)
 
 
-## <a name="channel-status"></a>Состояние канала
+## <a name="channel-status"></a>Поддержка каналов коммуникации
 
-Bot Framework позволяет публиковать бота нескольким каналам. Мы работаем с различных каналов, чтобы обеспечивать полную поддержку адаптивной карты. См. в разделе [статус партнера](../resources/partners.md) страницы для последней версии.
+Bot Framework позволяет публиковать бота в нескольких каналах. Мы работаем над тем, чтобы обеспечить полную поддержку адаптивных карточек в разных каналах коммуникации. Новости см. на странице со сведениями о [поддерживаемых платформах](../resources/partners.md).
 
 
-## <a name="dive-in"></a>Погрузитесь!
+## <a name="dive-in"></a>Узнайте больше!
 
-Мы затронули лишь верхушку рабочей области в этом руководстве, поэтому обратитесь Просмотр по ссылкам ниже, чтобы изучить другие способы, что Адаптивная карты можно повысить бота.
+В этом руководстве мы предоставили только общие сведения, поэтому почаще проверяйте ссылки ниже, чтобы узнать о том, как можно улучшить ботов с помощью адаптивных карточек.
 
-* [Обзор образца карты](http://adaptivecards.io/samples/) вдохновения
-* Используйте [обозреватель схем](http://adaptivecards.io/explorer) дополнительные доступные элементы
-* Построение карт с помощью [интерактивных визуализатора](http://adaptivecards.io/visualizer/index.html?hostApp=Skype)
-* [Связаться с нами](http://adaptivecards.io/connect) с свои отзывы
+* [Ознакомьтесь с примерами адаптивных карточек](http://adaptivecards.io/samples/).
+* Воспользуйтесь [обозревателем схемы](http://adaptivecards.io/explorer), чтобы узнать о доступных элементах.
+* Создайте адаптивную карточку с помощью [интерактивного визуализатора](http://adaptivecards.io/visualizer/index.html?hostApp=Skype).
+* [Свяжитесь с нами](http://adaptivecards.io/connect), чтобы оставить свой отзыв.

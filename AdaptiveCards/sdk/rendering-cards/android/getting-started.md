@@ -4,27 +4,44 @@ author: bekao
 ms.author: bekao
 ms.date: 09/27/2017
 ms.topic: article
-ms.openlocfilehash: 691ac9f2590fa52e36703890c14a6cfe1af1862c
-ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
+ms.openlocfilehash: b5f1279317e6b34d2e3bccee2625d972ac185e04
+ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59553496"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67134275"
 ---
-# <a name="getting-started---android"></a>Начало работы — Android
+# <a name="getting-started---android"></a>Начало работы — Android
 
-Это модуль подготовки отчетов, какие целевые объекты Android нативные элементы управления.
+Это средство визуализации, использующее собственные элементы управления Android.
 
-## <a name="install-maven-package"></a>Установите пакет Maven
-
-**io.adaptivecards:adaptivecards-android:{version}**
+## <a name="install-maven-package"></a>Установка пакета Maven
 
 [![Maven Central](https://img.shields.io/maven-central/v/io.adaptivecards/adaptivecards-android.svg)](https://search.maven.org/#search%7Cga%7C1%7Ca%3A%22adaptivecards-android%22)
 
-## <a name="namespaces"></a>Пространства имен
+Опубликованные пакеты доступны ![здесь](https://search.maven.org/search?q=g:io.adaptivecards)
 
-*Скоро*
+Чтобы добавить в проект библиотеку, включите следующую строку в gradle.build проекта в разделе зависимостей.
 
-## <a name="next-steps"></a>Следующие шаги
+```build.gradle
+ implementation 'io.adaptivecards:adaptivecards-android:1.1.0'
+```
+Вам нужно изменить номер версии с учетом версии, которую вы хотите добавить в проект.
 
-См. в разделе [визуализации карточки](render-a-card.md) для получения дальнейших указаний.
+## <a name="add-import"></a>Импорт
+
+Чтобы добавить объектную модель, выполните следующую операцию импорта:
+
+```
+ import io.adaptivecards.objectmodel.*;
+```
+
+Чтобы добавить средство визуализации, выполните следующую операцию импорта:
+
+```
+ import io.adaptivecards.renderer.*;
+```
+
+## <a name="next-steps"></a>Дальнейшие действия
+
+См. подробнее о [визуализации карточек](render-a-card.md).

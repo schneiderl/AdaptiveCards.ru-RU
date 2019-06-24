@@ -1,23 +1,23 @@
 ---
-title: Расширяемость – пакет SDK для .NET WPF
+title: Расширяемость – пакет SDK .NET для WPF
 author: matthidinger
 ms.author: mahiding
 ms.date: 10/19/2017
 ms.topic: article
-ms.openlocfilehash: af301ec4d73b6791c1d132b9df7040d71cf70d7b
-ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
+ms.openlocfilehash: 4f89784f711727deb538b2ed2195007ca8e6aca1
+ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59552626"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67134313"
 ---
-# <a name="extensibility---net-wpf"></a>Расширяемость – .NET WPF
+# <a name="extensibility---net-wpf"></a>Расширяемость – .NET WPF
 
-## <a name="custom-element-rendering"></a>Пользовательский элемент визуализации
+## <a name="custom-element-rendering"></a>Визуализация пользовательских элементов
 
-Для полного доступа модуля подготовки отчетов можно использовать `ElementRenderers` свойства **добавить**, **удалить**, или **переопределить** по умолчанию модули подготовки отчетов.
+Для полного контроля можно использовать свойство `ElementRenderers`, чтобы **добавлять**, **удалять** или **переопределять** требуемое средство визуализации.
 
-В следующем примере показано, как можно определить пользовательский `"type": "Rating"` элемент и визуализировать его.
+В следующем примере показано, как можно определить пользовательский элемент `"type": "Rating"` и визуализировать его.
 
 ```csharp
 // Register the new type with the JSON parser
@@ -29,9 +29,9 @@ renderer.ElementRenderers.Set<MyCustomRating>(MyCustomRating.Render);
 // Define a custom Rating element type
 public class MyCustomRating : AdaptiveElement
 {
-    public override string Type => "Rating";
+    public MyCustomRating() { Type = "Rating"; }
 
-    public double Rating { get; set; }
+    public override string Type { get; set; }
 
     public AdaptiveTextSize Size { get; set; }
 

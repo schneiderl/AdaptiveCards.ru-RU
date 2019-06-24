@@ -1,19 +1,19 @@
 ---
-title: Действия — пакет SDK для Android
+title: Действия — пакет SDK для Android
 author: bekao
 ms.author: bekao
 ms.date: 09/27/2017
 ms.topic: article
-ms.openlocfilehash: b823b139a706e5149ff1cabc672f57cede4bfa33
-ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
+ms.openlocfilehash: e21c03e069e7ab29dd7d2724d49a2d439c67e5a1
+ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59552546"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67134255"
 ---
-# <a name="actions---android"></a>Действия — Android
+# <a name="actions---android"></a>Действия — Android
 
-Класс, который был передан в вызов отрисовки, реализующий интерфейс ICardActionHandler запускается при выполнении действия карточки. Вот как можно определить обработчик действия:
+При выполнении действия карточки вызывается класс, передаваемый в вызов средства визуализации, который реализует интерфейс ICardActionHandler. Обработчик действий определяется следующим образом:
 
 ```java
 public class ActionHandler implements ICardActionHandler
@@ -109,3 +109,15 @@ public class ActionHandler implements ICardActionHandler
     }
 }
 ```
+
+> [!IMPORTANT]
+> **Критические изменения в версии 1.1**
+> 
+> 1. Элемент media, добавленный в этой версии, требует реализации двух новых методов классами, реализующими ICardActionHandler. Вот эти методы:
+>
+> ```java
+> public void onMediaPlay(BaseCardElement mediaElement, RenderedAdaptiveCard renderedAdaptiveCard)
+> public void onMediaStop(BaseCardElement mediaElement, RenderedAdaptiveCard renderedAdaptiveCard)
+> ```
+>
+> onMediaPlay вызывается при первом нажатии кнопки воспроизведения в любом элементе media, тогда как onMediaStop вызывается, когда оканчивается воспроизведение мультимедийного содержимого.

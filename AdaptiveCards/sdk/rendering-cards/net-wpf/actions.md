@@ -1,31 +1,31 @@
 ---
-title: Действия — пакет SDK для .NET WPF
+title: Действия — пакет SDK .NET для WPF
 author: matthidinger
 ms.author: mahiding
 ms.date: 10/19/2017
 ms.topic: article
-ms.openlocfilehash: 9e96fd0ce6322e79f8717d8132857233f62f66f1
-ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
+ms.openlocfilehash: 39ddbc47fd123c5f25ba778925f0bf1bf1845f54
+ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59553136"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67134337"
 ---
-# <a name="actions---net-wpf"></a>Действия — .NET WPF
+# <a name="actions---net-wpf"></a>Действия — .NET WPF
 
-Любой `actions` в карточке отрисовывается как WPF `Button`s, но элемента в приложение для обработки, что происходит, когда пользователь нажимает их. 
+Все `actions` в карточке представлены в виде `Button` WPF, а приложение определяет, как обрабатывать их нажатия пользователями. 
 
-`RenderedAdaptiveCard` Предоставляет `OnAction` событий для этой цели.
+Для этого объект `RenderedAdaptiveCard` предоставляет событие `OnAction`.
 
 ```csharp
 // Event handler fires when a user clicks an action within the card
 renderedCard.OnAction += MyActionHandler;
 
-private void MyActionHandler(RenderedAdaptiveCard sender, ActionEventArgs e)
+private void MyActionHandler(RenderedAdaptiveCard sender, AdaptiveActionEventArgs e)
 {
     if (e.Action is AdaptiveOpenUrlAction openUrlAction)
     {
-        Process.Start(openUrlAction.Url);
+        Process.Start(openUrlAction.Url.AbsoluteUri);
     }
     else if (e.Action is AdaptiveShowCardAction showCardAction)
     {

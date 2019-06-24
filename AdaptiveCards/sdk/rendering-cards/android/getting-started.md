@@ -4,27 +4,44 @@ author: bekao
 ms.author: bekao
 ms.date: 09/27/2017
 ms.topic: article
-ms.openlocfilehash: 691ac9f2590fa52e36703890c14a6cfe1af1862c
-ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
+ms.openlocfilehash: b5f1279317e6b34d2e3bccee2625d972ac185e04
+ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59553496"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67134275"
 ---
-# <a name="getting-started---android"></a><span data-ttu-id="d9744-102">Начало работы — Android</span><span class="sxs-lookup"><span data-stu-id="d9744-102">Getting started - Android</span></span>
+# <a name="getting-started---android"></a><span data-ttu-id="bb0dc-102">Начало работы — Android</span><span class="sxs-lookup"><span data-stu-id="bb0dc-102">Getting started - Android</span></span>
 
-<span data-ttu-id="d9744-103">Это модуль подготовки отчетов, какие целевые объекты Android нативные элементы управления.</span><span class="sxs-lookup"><span data-stu-id="d9744-103">This is a renderer which targets Android native controls.</span></span>
+<span data-ttu-id="bb0dc-103">Это средство визуализации, использующее собственные элементы управления Android.</span><span class="sxs-lookup"><span data-stu-id="bb0dc-103">This is a renderer which targets Android native controls.</span></span>
 
-## <a name="install-maven-package"></a><span data-ttu-id="d9744-104">Установите пакет Maven</span><span class="sxs-lookup"><span data-stu-id="d9744-104">Install Maven package</span></span>
+## <a name="install-maven-package"></a><span data-ttu-id="bb0dc-104">Установка пакета Maven</span><span class="sxs-lookup"><span data-stu-id="bb0dc-104">Install Maven package</span></span>
 
-<span data-ttu-id="d9744-105">**io.adaptivecards:adaptivecards-android:{version}**</span><span class="sxs-lookup"><span data-stu-id="d9744-105">**io.adaptivecards:adaptivecards-android:{version}**</span></span>
+<span data-ttu-id="bb0dc-105">[![Maven Central](https://img.shields.io/maven-central/v/io.adaptivecards/adaptivecards-android.svg)](https://search.maven.org/#search%7Cga%7C1%7Ca%3A%22adaptivecards-android%22)</span><span class="sxs-lookup"><span data-stu-id="bb0dc-105">[![Maven Central](https://img.shields.io/maven-central/v/io.adaptivecards/adaptivecards-android.svg)](https://search.maven.org/#search%7Cga%7C1%7Ca%3A%22adaptivecards-android%22)</span></span>
 
-<span data-ttu-id="d9744-106">[![Maven Central](https://img.shields.io/maven-central/v/io.adaptivecards/adaptivecards-android.svg)](https://search.maven.org/#search%7Cga%7C1%7Ca%3A%22adaptivecards-android%22)</span><span class="sxs-lookup"><span data-stu-id="d9744-106">[![Maven Central](https://img.shields.io/maven-central/v/io.adaptivecards/adaptivecards-android.svg)](https://search.maven.org/#search%7Cga%7C1%7Ca%3A%22adaptivecards-android%22)</span></span>
+<span data-ttu-id="bb0dc-106">Опубликованные пакеты доступны</span><span class="sxs-lookup"><span data-stu-id="bb0dc-106">You can find the published packages</span></span> ![здесь](https://search.maven.org/search?q=g:io.adaptivecards)
 
-## <a name="namespaces"></a><span data-ttu-id="d9744-107">Пространства имен</span><span class="sxs-lookup"><span data-stu-id="d9744-107">Namespaces</span></span>
+<span data-ttu-id="bb0dc-108">Чтобы добавить в проект библиотеку, включите следующую строку в gradle.build проекта в разделе зависимостей.</span><span class="sxs-lookup"><span data-stu-id="bb0dc-108">To include library to your project you must include this line into your project gradle.build under the dependencies section</span></span>
 
-<span data-ttu-id="d9744-108">*Скоро*</span><span class="sxs-lookup"><span data-stu-id="d9744-108">*Coming soon*</span></span>
+```build.gradle
+ implementation 'io.adaptivecards:adaptivecards-android:1.1.0'
+```
+<span data-ttu-id="bb0dc-109">Вам нужно изменить номер версии с учетом версии, которую вы хотите добавить в проект.</span><span class="sxs-lookup"><span data-stu-id="bb0dc-109">You need to change the version number depending on the version you want to include into your project</span></span>
 
-## <a name="next-steps"></a><span data-ttu-id="d9744-109">Следующие шаги</span><span class="sxs-lookup"><span data-stu-id="d9744-109">Next steps</span></span>
+## <a name="add-import"></a><span data-ttu-id="bb0dc-110">Импорт</span><span class="sxs-lookup"><span data-stu-id="bb0dc-110">Add import</span></span>
 
-<span data-ttu-id="d9744-110">См. в разделе [визуализации карточки](render-a-card.md) для получения дальнейших указаний.</span><span class="sxs-lookup"><span data-stu-id="d9744-110">See [Render a card](render-a-card.md) for the next steps!</span></span>
+<span data-ttu-id="bb0dc-111">Чтобы добавить объектную модель, выполните следующую операцию импорта:</span><span class="sxs-lookup"><span data-stu-id="bb0dc-111">To include the object model, add this import</span></span>
+
+```
+ import io.adaptivecards.objectmodel.*;
+```
+
+<span data-ttu-id="bb0dc-112">Чтобы добавить средство визуализации, выполните следующую операцию импорта:</span><span class="sxs-lookup"><span data-stu-id="bb0dc-112">To include the renderer, add this import</span></span>
+
+```
+ import io.adaptivecards.renderer.*;
+```
+
+## <a name="next-steps"></a><span data-ttu-id="bb0dc-113">Дальнейшие действия</span><span class="sxs-lookup"><span data-stu-id="bb0dc-113">Next steps</span></span>
+
+<span data-ttu-id="bb0dc-114">См. подробнее о [визуализации карточек](render-a-card.md).</span><span class="sxs-lookup"><span data-stu-id="bb0dc-114">See [Render a card](render-a-card.md) for the next steps!</span></span>

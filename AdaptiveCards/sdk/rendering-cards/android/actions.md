@@ -1,19 +1,19 @@
 ---
-title: Действия — пакет SDK для Android
+title: Действия — пакет SDK для Android
 author: bekao
 ms.author: bekao
 ms.date: 09/27/2017
 ms.topic: article
-ms.openlocfilehash: b823b139a706e5149ff1cabc672f57cede4bfa33
-ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
+ms.openlocfilehash: e21c03e069e7ab29dd7d2724d49a2d439c67e5a1
+ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59552546"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67134255"
 ---
-# <a name="actions---android"></a><span data-ttu-id="9b3af-102">Действия — Android</span><span class="sxs-lookup"><span data-stu-id="9b3af-102">Actions - Android</span></span>
+# <a name="actions---android"></a><span data-ttu-id="b5bb1-102">Действия — Android</span><span class="sxs-lookup"><span data-stu-id="b5bb1-102">Actions - Android</span></span>
 
-<span data-ttu-id="9b3af-103">Класс, который был передан в вызов отрисовки, реализующий интерфейс ICardActionHandler запускается при выполнении действия карточки.</span><span class="sxs-lookup"><span data-stu-id="9b3af-103">When a cards action is executed, the class that was passed to the render call that implements the ICardActionHandler interface gets invoked.</span></span> <span data-ttu-id="9b3af-104">Вот как можно определить обработчик действия:</span><span class="sxs-lookup"><span data-stu-id="9b3af-104">Here is how to define your action handler:</span></span>
+<span data-ttu-id="b5bb1-103">При выполнении действия карточки вызывается класс, передаваемый в вызов средства визуализации, который реализует интерфейс ICardActionHandler.</span><span class="sxs-lookup"><span data-stu-id="b5bb1-103">When a cards action is executed, the class that was passed to the render call that implements the ICardActionHandler interface gets invoked.</span></span> <span data-ttu-id="b5bb1-104">Обработчик действий определяется следующим образом:</span><span class="sxs-lookup"><span data-stu-id="b5bb1-104">Here is how to define your action handler:</span></span>
 
 ```java
 public class ActionHandler implements ICardActionHandler
@@ -109,3 +109,15 @@ public class ActionHandler implements ICardActionHandler
     }
 }
 ```
+
+> [!IMPORTANT]
+> <span data-ttu-id="b5bb1-105">**Критические изменения в версии 1.1**</span><span class="sxs-lookup"><span data-stu-id="b5bb1-105">**Breaking changes for v1.1**</span></span>
+> 
+> 1. <span data-ttu-id="b5bb1-106">Элемент media, добавленный в этой версии, требует реализации двух новых методов классами, реализующими ICardActionHandler. Вот эти методы:</span><span class="sxs-lookup"><span data-stu-id="b5bb1-106">The media element included in this version requires two new methods to be implemented by the classes that implement ICardActionHandler, these methods are</span></span>
+>
+> ```java
+> public void onMediaPlay(BaseCardElement mediaElement, RenderedAdaptiveCard renderedAdaptiveCard)
+> public void onMediaStop(BaseCardElement mediaElement, RenderedAdaptiveCard renderedAdaptiveCard)
+> ```
+>
+> <span data-ttu-id="b5bb1-107">onMediaPlay вызывается при первом нажатии кнопки воспроизведения в любом элементе media, тогда как onMediaStop вызывается, когда оканчивается воспроизведение мультимедийного содержимого.</span><span class="sxs-lookup"><span data-stu-id="b5bb1-107">onMediaPlay is invoked when the play button is pressed for the first time in any media element, meanwhile onMediaStop is invoked when the media reaches it's end</span></span>

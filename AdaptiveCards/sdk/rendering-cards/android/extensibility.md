@@ -4,14 +4,21 @@ author: bekao
 ms.author: bekao
 ms.date: 09/27/2017
 ms.topic: article
-ms.openlocfilehash: 378171186599dd8d103111da183b7fc2e6e01c42
-ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
+ms.openlocfilehash: ca92f0a2b6ef8a36c5394e4dd9853df59fef22b2
+ms.sourcegitcommit: 8c8067206f283d97a5aa4ec65ba23d3fe18962f1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "67134263"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68299555"
 ---
 # <a name="extensibility---android"></a>Расширяемость — Android
+
+Модуль подготовки Android можно расширить для поддержки нескольких сценариев, в том числе:
+* [Пользовательский синтаксический анализ элементов карточек](#custom-parsing-of-card-elements)
+* [Пользовательская отрисовка элементов карточек](#custom-rendering-of-card-elements)
+* [Пользовательская отрисовка действий](#custom-rendering-of-actions) (Начиная с версии 1.2)
+* [Пользовательская загрузка образа](#custom-image-loading) (Начиная с v 1.0.1)
+* [Пользовательская загрузка мультимедиа](#custom-media-loading) (Начиная с версии 1.1)
 
 ## <a name="custom-parsing-of-card-elements"></a>Пользовательский анализ элементов карточки
 
@@ -78,7 +85,13 @@ AdaptiveCard adaptiveCard = AdaptiveCard.DeserializeFromString(jsonText, element
 
 ## <a name="custom-rendering-of-card-elements"></a>Пользовательская визуализация элементов карточки
 
-Чтобы определить пользовательское средство визуализации для нашего типа, сначала нужно создать класс, полученный из BaseCardElementParser:
+> [!IMPORTANT]
+>
+> **Список критических изменений**
+>
+> [Критические изменения в версии 1.2](#breaking-changes-for-v12)
+
+Чтобы определить собственный пользовательский модуль подготовки отчетов для нашего типа, сначала необходимо создать класс, который расширяется из ```BaseCardElementRenderer```:
 ```java
 public class MyCardElementRenderer extends BaseCardElementRenderer
 {
@@ -104,7 +117,140 @@ public class MyCardElementRenderer extends BaseCardElementRenderer
 ```java
 CardRendererRegistration.getInstance().registerRenderer("MyType", new CustomBlahRenderer());
 
-RenderedAdaptiveCard renderedCard = AdaptiveCardRenderer.getInstance().render(context, getSupportFragmentManager(), adaptiveCard, cardActionHandler, new HostConfig());
+RenderedAdaptiveCard renderedCard = AdaptiveCardRenderer.getInstance().render(context, fragmentManager, adaptiveCard, cardActionHandler,  hostConfig);
+```
+
+### <a name="breaking-changes-for-v12"></a>Критические изменения для версии 1.2
+
+Метод был изменен для ```RenderedAdaptiveCard``` включения параметра и ```ContainerStyle``` был изменен для рендераргс, где теперь содержится контаинерстиле, поэтому класс, расширяющий басекарделементрендерер, должен выглядеть следующим образом. ```render```
+
+```
+public class MyCardElementRenderer extends BaseCardElementRenderer
+{
+    @Override
+    public View render(RenderedAdaptiveCard renderedAdaptiveCard, Context context, FragmentManager fragmentManager, ViewGroup viewGroup,
+                       BaseCardElement baseCardElement, ICardActionHandler cardActionHandler, HostConfig hostConfig, RenderArgs renderArgs)
+    { }
+}
+```
+
+## <a name="custom-parsing-of-card-actions"></a>Пользовательский анализ действий карточек
+
+Аналогично анализу пользовательских элементов карт в версии 1.2 появилась возможность анализировать пользовательские действия. Например, предположим, что у нас есть новый тип действия, который выглядит следующим образом:
+```json
+{
+    "type" : "MyAction",
+    "ActionData" : "My data"
+}
+```
+
+Затем в следующих строках показано, как выполнить синтаксический анализ в Актионелемент, который ```BaseActionElement```расширяется из:
+```java
+public class MyActionElement extends BaseActionElement
+{
+    public MyActionElement(ActionType type) 
+    {
+        super(type);
+    }
+
+    public String getActionData()
+    {
+        return mActionData;
+    }
+
+    public void setActionData(String s)
+    {
+        mActionData = s;
+    }
+
+    private String mActionData;
+    public static final String MyActionId = "myAction";
+}
+
+public class MyActionParser extends ActionElementParser
+{
+    @Override
+    public BaseActionElement Deserialize(ParseContext context, JsonValue value)
+    {
+        MyActionElement element = new MyActionElement(ActionType.Custom);
+        element.SetElementTypeString(MyActionElement.MyActionId);
+        String val = value.getString();
+        try {
+            JSONObject obj = new JSONObject(val);
+            element.setActionData(obj.getString("ActionData"));
+        } catch (JSONException e) {
+            e.printStackTrace();
+            element.setActionData("Failure");
+        }
+        return element;
+    }
+
+    @Override
+    public BaseActionElement DeserializeFromString(ParseContext context, String jsonString)
+    {
+        MyActionElement element = new MyActionElement(ActionType.Custom);
+        element.SetElementTypeString(MyActionElement.MyActionId);
+        try {
+            JSONObject obj = new JSONObject(jsonString);
+            element.setBackwardString(obj.getString("ActionData"));
+        } catch (JSONException e) {
+            e.printStackTrace();
+            element.setBackwardString("Failure");
+        }
+        return element;
+    }
+}
+```
+
+А в следующих строках показано, как зарегистрировать средство синтаксического анализа и получить объект Адаптивекард, содержащий элемент настраиваемого действия:
+```java
+// Create an ActionParserRegistration and add your parser to it
+ActionParserRegistration actionParserRegistration = new ActionParserRegistration();
+actionParserRegistration.AddParser(MyActionElement.MyActionId, new MyActionParser());
+
+ParseContext context = new ParseContext(null, actionParserRegistration);
+ParseResult parseResult = AdaptiveCard.DeserializeFromString(jsonText, AdaptiveCardRenderer.VERSION, context);
+```
+
+Далее идет подготовка настраиваемого действия к просмотру.
+
+## <a name="custom-rendering-of-actions"></a>Пользовательская отрисовка действий
+
+Чтобы определить собственный обработчик настраиваемых действий для нашего типа, сначала необходимо создать класс, который расширяется из ```BaseActionElementRenderer```:
+```java
+public class MyActionRenderer extends BaseActionElementRenderer
+{
+    @Override
+    public Button render(RenderedAdaptiveCard renderedCard,
+                         Context context,
+                         FragmentManager fragmentManager,
+                         ViewGroup viewGroup,
+                         BaseActionElement baseActionElement,
+                         ICardActionHandler cardActionHandler,
+                         HostConfig hostConfig,
+                         RenderArgs renderArgs)
+    {
+        Button myActionButton = new Button(context);
+
+        CustomActionElement customAction = (CustomActionElement) baseActionElement.findImplObj();
+
+        myActionButton.setBackgroundColor(getResources().getColor(R.color.greenActionColor));
+        myActionButton.setText(customAction.getMessage());
+        myActionButton.setAllCaps(false);
+        myActionButton.setOnClickListener(new BaseActionElementRenderer.ActionOnClickListener(renderedCard, baseActionElement, cardActionHandler));
+
+        viewGroup.addView(myActionButton);
+
+        return myActionButton;
+    }
+}
+```
+
+Затем необходимо зарегистрировать средство визуализации следующим образом:
+```java
+CardRendererRegistration.getInstance().registerActionRenderer("myAction", new CustomActionRenderer());
+
+RenderedAdaptiveCard renderedCard = AdaptiveCardRenderer.getInstance().render(context, fragmentManager, adaptiveCard, cardActionHandler, hostConfig);
 ```
 
 ## <a name="custom-rendering-of-actions"></a>Пользовательская визуализация действий
@@ -233,13 +379,14 @@ public class ResourceResolver implements IResourceResolver
 ```
 
 Как можно видеть, наиболее существенными являются следующие изменения:
-* мы переименовали loadOnlineImage (String, GenericImageLoaderAsync) в resolveImageResource (String, GenericImageLoaderAsync);
-* для resolveImageResource (String, GenericImageLoaderAsync) добавлена перегрузка в виде (String, GenericImageLoaderAsync, int) для поддержки сценариев, в которых требуется максимальная ширина.
+
+* ```loadOnlineImage(String, GenericImageLoaderAsync)```был переименован в```resolveImageResource(String, GenericImageLoaderAsync)```
+* перегрузка для ```resolveImageResource(String, GenericImageLoaderAsync)``` была добавлена как ```resolveImageResource(String, GenericImageLoaderAsync, int)``` для поддержки сценариев, в которых требуется максимальная ширина.
 
 ## <a name="custom-media-loading"></a>Пользовательская загрузка мультимедиа
 
 > [!IMPORTANT]
-> **Обратите внимание, что IOnlineMediaLoader, требующий MediaDataSource, был добавлен в уровень API 23 и Android M**.
+> **```IOnlineMediaLoader``` Необходимо```MediaDataSource``` помнить, что было добавлено на уровне API 23 или Android M.**
 
 Вместе с элементом мультимедиа был также добавлен интерфейс IOnlineMediaLoader, который позволяет разработчикам переопределять [MediaDataSource](https://developer.android.com/reference/android/media/MediaDataSource) базового элемента mediaPlayer. **(Требуется Android M)**
 

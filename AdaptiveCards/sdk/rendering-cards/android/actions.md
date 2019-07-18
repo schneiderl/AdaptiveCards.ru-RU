@@ -4,16 +4,22 @@ author: bekao
 ms.author: bekao
 ms.date: 09/27/2017
 ms.topic: article
-ms.openlocfilehash: e21c03e069e7ab29dd7d2724d49a2d439c67e5a1
-ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
+ms.openlocfilehash: 49b0b45abeb54381bd7b4b548219a09ad5da10c1
+ms.sourcegitcommit: 8c8067206f283d97a5aa4ec65ba23d3fe18962f1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "67134255"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68299528"
 ---
 # <a name="actions---android"></a>Действия — Android
 
-При выполнении действия карточки вызывается класс, передаваемый в вызов средства визуализации, который реализует интерфейс ICardActionHandler. Обработчик действий определяется следующим образом:
+> [!IMPORTANT]
+> **Список критических изменений**
+> 
+> [Критические изменения в v 1.1](#breaking-changes-in-v11)
+> 
+
+Когда выполняется действие карточек, вызывается класс, переданный в вызов прорисовки, который реализует ```ICardActionHandler``` интерфейс. Обработчик действий определяется следующим образом:
 
 ```java
 public class ActionHandler implements ICardActionHandler
@@ -110,14 +116,50 @@ public class ActionHandler implements ICardActionHandler
 }
 ```
 
-> [!IMPORTANT]
-> **Критические изменения в версии 1.1**
-> 
-> 1. Элемент media, добавленный в этой версии, требует реализации двух новых методов классами, реализующими ICardActionHandler. Вот эти методы:
->
-> ```java
-> public void onMediaPlay(BaseCardElement mediaElement, RenderedAdaptiveCard renderedAdaptiveCard)
-> public void onMediaStop(BaseCardElement mediaElement, RenderedAdaptiveCard renderedAdaptiveCard)
-> ```
->
-> onMediaPlay вызывается при первом нажатии кнопки воспроизведения в любом элементе media, тогда как onMediaStop вызывается, когда оканчивается воспроизведение мультимедийного содержимого.
+## <a name="breaking-changes-in-v11"></a>Критические изменения в v 1.1
+
+Для элемента мультимедиа, входящего в эту версию, требуются два новых метода, реализуемых классами, ```ICardActionHandler```которые реализуют эти методы:
+
+* ```onMediaPlay```вызывается, когда кнопка воспроизведения нажимается в первый раз в любом элементе мультимедиа
+* ```onMediaStop```вызывается, когда носитель достигает конца
+
+Для этих методов используются следующие сигнатуры:
+
+```java
+public void onMediaPlay(BaseCardElement mediaElement, RenderedAdaptiveCard renderedAdaptiveCard)
+public void onMediaStop(BaseCardElement mediaElement, RenderedAdaptiveCard renderedAdaptiveCard)
+```
+
+Реализация ActionHandler из предыдущего примера теперь будет выглядеть примерно так:
+
+```java
+public class ActionHandler implements ICardActionHandler
+{
+    @Override
+    public void onAction(BaseActionElement actionElement, RenderedAdaptiveCard renderedCard)
+    { }
+
+    private void onSubmit(BaseActionElement actionElement, RenderedAdaptiveCard renderedAdaptiveCard) 
+    { }
+
+    private void onShowCard(BaseActionElement actionElement)
+    { }
+
+    private void onOpenUrl(BaseActionElement actionElement)
+    { }
+
+    @Override
+    public void onMediaPlay(BaseCardElement mediaElement, RenderedAdaptiveCard renderedAdaptiveCard)
+    {
+        // Your logic here, i.e.
+        showToast("Media started: " + mediaElement, Toast.LENGTH_LONG);
+    }
+
+    @Override
+    public void onMediaStop(BaseCardElement mediaElement, RenderedAdaptiveCard renderedAdaptiveCard)
+    {
+        // Your logic here, i.e.
+        showToast("Media ended playing: " + mediaElement, Toast.LENGTH_LONG);
+    }
+}
+```

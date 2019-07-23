@@ -1,41 +1,41 @@
 ---
-title: Пакет SDK для .NET для адаптивной карт
+title: Пакет SDK для .NET для адаптивных карт
 author: matthidinger
 ms.author: mahiding
 ms.date: 10/01/2017
 ms.topic: article
-ms.openlocfilehash: 37dec7651a574194eb00d46014431dfb5764f9b7
-ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
+ms.openlocfilehash: fa86d83a8f20490ec286b69653099ac8cd81b8ef
+ms.sourcegitcommit: 4d80c553ab574befa8c84706fd85d22077915745
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59553746"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68387345"
 ---
-# <a name="net-sdk-for-authoring-cards"></a>Пакет SDK для .NET для создания карт
+# <a name="net-sdk-for-authoring-cards"></a>Пакет SDK для .NET для создания карточек
 
-Как было описано в [Приступая к работе](../../authoring-cards/getting-started.md) страницы, инструмент Adaptive Cards — это объектная модель JSON. Библиотека .NET значительно упрощает работу с код JSON.
+Как описано на странице [Начало работы](../../authoring-cards/getting-started.md) , адаптивная карта является объектной моделью JSON. Библиотека .NET значительно упрощает работу с этим JSON.
 
 > [!IMPORTANT]
-> **Критические изменения из v0.5**
+> **Критические изменения с версии 0,5**
 > 
-> 1. Пакет переименован из `Microsoft.AdaptiveCards` для `AdaptiveCards`
-> 1. Из-за конфликтов часто имен типов framework все классы модели иметь префикс с «Adaptive». Например `TextBlock` теперь `AdaptiveTextBlock`
-> 1. Все свойства «uri» были изменены из типа `string` для `Uri`
-> 1. Также были внесены некоторые изменения схемы из v0.5 предварительной версии, которые являются [описанную в этой статье](https://github.com/Microsoft/AdaptiveCards/pull/633)
+> 1. Пакет переименован из `Microsoft.AdaptiveCards` в`AdaptiveCards`
+> 1. Из-за частого конфликта имен с типами платформы все классы модели имеют префикс "адаптивно". Например, `TextBlock` теперь`AdaptiveTextBlock`
+> 1. Все свойства "URI" были изменены с типа `string` на`Uri`
+> 1. Также были внесены некоторые изменения в схему из версии v 0,5 Preview, которые описаны [здесь](https://github.com/Microsoft/AdaptiveCards/pull/633) .
 
 
-## <a name="nuget-install"></a>Программа установки NuGet
-`AdaptiveCards` Пакет NuGet предоставляет типы для работы с адаптивной карточек в .NET
+## <a name="nuget-install"></a>Установка NuGet
+Пакет `AdaptiveCards` NuGet предоставляет типы для работы с адаптивными картами в .NET
 
-[![Программа установки NuGet](https://img.shields.io/nuget/vpre/AdaptiveCards.svg)](https://www.nuget.org/packages/AdaptiveCards)
+[![Установка NuGet](https://img.shields.io/nuget/vpre/AdaptiveCards.svg)](https://www.nuget.org/packages/AdaptiveCards)
 
 ```console
 Install-Package AdaptiveCards -IncludePrerelease
 ```
 
-## <a name="example-create-an-adaptivecard-and-serialize-to-json"></a>Пример. Создание AdaptiveCard и сериализации в JSON
+## <a name="example-create-an-adaptivecard-and-serialize-to-json"></a>Пример. Создание Адаптивекард и сериализация в JSON
 
-В этом примере показано, как построить инструмент Adaptive Cards с использованием стандарта C# объектов и затем выполнить его сериализацию в JSON для передачи по сети.
+В этом примере показано, как создать адаптивную карту с C# помощью стандартных объектов, а затем сериализовать ее в JSON для передачи по сети.
 
 ```csharp
 using AdaptiveCards;
@@ -58,17 +58,17 @@ card.Body.Add(new AdaptiveImage()
 string json = card.ToJson();
 ```
 
-## <a name="example-parse-an-adaptivecard-from-json"></a>Пример. Синтаксический анализ AdaptiveCard из JSON
+## <a name="example-parse-an-adaptivecard-from-json"></a>Пример. Анализ Адаптивекард из JSON
 
-В этом примере показано, как выполнить синтаксический анализ полезных данных JSON в инструмент Adaptive cards. Это позволяет легко управлять объектной моделью или даже отображаться адаптивной карты внутри приложения с помощью наших [модуль подготовки отчетов пакеты SDK](../../rendering-cards/getting-started.md).
+В этом примере показано, как анализировать полезные данные JSON в адаптивную карту. Это позволяет легко управлять объектной моделью или даже визуализировать адаптивные карты внутри приложения с помощью наших [пакетов SDK](../../rendering-cards/getting-started.md)для модуля подготовки отчетов.
 
 ```csharp
 try
 {
     // Get a JSON-serialized payload
     // Your app will probably get cards from somewhere else :)
-    var client = new HttpClient("http://adaptivecards.io/payloads/ActivityUpdate.json");
-    var response = await client.GetAsync(cardUrl);
+    var client = new HttpClient();
+    var response = await client.GetAsync("http://adaptivecards.io/payloads/ActivityUpdate.json");
     var json = await response.Content.ReadAsStringAsync();
 
     // Parse the JSON 

@@ -1,28 +1,28 @@
 ---
-title: Партнеры адаптивной карты
+title: Партнеры по адаптивным картам
 author: matthidinger
 ms.author: mahiding
 ms.date: 9/24/2018
 ms.topic: article
-ms.openlocfilehash: 0b48069f86a73bd26340976fcd420a062ce5b890
-ms.sourcegitcommit: eb7e91e8466d511b79068bc537930962abd45024
+ms.openlocfilehash: 92e49a8e47129d2c8b90e7c6ae2d32aa4ecfeddc
+ms.sourcegitcommit: f8de9c02b92cd8927a18e59e5650c92b2b78db06
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67815986"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523859"
 ---
 # <a name="partners"></a>Партнеры 
 
-Адаптивной карты наиболее полезны, когда их использовать широкого круга разработчиков. Наша концепция заключается, чтобы создать общий экосистему были разработчики могут писать и совместного использования содержимого на нескольких платформах. Наша цель — работают совместно с сообщества, а компаниям организовывать эту концепцию и разрабатывать инфраструктуру exchange универсальной карты для разработчиков.
+Адаптивные карты наиболее полезны при использовании широкого спектра разработчиков. Наша концепция — создать общую экосистему, в которой разработчики могут создавать и совместно использовать содержимое на нескольких платформах. Наша цель — совместная работа с сообществом и компаниями для создания этой концепции и разработки инфраструктуры универсальной карты обмена.
 
-Если вы не хотите присоединиться к нам в экосистеме адаптивной карты, [обратиться непосредственно на сайте GitHub](https://github.com/Microsoft/AdaptiveCards).
+Если вы хотите присоединиться к экосистеме адаптивных карт, обратитесь [непосредственно к GitHub](https://github.com/Microsoft/AdaptiveCards).
 
-## <a name="live"></a>Live
+## <a name="live"></a>Живущ
 
 Платформа | Описание | Документация | Version
 ---------|-------------|---------------|---------
-[Прочитай Bot Framework](https://github.com/Microsoft/BotFramework-WebChat)  | Встраиваемый веб-чата элемента управления для Microsoft Bot Framework | [Начало работы](https://docs.microsoft.com/en-us/adaptive-cards/get-started/bots) | 1.2 (web чата 4.5)
-[Например навыками Кортаны](https://docs.microsoft.com/en-us/cortana/skills/adaptive-cards) | Виртуальные помощники для Windows 10 | [Начало работы](https://docs.microsoft.com/en-us/adaptive-cards/get-started/bots) | 1.0
-[Временная шкала Windows](https://blogs.windows.com/windowsexperience/2017/12/19/announcing-windows-10-insider-preview-build-17063-pc/) | Новый способ возобновить предыдущих действий, начатую на этот компьютер, другие ПК Windows и устройств iOS и Android. | [Начало работы](https://docs.microsoft.com/en-us/adaptive-cards/get-started/windows) | 1.0
-[Сообщения с действиями Outlook](https://docs.microsoft.com/en-us/outlook/actionable-messages/)  | Присоединение практические сообщение на адрес электронной почты | [Начало работы](https://docs.microsoft.com/en-us/outlook/actionable-messages/) | 1.0
-[Microsoft Teams](https://products.office.com/en-US/microsoft-teams/group-chat-software) | Платформа, которая объединяет workplace чата, встреч и примечания | [Начало работы](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/cards/cards-reference#adaptive-card) | 1.0
+[Интерактивный чат для платформы Bot](https://github.com/Microsoft/BotFramework-WebChat)  | Встраиваемый элемент управления для веб-чата в Microsoft Bot Framework | [Начало работы](https://docs.microsoft.com/en-us/adaptive-cards/get-started/bots) | 1,2 (веб-чат 4,5)
+[Навыки кортаны](https://docs.microsoft.com/en-us/cortana/skills/adaptive-cards) | Виртуальный помощник для Windows 10 | [Начало работы](https://docs.microsoft.com/en-us/adaptive-cards/get-started/bots) | 1.0
+[Временная шкала Windows](https://blogs.windows.com/windowsexperience/2017/12/19/announcing-windows-10-insider-preview-build-17063-pc/) | Новый способ возобновления работы, выполняемой на этом компьютере, других компьютерах с Windows и устройств iOS/Android. | [Начало работы](https://docs.microsoft.com/en-us/adaptive-cards/get-started/windows) | 1.0
+[Сообщения, которые исявляются действиями Outlook](https://docs.microsoft.com/en-us/outlook/actionable-messages/)  | Вложение сообщения с действиями в сообщение электронной почты | [Начало работы](https://docs.microsoft.com/en-us/outlook/actionable-messages/) | 1.0
+[Microsoft Teams](https://products.office.com/en-US/microsoft-teams/group-chat-software) | Платформа, которая сочетает чат с рабочей областью, собрания и заметки | [Начало работы](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/cards/cards-reference#adaptive-card) | 1.0

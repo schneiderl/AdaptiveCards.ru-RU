@@ -4,24 +4,16 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 10/01/2017
 ms.topic: article
-ms.openlocfilehash: fa86d83a8f20490ec286b69653099ac8cd81b8ef
-ms.sourcegitcommit: 4d80c553ab574befa8c84706fd85d22077915745
+ms.openlocfilehash: fb1a79da288cbce77c4f684b384982feb96e7a8c
+ms.sourcegitcommit: f8de9c02b92cd8927a18e59e5650c92b2b78db06
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68387345"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523842"
 ---
 # <a name="net-sdk-for-authoring-cards"></a>Пакет SDK для .NET для создания карточек
 
 Как описано на странице [Начало работы](../../authoring-cards/getting-started.md) , адаптивная карта является объектной моделью JSON. Библиотека .NET значительно упрощает работу с этим JSON.
-
-> [!IMPORTANT]
-> **Критические изменения с версии 0,5**
-> 
-> 1. Пакет переименован из `Microsoft.AdaptiveCards` в`AdaptiveCards`
-> 1. Из-за частого конфликта имен с типами платформы все классы модели имеют префикс "адаптивно". Например, `TextBlock` теперь`AdaptiveTextBlock`
-> 1. Все свойства "URI" были изменены с типа `string` на`Uri`
-> 1. Также были внесены некоторые изменения в схему из версии v 0,5 Preview, которые описаны [здесь](https://github.com/Microsoft/AdaptiveCards/pull/633) .
 
 
 ## <a name="nuget-install"></a>Установка NuGet
@@ -30,7 +22,7 @@ ms.locfileid: "68387345"
 [![Установка NuGet](https://img.shields.io/nuget/vpre/AdaptiveCards.svg)](https://www.nuget.org/packages/AdaptiveCards)
 
 ```console
-Install-Package AdaptiveCards -IncludePrerelease
+Install-Package AdaptiveCards
 ```
 
 ## <a name="example-create-an-adaptivecard-and-serialize-to-json"></a>Пример. Создание Адаптивекард и сериализация в JSON

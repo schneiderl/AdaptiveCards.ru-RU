@@ -38,6 +38,16 @@
       href: sdk/authoring-cards/toc.yml
     - name: Отрисовка карточек
       href: sdk/rendering-cards/toc.yml
+- name: Создание шаблонов (ознакомительная версия)
+  items:
+    - name: Обзор
+      href: templating/index.md
+    - name: Язык шаблонов
+      href: templating/language.md
+    - name: Пакеты SDK
+      href: templating/sdk.md
+    - name: Служба шаблонов
+      href: templating/service.md
 - name: Ресурсы
   items:
     - name: Принципы

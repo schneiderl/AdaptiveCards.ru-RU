@@ -32,19 +32,21 @@
       href: rendering-cards/renderer-status.md
     - name: Реализация отрисовщика
       href: rendering-cards/implement-a-renderer.md
-- name: SDK
+- name: Пакеты SDK
   items:
     - name: Разработка карточек
       href: sdk/authoring-cards/toc.yml
     - name: Отрисовка карточек
       href: sdk/rendering-cards/toc.yml
+    - name: Пакет SDK для конструктора
+      href: sdk/designer.md
 - name: Создание шаблонов (ознакомительная версия)
   items:
     - name: Обзор
       href: templating/index.md
     - name: Язык шаблонов
       href: templating/language.md
-    - name: Пакеты SDK
+    - name: Пакеты SDK для создания шаблонов
       href: templating/sdk.md
     - name: Служба шаблонов
       href: templating/service.md

@@ -1,5 +1,5 @@
 ---
-title: Конфигурации узла - .NET SDK для визуализации изображения
+title: Конфигурация узла — пакет SDK для визуализации изображений .NET
 author: matthidinger
 ms.author: mahiding
 ms.date: 10/19/2017
@@ -11,6 +11,6 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59553446"
 ---
-# <a name="host-config---net-image"></a>Размещение config - образа .NET
+# <a name="host-config---net-image"></a>Конфигурация узла — образ .NET
 
-См. в разделе [WPF документация](../net-wpf/getting-started.md) для полный перечень этих параметров.
+Полный список вариантов использования этих параметров см. в документации по [WPF](../net-wpf/getting-started.md) .

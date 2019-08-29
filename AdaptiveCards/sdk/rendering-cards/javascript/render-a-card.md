@@ -1,5 +1,5 @@
 ---
-title: Визуализации карт - пакет SDK для JavaScript
+title: Подготовка к просмотру пакета SDK для карты JavaScript
 author: matthidinger
 ms.author: mahiding
 ms.date: 11/28/2017
@@ -11,9 +11,9 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59553126"
 ---
-# <a name="render-a-card---javascript"></a>Визуализации карт — JavaScript
+# <a name="render-a-card---javascript"></a>Подготовка карты — JavaScript
 
-Вот способ визуализации карт, с помощью пакета SDK для JavaScript.
+Вот как можно отобразить карту с помощью пакета SDK для JavaScript.
 
 ## <a name="usage"></a>Использование
 
@@ -30,7 +30,7 @@ var AdaptiveCards = require("adaptivecards");
 AdaptiveCards.renderCard(...);
 ```
 
-## <a name="render-a-card"></a>Визуализации карт
+## <a name="render-a-card"></a>Визуализация карточки
 
 ```js
 // Author a card

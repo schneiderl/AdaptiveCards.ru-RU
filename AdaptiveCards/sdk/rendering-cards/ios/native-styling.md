@@ -1,5 +1,5 @@
 ---
-title: Собственные стили - пакет SDK для iOS
+title: Собственный стиль — пакет SDK для iOS
 author: matthidinger
 ms.author: mahiding
 ms.date: 06/26/2017

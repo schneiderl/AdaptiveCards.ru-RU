@@ -1,5 +1,5 @@
 ---
-title: Расширяемость – пакет SDK для универсальной платформы Windows
+title: Расширяемость — пакет SDK для UWP
 author: matthidinger
 ms.author: mahiding
 ms.date: 06/26/2017
@@ -11,11 +11,11 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59553046"
 ---
-# <a name="extensibility---uwp"></a>Расширяемость – универсальной платформы Windows
+# <a name="extensibility---uwp"></a>Расширяемость — UWP
 
-## <a name="changing-per-element-rendering"></a>Изменение каждого элемента визуализации
+## <a name="changing-per-element-rendering"></a>Изменение отрисовки на элемент
 
-Реализация класса модуля подготовки отчетов и задайте его в модуль подготовки отчетов
+Реализация класса модуля подготовки отчетов и его задание в модуле подготовки отчетов
 
 ```csharp
 // My custom renderer is going to replace how textblocks should render!

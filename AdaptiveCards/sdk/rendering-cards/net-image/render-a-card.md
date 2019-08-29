@@ -1,5 +1,5 @@
 ---
-title: Визуализации карт - .NET SDK для визуализации изображения
+title: Подготовка к просмотру карты — пакет SDK для визуализации изображений .NET
 author: matthidinger
 ms.author: mahiding
 ms.date: 10/19/2017
@@ -11,9 +11,9 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59552496"
 ---
-# <a name="render-a-card---net-image"></a>Визуализации карт - образа .NET
+# <a name="render-a-card---net-image"></a>Подготовка изображения карты .NET
 
-Вот способ визуализации карт, с помощью пакета SDK для .NET образа.
+Ниже показано, как подготовить карту с помощью пакета SDK для образа .NET.
 
 ```csharp
 try

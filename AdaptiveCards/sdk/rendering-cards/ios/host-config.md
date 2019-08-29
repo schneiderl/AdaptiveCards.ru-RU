@@ -1,5 +1,5 @@
 ---
-title: Конфигурации узла - пакет SDK для iOS
+title: Конфигурация узла — пакет SDK для iOS
 author: matthidinger
 ms.author: mahiding
 ms.date: 06/26/2017
@@ -11,23 +11,23 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59553706"
 ---
-# <a name="host-config---ios"></a>Host config - iOS
+# <a name="host-config---ios"></a>Конфигурация узла — iOS
 
-Узел можно настроить с помощью HostConfig которого могут быть вызваны строки JSON
+Узел можно настроить с помощью Хостконфиг, который может быть создан строкой JSON
 
 ```objective-c
 ACOParseResult *hostconfigParseResult = [ACOHostConfig FromJson:self.hostconfig];
 ```
 
-Можно создать экземпляр по умолчанию HostConfig
+Экземпляр Хостконфиг по умолчанию можно создать
 
 ```objective-c
 ACOHostConfig *defaultConfig = [[ACHostConfig alloc] init];
 ```
 
-## <a name="render-a-card-using-host-config"></a>Визуализации карт, с помощью конфигурации узла
+## <a name="render-a-card-using-host-config"></a>Подготовка карты с помощью конфигурации узла
 
-Rederer принимает инструмент adaptive Cards и конфигурации узла. HostConfig может быть пустым, и если nil, будет использоваться значение по умолчанию.
+Средство визуализации принимает адаптивную карточку и параметр HostConfig. Если HostConfig имеет значение NULL, применяется конфигурация по умолчанию.
 
 ```objective-c
 ACRRenderResult *renderResult;

@@ -1,5 +1,5 @@
 ---
-title: .NET HTML SDK
+title: ПАКЕТ SDK ДЛЯ .NET HTML
 author: matthidinger
 ms.author: mahiding
 ms.date: 10/19/2017
@@ -11,13 +11,13 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59552606"
 ---
-# <a name="getting-started---net-html"></a>Приступая к работе — .NET HTML
+# <a name="getting-started---net-html"></a>Начало работы — HTML-код .NET
 
-Как было описано в [Приступая к работе](../../../authoring-cards/getting-started.md) страницы, инструмент Adaptive Cards — это объектная модель сериализации JSON карты. Это библиотека .NET для создания HTML-разметки, обычно с сервера.
+Как описано в [Начало работы](../../../authoring-cards/getting-started.md) странице, адаптивная карта является объектной моделью сериализованной карточки JSON. Это библиотека .NET для создания разметки HTML, обычно с сервера.
 
-## <a name="nuget-install"></a>Программа установки NuGet
+## <a name="nuget-install"></a>Установка NuGet
 
-[![Программа установки NuGet](https://img.shields.io/nuget/vpre/AdaptiveCards.Rendering.Html.svg)](https://www.nuget.org/packages/AdaptiveCards.Rendering.Html)
+[![Установка NuGet](https://img.shields.io/nuget/vpre/AdaptiveCards.Rendering.Html.svg)](https://www.nuget.org/packages/AdaptiveCards.Rendering.Html)
 
 ```console
 Install-Package AdaptiveCards.Rendering.Html -IncludePrerelease
@@ -25,4 +25,4 @@ Install-Package AdaptiveCards.Rendering.Html -IncludePrerelease
 
 ## <a name="next-steps"></a>Следующие шаги
 
-См. в разделе [визуализации карточки](render-a-card.md) для получения дальнейших указаний.
+См. подробнее о [визуализации карточек](render-a-card.md).

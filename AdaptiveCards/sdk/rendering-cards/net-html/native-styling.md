@@ -1,5 +1,5 @@
 ---
-title: Собственные стили - пакета SDK для .NET HTML
+title: Собственный стиль — пакет SDK для .NET HTML
 author: matthidinger
 ms.author: mahiding
 ms.date: 10/19/2017
@@ -11,32 +11,32 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59552566"
 ---
-# <a name="native-styling---net-html"></a>Собственные стили - .NET HTML
+# <a name="native-styling---net-html"></a>Собственный стиль — HTML-код .NET
 
-Во время конфигурации узла можно получить большинство определенным способом существует на каждой платформе, вполне вероятно, что необходимо сделать некоторые собственные стили на каждой платформе. 
+Несмотря на то, что конфигурация узла будет наиболее актуальна на каждой платформе, вполне вероятно, что на каждой платформе придется выполнять некоторые собственные стили. 
 
-HTML упрощает это, добавив классы CSS к каждому элементу.
+HTML упрощает эту задачу, добавляя классы CSS к каждому элементу.
 
 | Элемент | Класс CSS |
 |---|---|
-| AdaptiveCard | AC-adaptivecard |
-| Все действия | AC кнопка | 
-| Выбор действия | можно выбрать AC |
-| Action.OpenUrl  | AC действие openUrl |
-| Action.ShowCard | AC действие showCard |
-| Action.Submit  | AC действие submit  |
-| ActionSet | AC-actionset |
-| Column | AC столбец |
-| Набор столбцов | AC-набор столбцов |
-| Контейнер | AC контейнера |
-| Все входные данные | AC-входных данных |
-| Input.ChoiceSet | AC-multichoiceInput  |
-| Input.Date | AC-dateInput |
-| Input.Number | AC-numberInput |
-| Input.Text | AC-textInput |
-| Input.Time | AC-timeInput |
-| Input.Toggle| - |
-| Изображение  | AC-image |
-| ImageSet  | AC-imageset |
-| FactSet | AC-factset |
-| TextBlock  | AC-textblock |
+| адаптивекард | AC-адаптивекард |
+| Все действия | Кнопка AC | 
+| Выбор действий | Выбираемый AC |
+| Action. OpenUrl  | AC-Action-openUrl |
+| Action. Шовкард | AC-Action-Шовкард |
+| Действие. Отправка  | AC-действие — отправка  |
+| Действие | AC-действие |
+| Column | столбец "AC" |
+| ColumnSet | блок-гистограмма |
+| Контейнер | контейнер AC |
+| Все входные данные | входные данные AC |
+| Input. Choice | AC-Мултичоицеинпут  |
+| Input. Date | AC-Датеинпут |
+| Input. Number | AC-Нумберинпут |
+| Input. Text | AC-textInput |
+| Входной. время | AC-Тимеинпут |
+| Input. toggle| - |
+| Image  | образ AC |
+| ImageSet  | блок-образ AC |
+| FactSet | блок-фактор AC |
+| TextBlock  | AC-TextBlock |

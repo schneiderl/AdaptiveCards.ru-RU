@@ -1,5 +1,5 @@
 ---
-title: Расширяемость – пакет SDK для iOS
+title: Расширяемость — пакет SDK для iOS
 author: matthidinger
 ms.author: mahiding
 ms.date: 06/26/2017
@@ -11,12 +11,12 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59553566"
 ---
-# <a name="extensibility---ios"></a>Расширяемость – iOS
+# <a name="extensibility---ios"></a>Расширяемость — iOS
 
-## <a name="changing-per-element-rendering"></a>Изменение каждого элемента визуализации
+## <a name="changing-per-element-rendering"></a>Изменение отрисовки на элемент
 
-Разработчики могут настраивать внешний вид элементов AdaptiveCards renderred, таких как TextBlock.
-Пример показывает, каким образом могут изменять цвет фона NumberInput.
+Разработчики могут настраивать внешний вид элементов рендерред Адаптивекардс, таких как TextBlock.
+В следующем примере показано, как можно изменить цвет фона Нумберинпут.
 
 ```objective-c
 ACRRegistration *registration = [ACRRegistration getInstance];
@@ -53,8 +53,8 @@ ACRRegistration *registration = [ACRRegistration getInstance];
 
  ## <a name="additional-property"></a>Дополнительное свойство
 
- Разработчики также могут отправлять в дополнительных свойствах, как часть полезных данных json.
-Например помимо «интервал» и «идентификатор» для полезных данных json для BaseCardElement, может добавить radius для углов TextBlock его полезные данные json.
+ Разработчики также могут передавать дополнительные свойства в рамках полезных данных JSON.
+Например, в дополнение к "расстоянию" и "ID" полезных данных JSON для Басекарделемент можно добавить радиус для углов TextBlock в свои полезные данные JSON.
 
  ```objective-c
  "type":"TextBlock",
@@ -70,10 +70,10 @@ ACRRegistration *registration = [ACRRegistration getInstance];
               radiusForMyTextBlock = dictionary[@"radius"];
           ...
 ```
- ## <a name="custom-parsing"></a>Custom синтаксического анализа
+ ## <a name="custom-parsing"></a>Пользовательский синтаксический анализ
 
-Разработчики могут также иметь пользовательского анализа и имеют новый элемент пользовательского интерфейса, добавляемый adpative карты, например индикатор хода выполнения. Проверьте CustomProgressBarRenderer.mm детализации.
-Настраиваемое средство синтаксического анализа необходимо реализовать протокол ACOIBaseCardElementParser. метод deserializeToCustomElement следует анализирует, учитывая полезные данные json, заданной в качестве NSData и возвращают указатель на объект UIView, который добавляется к объекту AdaptiveCard к просмотру.
+Разработчики также могут иметь пользовательский синтаксический анализ и добавить новый элемент пользовательского интерфейса в карточку адпативе, например индикатор выполнения. Дополнительные сведения можно узнать в CustomProgressBarRenderer.mm.
+Пользовательское средство синтаксического анализа должно реализовать протокол Акоибасекарделементпарсер. метод Десериализетокустомелемент должен анализировать заданную полезную нагрузку JSON, заданную как NSData, и возвращать указатель на объект UIView, который будет добавлен в объект Адаптивекард для просмотра.
 
 ```objective-c
       CustomProgressBarRenderer *progressBarRenderer = [[CustomProgressBarRenderer alloc] init];

@@ -42,6 +42,6 @@ ms.locfileid: "67134275"
  import io.adaptivecards.renderer.*;
 ```
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 См. подробнее о [визуализации карточек](render-a-card.md).

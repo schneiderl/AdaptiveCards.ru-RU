@@ -1,5 +1,5 @@
 ---
-title: Визуализации пакета SDK для .NET изображения
+title: Пакет SDK для визуализации изображений .NET
 author: matthidinger
 ms.author: mahiding
 ms.date: 10/19/2017
@@ -11,15 +11,15 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59552866"
 ---
-# <a name="getting-started---net-image"></a>Приступая к работе - образа .NET
+# <a name="getting-started---net-image"></a>Приступая к работе — образ .NET
 
-Как было описано в [Приступая к работе](../../../authoring-cards/getting-started.md) страницы, инструмент Adaptive Cards — это объектная модель сериализации JSON карты. Эта библиотека упрощает для подготовки к просмотру код JSON в в изображения в формате PNG.
+Как описано в [Начало работы](../../../authoring-cards/getting-started.md) странице, адаптивная карта является объектной моделью сериализованной карточки JSON. Эта библиотека упрощает визуализацию JSON в виде изображения в формате PNG.
 
-Этот пакет можно использовать даже на сервере для создания образов и реализует все «магические поток однопотокового Подразделения» некоторой для вас. 
+Этот пакет можно даже использовать на сервере для создания образов и реализовывать все ГУ "волшебного STA-потока". 
 
-## <a name="nuget-install"></a>Программа установки NuGet
+## <a name="nuget-install"></a>Установка NuGet
 
-[![Программа установки NuGet](https://img.shields.io/nuget/vpre/AdaptiveCards.Rendering.Wpf.svg)](https://www.nuget.org/packages/AdaptiveCards.Rendering.Wpf)
+[![Установка NuGet](https://img.shields.io/nuget/vpre/AdaptiveCards.Rendering.Wpf.svg)](https://www.nuget.org/packages/AdaptiveCards.Rendering.Wpf)
 
 ```console
 Install-Package AdaptiveCards.Rendering.Wpf -IncludePrerelease
@@ -27,4 +27,4 @@ Install-Package AdaptiveCards.Rendering.Wpf -IncludePrerelease
 
 ## <a name="next-steps"></a>Следующие шаги
 
-См. в разделе [визуализации карточки](render-a-card.md) для получения дальнейших указаний.
+См. подробнее о [визуализации карточек](render-a-card.md).

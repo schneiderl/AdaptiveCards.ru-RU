@@ -1,5 +1,5 @@
 ---
-title: Визуализации карт - пакета SDK для универсальной платформы Windows
+title: Подготовка к просмотру карты с помощью пакета SDK для UWP
 author: matthidinger
 ms.author: mahiding
 ms.date: 06/26/2017
@@ -11,13 +11,13 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59552436"
 ---
-# <a name="render-a-card---uwp"></a>Визуализации карт - универсальной платформы Windows
+# <a name="render-a-card---uwp"></a>Визуализация карты — UWP
 
-Вот способ визуализации карт, с помощью пакета SDK универсальной платформы Windows.
+Вот как можно отобразить карту с помощью пакета SDK для UWP.
 
-## <a name="create-an-instance-of-your-renderer"></a>Создайте экземпляр вашего модуля подготовки отчетов
+## <a name="create-an-instance-of-your-renderer"></a>Создание экземпляра модуля подготовки отчетов
 
-Создайте экземпляр библиотеки модуля подготовки отчетов. 
+На этом шаге необходимо создать экземпляр библиотеки средства визуализации. 
 
 ```csharp
 using AdaptiveCards.Rendering.Uwp;
@@ -38,9 +38,9 @@ var card = AdaptiveCard.FromJsonString(jsonString);
 var card = AdaptiveCard.FromJson(jsonObject);
 ```
 
-## <a name="render-a-card"></a>Визуализации карт
+## <a name="render-a-card"></a>Визуализация карточки
 
-Получить карточку из источника и визуализировать его.
+Получение карты из источника и ее отрисовка.
 
 ```csharp
 RenderedAdaptiveCard renderedAdaptiveCard =  renderer.RenderAdaptiveCard(card);
@@ -58,7 +58,7 @@ if (renderedAdaptiveCard.FrameworkElement != null)
 
 ## <a name="example"></a>Пример
 
-Вот пример из модуля подготовки отчетов универсальной платформы Windows.
+Ниже приведен пример из модуля подготовки UWP.
 
 ```csharp
 var renderer = new AdaptiveCardRenderer();

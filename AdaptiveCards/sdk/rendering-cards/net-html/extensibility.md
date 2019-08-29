@@ -1,5 +1,5 @@
 ---
-title: Расширяемость – пакет SDK для .NET HTML
+title: Расширяемость — пакет SDK для .NET HTML
 author: matthidinger
 ms.author: mahiding
 ms.date: 10/19/2017
@@ -11,13 +11,13 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59552536"
 ---
-# <a name="extensibility---net-html"></a>Расширяемость – .NET HTML
+# <a name="extensibility---net-html"></a>Расширяемость — HTML-код .NET
 
-## <a name="custom-element-rendering"></a>Пользовательский элемент визуализации
+## <a name="custom-element-rendering"></a>Визуализация пользовательских элементов
 
-Для полного доступа модуля подготовки отчетов можно использовать `ElementRenderers` свойства **добавить**, **удалить**, или **переопределить** по умолчанию модули подготовки отчетов.
+Для полного контроля можно использовать свойство `ElementRenderers`, чтобы **добавлять**, **удалять** или **переопределять** требуемое средство визуализации.
 
-В следующем примере показано, как можно определить пользовательский `"type": "Rating"` элемент и визуализировать его.
+В следующем примере показано, как можно определить пользовательский элемент `"type": "Rating"` и визуализировать его.
 
 ```csharp
 // Register the new type with the JSON parser

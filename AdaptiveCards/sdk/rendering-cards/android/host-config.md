@@ -1,5 +1,5 @@
 ---
-title: Размещение config - пакета SDK для Android
+title: Конфигурация узла — пакет SDK для Android
 author: bekao
 ms.author: bekao
 ms.date: 09/27/2017
@@ -11,11 +11,11 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59553346"
 ---
-# <a name="host-config---android"></a>Конфигурации узла - Android
+# <a name="host-config---android"></a>Конфигурация узла — Android
 
-Чтобы настроить модуль подготовки отчетов предоставления экземпляра объекта HostConfig. (См. в разделе [схема Config узла](../../../rendering-cards/host-config.md) для полного описания.)
+Чтобы настроить модуль подготовки отчетов, укажите экземпляр объекта Хостконфиг. (Полное описание см. в [схеме конфигурации узла](../../../rendering-cards/host-config.md) .)
 
-Чтобы создать объект HostConfig из строки, используйте метод DeserializeFromString
+Чтобы создать объект Хостконфиг из строки, используйте метод Десериализефромстринг
 
 ```java
 HostConfig hostConfig = HostConfig.DeserializeFromString(hostConfigText);

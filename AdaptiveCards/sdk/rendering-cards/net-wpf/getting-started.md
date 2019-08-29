@@ -11,23 +11,23 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59553626"
 ---
-# <a name="getting-started---net-wpf"></a>Приступая к работе - .NET WPF
+# <a name="getting-started---net-wpf"></a>Приступая к работе — .NET WPF
 
-Как было описано в [Приступая к работе](../../../authoring-cards/getting-started.md) страницы, инструмент Adaptive Cards — это объектная модель сериализации JSON карты. Эта библиотека упрощает для подготовки к просмотру код JSON в пользовательский Интерфейс WPF, который можно использовать в приложении.
+Как описано в [Начало работы](../../../authoring-cards/getting-started.md) странице, адаптивная карта является объектной моделью сериализованной карточки JSON. Эта библиотека упрощает визуализацию JSON в пользовательском интерфейсе WPF, который можно использовать в приложении.
 
-## <a name="nuget-install"></a>Программа установки NuGet
+## <a name="nuget-install"></a>Установка NuGet
 
-[![Программа установки NuGet](https://img.shields.io/nuget/vpre/AdaptiveCards.Rendering.Wpf.svg)](https://www.nuget.org/packages/AdaptiveCards.Rendering.Wpf)
+[![Установка NuGet](https://img.shields.io/nuget/vpre/AdaptiveCards.Rendering.Wpf.svg)](https://www.nuget.org/packages/AdaptiveCards.Rendering.Wpf)
 
 ```console
 Install-Package AdaptiveCards.Rendering.Wpf
 ```
 
-### <a name="xceed-enhanced-input-package"></a>Xceed расширенных входных пакетов
+### <a name="xceed-enhanced-input-package"></a>Расширенный входной пакет ксцеед
 
-Этот дополнительный пакет улучшает адаптивной входные данные карты элементов управления WPF предоставляет без дополнительной настройки. Он имеет зависимость от `Extended.Wpf.Toolkit`
+Этот необязательный пакет расширяет возможности управления входными данными адаптивных карт, помимо того, что WPF предоставляет по своему желанию. Зависит от`Extended.Wpf.Toolkit`
 
-[![Программа установки NuGet](https://img.shields.io/nuget/vpre/AdaptiveCards.Rendering.Wpf.Xceed.svg)](https://www.nuget.org/packages/AdaptiveCards.Rendering.Wpf.Xceed)
+[![Установка NuGet](https://img.shields.io/nuget/vpre/AdaptiveCards.Rendering.Wpf.Xceed.svg)](https://www.nuget.org/packages/AdaptiveCards.Rendering.Wpf.Xceed)
 
 ```console
 Install-Package AdaptiveCards.Rendering.Wpf.Xceed
@@ -37,8 +37,8 @@ Install-Package AdaptiveCards.Rendering.Wpf.Xceed
 
 ![Снимок экрана визуализатора](../../../resources/media/tools/wpfvisualizer.png)
 
-[Пример визуализатора WPF](https://github.com/Microsoft/AdaptiveCards/tree/master/source/dotnet/Samples/WPFVisualizer) позволяет визуализировать карты, использующие WPF.  Объект `Host Config` встроенной в редактор для редактирования и просмотра параметров конфигурации узла. Сохраните эти параметры в формате JSON, чтобы использовать их при подготовке к просмотру в приложении.
+[Пример визуализатора WPF](https://github.com/Microsoft/AdaptiveCards/tree/master/source/dotnet/Samples/WPFVisualizer) позволяет визуализировать карты с помощью WPF.  `Host Config` Редактор встроен в для редактирования и просмотра параметров конфигурации узла. Сохраните эти параметры в формате JSON, чтобы использовать их при подготовке к просмотру в приложении.
 
 ## <a name="next-steps"></a>Следующие шаги
 
-См. в разделе [визуализации карточки](render-a-card.md) для получения дальнейших указаний.
+См. подробнее о [визуализации карточек](render-a-card.md).

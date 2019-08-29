@@ -11,13 +11,13 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59552646"
 ---
-# <a name="getting-started---ios"></a>Приступая к работе — iOS
+# <a name="getting-started---ios"></a>Начало работы — iOS
 
-Этим модулем подготовки, которая нацелена на собственные элементы управления iOS.
+Модуль подготовки отчетов, предназначенный для собственных элементов управления iOS.
 
-## <a name="install-pod"></a>Установка pod
+## <a name="install-pod"></a>Установить Pod
 
-Эта возможность доступна в pod.
+Он доступен в виде Pod.
 
 [![CocoaPods](https://img.shields.io/cocoapods/v/AdaptiveCards.svg)](https://cocoapods.org/pods/AdaptiveCards)
 
@@ -33,4 +33,4 @@ ms.locfileid: "59552646"
 
 ## <a name="next-steps"></a>Следующие шаги
 
-См. в разделе [визуализации карточки](render-a-card.md) для получения дальнейших указаний.
+См. подробнее о [визуализации карточек](render-a-card.md).

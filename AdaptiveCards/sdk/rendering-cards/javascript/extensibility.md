@@ -1,5 +1,5 @@
 ---
-title: Расширяемость – пакет SDK для JavaScript
+title: Расширяемость — пакет SDK для JavaScript
 author: matthidinger
 ms.author: mahiding
 ms.date: 11/28/2017
@@ -11,16 +11,16 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59552636"
 ---
-# <a name="extensibility---javascript"></a>Расширяемость – JavaScript
+# <a name="extensibility---javascript"></a>Расширяемость — JavaScript
 
-## <a name="implement-and-register-a-custom-element"></a>Реализовывать и регистрировать настраиваемый элемент
+## <a name="implement-and-register-a-custom-element"></a>Реализация и регистрация пользовательского элемента
 
-Приведены инструкции по созданию пользовательского типа элемента инструмент Adaptive cards.
-- Создайте новый класс, обеспечивая тем самым из `CardElement`
-- Реализуйте его `getJsonTypeName`, `parse`, `toJSON`, `internalRender` и `renderSpeech` методы
-- Зарегистрировать его, добавив ее в модуль подготовки отчетов элемент реестра
+Порядок создания настраиваемого типа элемента адаптивной карты:
+- Создание нового класса из`CardElement`
+- `getJsonTypeName` Реализуйте`internalRender` методы,, и`renderSpeech` `parse` `toJSON`
+- Зарегистрируйте его, добавив в реестр элементов модуля подготовки отчетов
 
-Давайте рассмотрим в качестве примера и реализовать простой элемент индикатор хода выполнения:
+Давайте рассмотрим пример и реализую простой элемент индикатора выполнения:
 
 ```typescript
 import * as Adaptive from "adaptivecards";
@@ -136,7 +136,7 @@ export class ProgressBar extends Adaptive.CardElement {
 }
 ```
 
-Вот и все. Теперь просто Зарегистрируйте класс индикатор хода выполнения с помощью модуля подготовки отчетов:
+Вот и все. Теперь просто зарегистрируйте класс индикатора выполнения с помощью модуля подготовки отчетов:
 
 ```typescript
 Adaptive.AdaptiveCard.elementTypeRegistry.registerType("ProgressBar", () => { return new ProgressBar(); });
@@ -144,7 +144,7 @@ Adaptive.AdaptiveCard.elementTypeRegistry.registerType("ProgressBar", () => { re
 
 ## <a name="implement-and-register-a-custom-action"></a>Реализация и регистрация настраиваемого действия
 
-Действия по созданию настраиваемого действия инструмент Adaptive Cards по сути те же для пользовательских элементов. Ниже приведен простой пример действие оповещения, который просто отображает окно сообщения с текстом, можно настроить:
+Действия по созданию настраиваемого действия адаптивной карты по сути являются такими же, как и для пользовательских элементов. Ниже приведен простой пример действия оповещения, которое просто отображает окно сообщения с настраиваемым текстом:
 
 ```typescript
 import * as Adaptive from "adaptivecards";
@@ -176,7 +176,7 @@ export class AlertAction extends Adaptive.Action {
 }
 ```
 
-Зарегистрируйте новое действие:
+Теперь Зарегистрируйте новое действие:
 
 ```
 Adaptive.AdaptiveCard.actionTypeRegistry.registerType("Action.Alert", () => { return new AlertAction(); });
@@ -184,7 +184,7 @@ Adaptive.AdaptiveCard.actionTypeRegistry.registerType("Action.Alert", () => { re
 
 ## <a name="example"></a>Пример
 
-Ниже приведен пример карточки, использующего элемент ProgressBar и AlertAction действие.
+Ниже приведен пример карточки, в которой используются как элемент ProgressBar, так и действие Алертактион:
 ```
 {
     "type": "AdaptiveCard",
@@ -212,4 +212,4 @@ Adaptive.AdaptiveCard.actionTypeRegistry.registerType("Action.Alert", () => { re
 }
 ```
 
-А вот подготовкой к просмотру: ![образа](https://user-images.githubusercontent.com/1334689/52665466-8155e780-2ec0-11e9-841a-7d272ad1d103.png)
+И вот как это выглядит: ![Image](https://user-images.githubusercontent.com/1334689/52665466-8155e780-2ec0-11e9-841a-7d272ad1d103.png)

@@ -1,5 +1,5 @@
 ---
-title: Расширяемость – визуализации пакета SDK для .NET изображения
+title: Расширяемость — пакет SDK для визуализации изображений .NET
 author: matthidinger
 ms.author: mahiding
 ms.date: 10/19/2017
@@ -11,6 +11,6 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59552876"
 ---
-# <a name="extensibility---net-image"></a>Расширяемость – образа .NET
+# <a name="extensibility---net-image"></a>Расширяемость — изображение .NET
 
-См. в разделе [WPF документация](../net-wpf/getting-started.md) для полный перечень этих параметров.
+Полный список вариантов использования этих параметров см. в документации по [WPF](../net-wpf/getting-started.md) .

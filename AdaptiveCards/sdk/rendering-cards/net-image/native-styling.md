@@ -1,5 +1,5 @@
 ---
-title: Собственные стили - .NET SDK для визуализации изображения
+title: Собственный стиль — пакет SDK для визуализации изображений .NET
 author: matthidinger
 ms.author: mahiding
 ms.date: 10/19/2017
@@ -11,6 +11,6 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59553146"
 ---
-# <a name="native-styling---net-image"></a><span data-ttu-id="80aac-102">Собственные стили - образа .NET</span><span class="sxs-lookup"><span data-stu-id="80aac-102">Native styling - .NET Image</span></span>
+# <a name="native-styling---net-image"></a><span data-ttu-id="7e2d6-102">Собственный стиль — изображение .NET</span><span class="sxs-lookup"><span data-stu-id="7e2d6-102">Native styling - .NET Image</span></span>
 
-<span data-ttu-id="80aac-103">См. в разделе [WPF документация](../net-wpf/getting-started.md) для полный перечень этих параметров.</span><span class="sxs-lookup"><span data-stu-id="80aac-103">See the [WPF docs](../net-wpf/getting-started.md) for a full run-down of these options.</span></span>
+<span data-ttu-id="7e2d6-103">Полный список вариантов использования этих параметров см. в документации по [WPF](../net-wpf/getting-started.md) .</span><span class="sxs-lookup"><span data-stu-id="7e2d6-103">See the [WPF docs](../net-wpf/getting-started.md) for a full run-down of these options.</span></span>

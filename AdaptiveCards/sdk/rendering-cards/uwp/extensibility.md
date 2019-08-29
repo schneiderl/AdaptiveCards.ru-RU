@@ -1,5 +1,5 @@
 ---
-title: Расширяемость – пакет SDK для универсальной платформы Windows
+title: Расширяемость — пакет SDK для UWP
 author: matthidinger
 ms.author: mahiding
 ms.date: 06/26/2017
@@ -11,11 +11,11 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59553046"
 ---
-# <a name="extensibility---uwp"></a><span data-ttu-id="c917f-102">Расширяемость – универсальной платформы Windows</span><span class="sxs-lookup"><span data-stu-id="c917f-102">Extensibility - UWP</span></span>
+# <a name="extensibility---uwp"></a><span data-ttu-id="7d37f-102">Расширяемость — UWP</span><span class="sxs-lookup"><span data-stu-id="7d37f-102">Extensibility - UWP</span></span>
 
-## <a name="changing-per-element-rendering"></a><span data-ttu-id="c917f-103">Изменение каждого элемента визуализации</span><span class="sxs-lookup"><span data-stu-id="c917f-103">Changing per element rendering</span></span>
+## <a name="changing-per-element-rendering"></a><span data-ttu-id="7d37f-103">Изменение отрисовки на элемент</span><span class="sxs-lookup"><span data-stu-id="7d37f-103">Changing per element rendering</span></span>
 
-<span data-ttu-id="c917f-104">Реализация класса модуля подготовки отчетов и задайте его в модуль подготовки отчетов</span><span class="sxs-lookup"><span data-stu-id="c917f-104">Implement a renderer class and set it in the renderer</span></span>
+<span data-ttu-id="7d37f-104">Реализация класса модуля подготовки отчетов и его задание в модуле подготовки отчетов</span><span class="sxs-lookup"><span data-stu-id="7d37f-104">Implement a renderer class and set it in the renderer</span></span>
 
 ```csharp
 // My custom renderer is going to replace how textblocks should render!

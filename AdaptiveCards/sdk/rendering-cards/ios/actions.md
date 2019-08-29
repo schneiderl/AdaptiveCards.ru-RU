@@ -11,9 +11,9 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59553586"
 ---
-# <a name="actions---ios"></a><span data-ttu-id="4904e-102">Действия — iOS</span><span class="sxs-lookup"><span data-stu-id="4904e-102">Actions - iOS</span></span>
+# <a name="actions---ios"></a><span data-ttu-id="ed472-102">Действия — iOS</span><span class="sxs-lookup"><span data-stu-id="ed472-102">Actions - iOS</span></span>
 
-<span data-ttu-id="4904e-103">Разработчики могут получать действия таких это операция SubmitAction и OpenUrl путем реализации ACRActionDelegate и задайте для него значение экземпляра AdaptiveCard.</span><span class="sxs-lookup"><span data-stu-id="4904e-103">Developers can receive actions such SubmitAction and OpenUrl by implementing ACRActionDelegate, and set it to instance of AdaptiveCard.</span></span>
+<span data-ttu-id="ed472-103">Разработчики могут получить такие действия, как Субмитактион и OpenUrl, реализуя Акрактионделегате, и установить их в качестве экземпляра Адаптивекард.</span><span class="sxs-lookup"><span data-stu-id="ed472-103">Developers can receive actions such SubmitAction and OpenUrl by implementing ACRActionDelegate, and set it to instance of AdaptiveCard.</span></span>
 
 ```objective-c
 //// delegate implementation

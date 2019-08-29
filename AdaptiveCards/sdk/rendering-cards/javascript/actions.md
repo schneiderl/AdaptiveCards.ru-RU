@@ -11,7 +11,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59553116"
 ---
-# <a name="actions---javascript"></a><span data-ttu-id="8ff50-102">Действия — JavaScript</span><span class="sxs-lookup"><span data-stu-id="8ff50-102">Actions - JavaScript</span></span>
+# <a name="actions---javascript"></a><span data-ttu-id="83f78-102">Действия — JavaScript</span><span class="sxs-lookup"><span data-stu-id="83f78-102">Actions - JavaScript</span></span>
 
 ```js
 // Set the adaptive card's event handlers. onExecuteAction is invoked

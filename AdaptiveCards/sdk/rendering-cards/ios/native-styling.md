@@ -1,5 +1,5 @@
 ---
-title: Собственные стили - пакет SDK для iOS
+title: Собственный стиль — пакет SDK для iOS
 author: matthidinger
 ms.author: mahiding
 ms.date: 06/26/2017
@@ -11,6 +11,6 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59553306"
 ---
-# <a name="native-styling---ios"></a><span data-ttu-id="49494-102">Собственный стиль — iOS</span><span class="sxs-lookup"><span data-stu-id="49494-102">Native styling - iOS</span></span>
+# <a name="native-styling---ios"></a><span data-ttu-id="a6d6d-102">Собственный стиль — iOS</span><span class="sxs-lookup"><span data-stu-id="a6d6d-102">Native styling - iOS</span></span>
 
-<span data-ttu-id="49494-103">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="49494-103">Not supported.</span></span>
+<span data-ttu-id="a6d6d-103">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a6d6d-103">Not supported.</span></span>

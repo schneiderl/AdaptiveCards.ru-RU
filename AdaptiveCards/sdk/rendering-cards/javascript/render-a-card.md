@@ -1,5 +1,5 @@
 ---
-title: Визуализации карт - пакет SDK для JavaScript
+title: Подготовка к просмотру пакета SDK для карты JavaScript
 author: matthidinger
 ms.author: mahiding
 ms.date: 11/28/2017
@@ -11,13 +11,13 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59553126"
 ---
-# <a name="render-a-card---javascript"></a><span data-ttu-id="03b93-102">Визуализации карт — JavaScript</span><span class="sxs-lookup"><span data-stu-id="03b93-102">Render a card - JavaScript</span></span>
+# <a name="render-a-card---javascript"></a><span data-ttu-id="cd97a-102">Подготовка карты — JavaScript</span><span class="sxs-lookup"><span data-stu-id="cd97a-102">Render a card - JavaScript</span></span>
 
-<span data-ttu-id="03b93-103">Вот способ визуализации карт, с помощью пакета SDK для JavaScript.</span><span class="sxs-lookup"><span data-stu-id="03b93-103">Here's how to render a card using the JavaScript SDK.</span></span>
+<span data-ttu-id="cd97a-103">Вот как можно отобразить карту с помощью пакета SDK для JavaScript.</span><span class="sxs-lookup"><span data-stu-id="cd97a-103">Here's how to render a card using the JavaScript SDK.</span></span>
 
-## <a name="usage"></a><span data-ttu-id="03b93-104">Использование</span><span class="sxs-lookup"><span data-stu-id="03b93-104">Usage</span></span>
+## <a name="usage"></a><span data-ttu-id="cd97a-104">Использование</span><span class="sxs-lookup"><span data-stu-id="cd97a-104">Usage</span></span>
 
-### <a name="import-the-module"></a><span data-ttu-id="03b93-105">Импорт модуля</span><span class="sxs-lookup"><span data-stu-id="03b93-105">Import the module</span></span>
+### <a name="import-the-module"></a><span data-ttu-id="cd97a-105">Импорт модуля</span><span class="sxs-lookup"><span data-stu-id="cd97a-105">Import the module</span></span>
 
 ```js
 // import the module
@@ -30,7 +30,7 @@ var AdaptiveCards = require("adaptivecards");
 AdaptiveCards.renderCard(...);
 ```
 
-## <a name="render-a-card"></a><span data-ttu-id="03b93-106">Визуализации карт</span><span class="sxs-lookup"><span data-stu-id="03b93-106">Render a card</span></span>
+## <a name="render-a-card"></a><span data-ttu-id="cd97a-106">Визуализация карточки</span><span class="sxs-lookup"><span data-stu-id="cd97a-106">Render a card</span></span>
 
 ```js
 // Author a card

@@ -1,66 +1,66 @@
 ---
-title: Подготовка к просмотру карты внутри приложения
+title: Отрисовка карточек в приложении
 author: matthidinger
 ms.author: mahiding
 ms.date: 06/26/2017
 ms.topic: article
 ms.openlocfilehash: 0a5f99268ce483fddd99f4493b386db796c3e9d2
 ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/14/2019
 ms.locfileid: "67138097"
 ---
-# <a name="rendering-cards-inside-your-application"></a>Подготовка к просмотру карты внутри приложения
+# <a name="rendering-cards-inside-your-application"></a>Отрисовка карточек в приложении
 
-Это просто для отрисовки карты адаптивной внутри приложения. Мы предоставляем пакеты SDK для всех распространенных платформ, а также предоставляют [подробные спецификации](implement-a-renderer.md) для создания собственных инструмент Adaptive Cards модуля подготовки отчетов.
+Вы можете легко отображать адаптивные карточки внутри приложения. Мы предоставляем пакеты SDK для всех распространенных платформ, а также предлагаем [подробную спецификацию](implement-a-renderer.md) для создания собственного отрисовщика адаптивных карточек.
 
-1. **Установка пакета SDK для модуля подготовки отчетов** — для целевой платформы.
-2. **Создать экземпляр модуля подготовки отчетов** — настроенное с обработчиками событий стиль, правила и действия приложения.
-3. **Отображать карту собственного пользовательского интерфейса** — автоматически со стилем в приложение.
+1. **Установите пакет SDK отрисовщика** для целевой платформы.
+2. **Создайте экземпляр отрисовщика**, настроенный с учетом стиля, правил и обработчиков событий действий своего приложения.
+3. **Отобразите карточку в собственном пользовательском интерфейсе**, автоматически оформленную в стиле своего приложения.
 
-## <a name="adaptive-cards-sdks"></a>Пакеты SDK адаптивной карты
+## <a name="adaptive-cards-sdks"></a>Пакеты SDK адаптивных карточек
 
 |Платформа|Установка|Сборка|Документы|Состояние|
 |---|---|---|---|---|
-| JavaScript | [![npm install](https://img.shields.io/npm/v/adaptivecards.svg)](https://www.npmjs.com/package/adaptivecards) | [Source](https://github.com/Microsoft/AdaptiveCards/tree/master/source/nodejs)| [Документация](../sdk/rendering-cards/javascript/getting-started.md) | ![Состояние сборки](https://img.shields.io/vso/build/Microsoft/56cf629e-8f3a-4412-acbc-bf69366c552c/20564.svg) |
-| .NET WPF | [![Программа установки NuGet](https://img.shields.io/nuget/vpre/AdaptiveCards.Rendering.Wpf.svg)](https://www.nuget.org/packages/AdaptiveCards.Rendering.Wpf) | [Source](https://github.com/Microsoft/AdaptiveCards/tree/master/source/dotnet)| [Документация](../sdk/rendering-cards/net-wpf/getting-started.md) | ![Состояние сборки](https://img.shields.io/vso/build/Microsoft/56cf629e-8f3a-4412-acbc-bf69366c552c/20596.svg) |
-| .NET HTML | [![Программа установки NuGet](https://img.shields.io/nuget/vpre/AdaptiveCards.Rendering.Html.svg)](https://www.nuget.org/packages/AdaptiveCards.Rendering.Html) | [Source](https://github.com/Microsoft/AdaptiveCards/tree/master/source/dotnet) | [Документация](../sdk/rendering-cards/net-html/getting-started.md) | ![Состояние сборки](https://img.shields.io/vso/build/Microsoft/56cf629e-8f3a-4412-acbc-bf69366c552c/20596.svg) |
-| Windows UWP | [![Программа установки NuGet](https://img.shields.io/nuget/vpre/AdaptiveCards.Rendering.Uwp.svg)](https://www.nuget.org/packages/AdaptiveCards.Rendering.Uwp) | [Source](https://github.com/Microsoft/AdaptiveCards/tree/master/source/uwp) | [Документация](../sdk/rendering-cards/uwp/getting-started.md) | ![Состояние сборки](https://img.shields.io/vso/build/Microsoft/56cf629e-8f3a-4412-acbc-bf69366c552c/20583.svg) |
-| Android | [![Maven Central](https://img.shields.io/maven-central/v/io.adaptivecards/adaptivecards-android.svg)](https://search.maven.org/#search%7Cga%7C1%7Ca%3A%22adaptivecards-android%22) | [Source](https://github.com/Microsoft/AdaptiveCards/tree/master/source/android) | [Документация](../sdk/rendering-cards/android/getting-started.md) | ![Состояние сборки](https://img.shields.io/vso/build/Microsoft/8d47e068-03c8-4cdc-aa9b-fc6929290322/17651.svg)
-| iOS | [![CocoaPods](https://img.shields.io/cocoapods/v/AdaptiveCards.svg)](https://cocoapods.org/pods/AdaptiveCards) | [Source](https://github.com/Microsoft/AdaptiveCards/tree/master/source/ios) | [Документация](../sdk/rendering-cards/ios/getting-started.md) |  ![Состояние сборки](https://img.shields.io/vso/build/Microsoft/8d47e068-03c8-4cdc-aa9b-fc6929290322/16990.svg) |
+| JavaScript | [![Установка с помощью npm](https://img.shields.io/npm/v/adaptivecards.svg)](https://www.npmjs.com/package/adaptivecards) | [Источник](https://github.com/Microsoft/AdaptiveCards/tree/master/source/nodejs)| [Документация](../sdk/rendering-cards/javascript/getting-started.md) | ![Состояние сборки](https://img.shields.io/vso/build/Microsoft/56cf629e-8f3a-4412-acbc-bf69366c552c/20564.svg) |
+| .NET WPF | [![Установка с помощью NuGet](https://img.shields.io/nuget/vpre/AdaptiveCards.Rendering.Wpf.svg)](https://www.nuget.org/packages/AdaptiveCards.Rendering.Wpf) | [Источник](https://github.com/Microsoft/AdaptiveCards/tree/master/source/dotnet)| [Документация](../sdk/rendering-cards/net-wpf/getting-started.md) | ![Состояние сборки](https://img.shields.io/vso/build/Microsoft/56cf629e-8f3a-4412-acbc-bf69366c552c/20596.svg) |
+| .NET HTML | [![Установка с помощью NuGet](https://img.shields.io/nuget/vpre/AdaptiveCards.Rendering.Html.svg)](https://www.nuget.org/packages/AdaptiveCards.Rendering.Html) | [Источник](https://github.com/Microsoft/AdaptiveCards/tree/master/source/dotnet) | [Документация](../sdk/rendering-cards/net-html/getting-started.md) | ![Состояние сборки](https://img.shields.io/vso/build/Microsoft/56cf629e-8f3a-4412-acbc-bf69366c552c/20596.svg) |
+| Универсальная платформа Windows | [![Установка с помощью NuGet](https://img.shields.io/nuget/vpre/AdaptiveCards.Rendering.Uwp.svg)](https://www.nuget.org/packages/AdaptiveCards.Rendering.Uwp) | [Источник](https://github.com/Microsoft/AdaptiveCards/tree/master/source/uwp) | [Документация](../sdk/rendering-cards/uwp/getting-started.md) | ![Состояние сборки](https://img.shields.io/vso/build/Microsoft/56cf629e-8f3a-4412-acbc-bf69366c552c/20583.svg) |
+| Android | [![Maven Central](https://img.shields.io/maven-central/v/io.adaptivecards/adaptivecards-android.svg)](https://search.maven.org/#search%7Cga%7C1%7Ca%3A%22adaptivecards-android%22) | [Источник](https://github.com/Microsoft/AdaptiveCards/tree/master/source/android) | [Документация](../sdk/rendering-cards/android/getting-started.md) | ![Состояние сборки](https://img.shields.io/vso/build/Microsoft/8d47e068-03c8-4cdc-aa9b-fc6929290322/17651.svg)
+| iOS | [![CocoaPods](https://img.shields.io/cocoapods/v/AdaptiveCards.svg)](https://cocoapods.org/pods/AdaptiveCards) | [Источник](https://github.com/Microsoft/AdaptiveCards/tree/master/source/ios) | [Документация](../sdk/rendering-cards/ios/getting-started.md) |  ![Состояние сборки](https://img.shields.io/vso/build/Microsoft/8d47e068-03c8-4cdc-aa9b-fc6929290322/16990.svg) |
 
-## <a name="create-an-instance-of-the-renderer"></a>Создайте экземпляр модуля подготовки отчетов
+## <a name="create-an-instance-of-the-renderer"></a>Создание экземпляра отрисовщика
 
-Следующим шагом является создание экземпляра `AdaptiveCardRenderer`. 
+Следующий шаг — создание экземпляра `AdaptiveCardRenderer`. 
 
-### <a name="hook-up-action-events"></a>Подключить события действия
+### <a name="hook-up-action-events"></a>Перехват событий действий
 
-По умолчанию действия будет отображаться в виде кнопок на карте, но он работает в приложение, чтобы сделать их ожиданиям. Каждый пакет SDK входит эквивалент `OnAction` событие, которое необходимо обработать.
+По умолчанию действия отображаются в виде кнопок на карточке, но приложение может сделать их поведение таким, каким вам требуется. Каждый пакет SDK содержит эквивалент события `OnAction`, которое необходимо обрабатывать.
 
-* **Action.OpenUrl** -открыть указанный `url`.  
-* **Action.Submit** - принимающей результат отправки с последующей отправкой к источнику. Как можно отправлять в источник карты — полностью на ваше усмотрение.
-* **Action.ShowCard** — вызывает диалоговое окно и отображает карточке вложенные в этот диалог. Обратите внимание, что достаточно для обработки этого, если `ShowCardActionMode` присваивается `popup`.
+* **Action.OpenUrl**: открытие указанного `url`.  
+* **Action.Submit**: получение результата отправки и его пересылка в источник. Способ отправки в источник карточки полностью зависит от вас.
+* **Action.ShowCard**: вызывает диалоговое окно и отображает в нем вложенную карточку. Обратите внимание на то, что это действие нужно обрабатывать, только если параметр `ShowCardActionMode` имеет значение `popup`.
 
-## <a name="render-a-card"></a>Визуализации карт
+## <a name="render-a-card"></a>Визуализация карточки
 
-После получения полезных данных карты, просто вызовите модуль подготовки отчетов и передайте в карточке. Вам потребуется получить собственный объект пользовательского интерфейса, состоящий из содержимого карты. Теперь просто поместите этот пользовательский Интерфейс где-то в приложении.
+После получения полезных данных карточки просто вызовите отрисовщик и передайте в него карточку. Вы получите объект собственного пользовательского интерфейса, состоящий из содержимого карточки. После этого его можно будет поместить в приложение.
 
 ## <a name="customization"></a>Настройка
 
-Существует несколько способов, которые можно настроить, что нужно отобразить. 
+Есть несколько способов настройки отрисовки объектов. 
 
 ### <a name="hostconfig"></a>HostConfig
 
-Объект [HostConfig](host-config.md) является объектом общего, кросс платформенных конфигурации, управляющий базовый стиль оформления и поведения карт в вашем приложении. Он определяет таких вещей, как размеры шрифтов, интервалы между элементами, цвета, число поддерживаемые действия и т. д. 
+[HostConfig](host-config.md) — это общий кроссплатформенный объект конфигурации, управляющий базовым стилем и поведением карточек внутри приложения. Он определяет размеры шрифтов, расстояния между элементами, цвета, число поддерживаемых действий и т. д. 
 
-### <a name="native-platform-styling"></a>Стилизация собственной платформы
+### <a name="native-platform-styling"></a>Стиль собственной платформы
 
-Большинство инфраструктур пользовательского интерфейса позволяют с помощью стилей framework собственного пользовательского интерфейса в стиле готовый для просмотра карты. Например в формате HTML можно указать классы CSS для HTML, или в XAML можно передать в пользовательских ResourceDictionary для точного управления выходных данных.
+Большинство платформ пользовательского интерфейса позволяет оформить отображаемую карточку в стиле платформы собственного пользовательского интерфейса. Например, в HTML можно указать классы CSS для HTML, а в XAML можно передать пользовательский объект ResourceDictionary для точного управления выводом.
 
-### <a name="customize-per-element-rendering"></a>Настройки отображения каждого элемента
+### <a name="customize-per-element-rendering"></a>Настройка отрисовки каждого элемента
 
-Каждый пакет SDK позволяет переопределять способ отрисовки любого элемента, или даже добавить поддержку совершенно новых элементов, определенных вами.  Например, можно изменить `Input.Date` модуля подготовки отчетов, создавать собственный пользовательский элемент управления не теряя остальной части выходных данных модуля подготовки отчетов. Или можно добавить поддержку для пользовательской `Rating` элемент, который определяется.
+Каждый пакет SDK позволяет переопределить отрисовку любого элемента или даже добавить поддержку совершенно новых определяемых вами элементов.  Например, можно изменить отрисовщик `Input.Date` таким образом, чтобы он выдавал ваш пользовательский элемент управления, сохранив остальные выходные данные отрисовщика. Или можно добавить поддержку настраиваемого элемента `Rating`, который вы определяете.
 
 
 

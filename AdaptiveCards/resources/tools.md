@@ -1,39 +1,39 @@
 ---
-title: Средства адаптивной карты
+title: Инструменты адаптивных карточек
 author: matthidinger
 ms.author: mahiding
 ms.date: 03/14/2019
 ms.topic: article
 ms.openlocfilehash: ad520693224509deaf0ea1c2cd6a837089dbf2d5
 ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/14/2019
 ms.locfileid: "67137987"
 ---
-# <a name="tools-and-samples"></a>Средства и примеры
+# <a name="tools-and-samples"></a>Инструменты и примеры
 
 ## <a name="card-designer"></a>Конструктор карточек 
 
-Необходимости в средстве для разработки карт? Нет ничего лучше конструктор на основе веб-обозревателя инструмент adaptive Cards в [https://adaptivecards.io/designer](https://adaptivecards.io/designer)
+Вам нужен инструмент для проектирования карточек? Можете больше не искать! Вот удобный браузерный конструктор адаптивных карточек: [https://adaptivecards.io/designer](https://adaptivecards.io/designer)
 
-[![Снимок экрана конструктора](media/tools/designer.jpg)](https://adaptivecards.io/designer)
+[![снимок экрана конструктора](media/tools/designer.jpg)](https://adaptivecards.io/designer)
 
-### <a name="embed-the-designer-into-your-app"></a>Внедрение конструктора в приложении
+### <a name="embed-the-designer-into-your-app"></a>Внедрение конструктора в приложение
 
-Но почему отправить этим пользователям существует в том случае, когда вы можете **внедрять конструкторе карты непосредственно в веб-** приложения с помощью нашей библиотеке JavaScript. 
+Но зачем отправлять пользователей куда-то, если можно **внедрить конструктор карточек непосредственно в свое веб-приложение** с помощью нашей библиотеки JavaScript. 
 
-Ознакомьтесь с [adaptivecards конструктор](https://npmjs.com/adaptivecards-designer) пакета, чтобы приступить к работе.
+Чтобы приступить к работе, ознакомьтесь с пакетом [adaptivecards-designer](https://npmjs.com/adaptivecards-designer).
 
 ## <a name="schema-validation"></a>Проверка схемы
 
-Проверка схемы — это эффективное средство, упрощает создание и включение средств.
+Проверка схемы — это эффективный способ упрощения процесса разработки и добавления инструментов.
 
-Мы предоставили полный [файла схемы JSON](http://adaptivecards.io/schemas/1.2.0/adaptive-card.json) для редактирования и проверке адаптивной карты в формате json. Обратите внимание, что схема URL-адрес с версиями, более новых версиях адаптивной карты будет иметь соответствующий URL-адрес.
+Мы предоставили полный [JSON-файл](http://adaptivecards.io/schemas/1.2.0/adaptive-card.json) для редактирования и проверки адаптивных карт на основе JSON. Обратите внимание на то, что URL-адрес схемы соответствует версии, поэтому более новые версии адаптивных карточек будут иметь соответствующий URL-адрес.
 
-В Visual Studio и Visual Studio Code можно получить автоматическое Intellisense, включая `$schema` ссылки.
+В Visual Studio и Visual Studio Code можно включить автоматическую функцию IntelliSense, добавив ссылку `$schema`.
 
-![Неправильный](media/tools/invalidjson1.png)
+![Неправильное значение](media/tools/invalidjson1.png)
 
 ![Автозаполнение](media/tools/autocomplete.png)
 
@@ -50,17 +50,17 @@ ms.locfileid: "67137987"
 
 ## <a name="visual-studio-code-extension"></a>Расширение Visual Studio Code
 
-Мы создали расширение Visual Studio code, который позволяет визуализировать карты, редактируемого в режиме реального времени в самом редакторе. 
+Мы создали расширение Visual Studio Code, которое позволяет визуализировать редактируемую карту в реальном времени в самом редакторе. 
 
 ![Расширение](media/tools/vscode-extension.png)
 
-Чтобы установить, откройте расширения Marketplace и выполните поиск **адаптивные средства просмотра карты**.
+Чтобы установить его, откройте Marketplace для расширений и выполните поиск **Adaptive Card Viewer**.
 
 ![магазин](media/tools/vscode-extension-marketplace.png)
 
 ### <a name="usage"></a>Использование
 
-При редактировании JSON-файл с инструмент Adaptive Cards `$schema` свойство, можно просмотреть с помощью `Ctrl+Shift+V A`.
+При редактировании JSON-файла со свойством адаптивной карточки `$schema` его можно просмотреть с помощью `Ctrl+Shift+V A`.
 ```json
 {
     "$schema": "http://adaptivecards.io/schemas/1.2.0/adaptive-card.json",
@@ -72,7 +72,7 @@ ms.locfileid: "67137987"
 
 ### <a name="options"></a>Параметры
 
-Следующий параметр Visual Studio Code доступен для средства просмотра AdaptiveCards. Это можно задать в параметрах пользователя или параметры рабочей области.
+Следующий параметр Visual Studio Code доступен для Adaptive Card Viewer. Его можно задать в разделе "Параметры пользователя" или "Параметры рабочей области".
 
 ```js
 {
@@ -83,10 +83,10 @@ ms.locfileid: "67137987"
 
 ## <a name="wpf-visualizer-sample"></a>Пример визуализатора WPF
 
-[Пример проекта визуализатор WPF](https://github.com/Microsoft/AdaptiveCards/tree/master/source/dotnet/Samples/WPFVisualizer) позволяет визуализировать карты, использующие WPF/Xaml на компьютере Windows.  Объект `hostconfig` встроенной в редактор для редактирования и просмотра параметров конфигурации узла. Сохраните эти параметры в формате JSON, чтобы использовать их при подготовке к просмотру в приложении.
+[Пример проекта визуализатора WPF](https://github.com/Microsoft/AdaptiveCards/tree/master/source/dotnet/Samples/WPFVisualizer) позволяет визуализировать карточки с использованием WPF или XAML на компьютере с Windows.  Доступен встроенный редактор `hostconfig`, в котором можно редактировать и просматривать параметры HostConfig. Сохраните эти параметры в JSON-файл, чтобы использовать их для отрисовки в своем приложении.
 
-![визуализатор WPF](media/tools/wpfvisualizer.png)
+![Визуализатор WPF](media/tools/wpfvisualizer.png)
 
-## <a name="wpf-imagerender-sample"></a>Пример ImageRender WPF
+## <a name="wpf-imagerender-sample"></a>Пример ImageRender для WPF
 
-[ImageRender пример проекта](https://github.com/Microsoft/AdaptiveCards/tree/master/source/dotnet/Samples/AdaptiveCards.Sample.ImageRender) превращает всех карт в PNG из командной строки с помощью WPF. 
+[Пример проекта ImageRender](https://github.com/Microsoft/AdaptiveCards/tree/master/source/dotnet/Samples/AdaptiveCards.Sample.ImageRender) превращает любую карточку в PNG-файл из командной строки с помощью WPF. 

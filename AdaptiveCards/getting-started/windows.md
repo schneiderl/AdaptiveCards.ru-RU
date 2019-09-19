@@ -4,16 +4,14 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 06/26/2017
 ms.topic: article
-ms.openlocfilehash: 20b324c12cd7cec10f2142fc2cf76039b5c329de
-ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
+ms.openlocfilehash: 65494ed437303d26a202c9a5b95f88255147cbd0
+ms.sourcegitcommit: 48838a50b5f0316e15b48d740a7dd0a5f96ebae4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "59552856"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70923075"
 ---
 # <a name="adaptive-cards-for-windows-developers"></a>Адаптивные карточки для разработчиков Windows
-
-
 
 ## <a name="timeline"></a>Информация о сроках
 
@@ -34,6 +32,12 @@ userActivity.DisplayText = article.Title; //used for details tile text
 userActivity.VisualElements.Content = AdaptiveCardBuilder.CreateAdaptiveCardFromJson(jsonString);
 await userActivity.SaveAsync();
 ```
+
+### <a name="learning-module"></a>Модуль обучения
+
+Вот отличный 45-минутный модуль обучения, который полностью охватывает описанные выше шаги.
+
+[Интеграция адаптивных карточек во временную шкалу Windows 10](https://docs.microsoft.com/en-us/learn/modules/integrate-app-into-windows-10-timeline/)
 
 ### <a name="learn-more"></a>Узнайте больше
 

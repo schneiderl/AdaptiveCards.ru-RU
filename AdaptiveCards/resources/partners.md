@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 9/24/2018
 ms.topic: article
-ms.openlocfilehash: 92e49a8e47129d2c8b90e7c6ae2d32aa4ecfeddc
-ms.sourcegitcommit: f8de9c02b92cd8927a18e59e5650c92b2b78db06
+ms.openlocfilehash: ea662d3c3906c9c83de306d82d2c9e0d4997e6ad
+ms.sourcegitcommit: 48838a50b5f0316e15b48d740a7dd0a5f96ebae4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523859"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70923061"
 ---
 # <a name="partners"></a>Партнеры 
 
@@ -26,3 +26,4 @@ ms.locfileid: "68523859"
 [Временная шкала Windows](https://blogs.windows.com/windowsexperience/2017/12/19/announcing-windows-10-insider-preview-build-17063-pc/) | Новый способ возобновления действий, которые вы начали выполнять на этом компьютере, других компьютерах с Windows и устройствах iOS или Android. | [Начало работы](https://docs.microsoft.com/en-us/adaptive-cards/get-started/windows) | 1.0
 [Сообщения с действиями Outlook](https://docs.microsoft.com/en-us/outlook/actionable-messages/)  | Вложение сообщения с действиями в письмо. | [Начало работы](https://docs.microsoft.com/en-us/outlook/actionable-messages/) | 1.0
 [Microsoft Teams](https://products.office.com/en-US/microsoft-teams/group-chat-software) | Платформа, которая сочетает рабочий чат, собрания и заметки. | [Начало работы](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/cards/cards-reference#adaptive-card) | 1.0
+[Cisco WebEx Teams](https://www.webex.com/team-collaboration.html) | WebEx Teams помогает ускорить работу над проектами, устанавливать более эффективные отношения и решать бизнес-задачи. | [Начало работы](https://developer.webex.com/docs/api/guides/cards) | 1.1

@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 06/26/2017
 ms.topic: article
-ms.openlocfilehash: 487acab86d80d563210abe07968520ea7669498a
-ms.sourcegitcommit: 8c8067206f283d97a5aa4ec65ba23d3fe18962f1
+ms.openlocfilehash: 27c7d5ac7da3ae182667cbf8efa90d29f110d1d3
+ms.sourcegitcommit: ef03c0eff3272a36cfa88daf99c4d57e4bae9599
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68299541"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "72042531"
 ---
 # <a name="adaptive-cards-overview"></a>Общие сведения об адаптивных карточках 
 
@@ -76,8 +76,8 @@ ms.locfileid: "68299541"
 Лучше добавить функцию позже, чем внести в систему ошибку. Если мы не можем решить, добавлять что-либо или нет, мы откладываем решение.  Всегда проще добавить новое свойство, чем иметь дело с устаревшим, на поддержку которого тратятся ресурсы.
 
 
-## <a name="build-2018-session"></a>Сеанс Build 2018
+## <a name="build-2019-session"></a>Семинар Build 2019
 
-В следующем сеансе Build 2018 демонстрируется использование адаптивных карточек в ботах, Кортане, Outlook и Windows. 
+Приведенный ниже семинар на конференции Microsoft Build демонстрирует различные варианты использования адаптивных карточек. 
 
-<iframe src="https://medius.studios.ms/Embed/Video/BRK2401?SFYT=true" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wT1yFr_j6IM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

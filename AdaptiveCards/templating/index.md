@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 07/29/2019
 ms.topic: article
-ms.openlocfilehash: ca21c70abc4638db8f96f3564d9e006aea39f926
-ms.sourcegitcommit: a16f53ba10a8607deacde5c8cc78927cac58657c
+ms.openlocfilehash: fdfe7b46614f046155ab84a5a487105d55afd7cb
+ms.sourcegitcommit: ef03c0eff3272a36cfa88daf99c4d57e4bae9599
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68878951"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "72042540"
 ---
 # <a name="adaptive-cards-templating-preview"></a>Создание шаблонов адаптивных карточек (ознакомительная версия)
 
@@ -180,7 +180,7 @@ ms.locfileid: "68878951"
 Платформа | Установка | Документация
 --- | --- | ---
 JavaScript | `npm install adaptivecards-templating` | [Документация](https://www.npmjs.com/package/adaptivecards-templating)
-.NET | *Ожидается в ближайшее время* | *Ожидается в ближайшее время*
+.NET | `nuget install AdaptiveCards.Templating` | [Документация](https://docs.microsoft.com/en-us/adaptive-cards/templating/sdk#net)
 
 ### <a name="javascript-example"></a>Пример JavaScript
 

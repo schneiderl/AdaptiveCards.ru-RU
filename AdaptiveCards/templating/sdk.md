@@ -1,25 +1,25 @@
 ---
-title: Пакеты SDK для шаблонов
+title: Пакеты SDK для создания шаблонов
 author: matthidinger
 ms.author: mahiding
 ms.date: 08/01/2019
 ms.topic: article
-ms.openlocfilehash: 5f60a458af99f1b88e8ee428a8f29f1849be9b62
-ms.sourcegitcommit: a16f53ba10a8607deacde5c8cc78927cac58657c
+ms.openlocfilehash: 3a9bfcd1bf8f87959a747997e04f5c5ad2a79980
+ms.sourcegitcommit: 90afb3729931b0e4cae19b17ef9e49453c2d2bf6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68878881"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72163613"
 ---
 # <a name="adaptive-card-templating-sdks"></a>Пакеты SDK для адаптивных шаблонов карт
 
 Пакеты SDK для шаблонов адаптивной карты упрощают заполнение [шаблона карты](language.md) реальными данными на любой поддерживаемой платформе.
 
-> Дополнительные сведения о шаблонах [адаптивных карт](index.md) см. в этой статье.
+> Дополнительные [сведения о шаблонах адаптивных карт](index.md) см. в этой статье.
 
 > [!IMPORTANT] 
 > 
-> Эти функции доступны **в предварительной версии и могут быть изменены**. Ваш отзыв не только Добро пожаловать, но и важен для обеспечения того, чтобы мы доставлять нужные **вам** функции.
+> Эти функции предоставляются в **ознакомительной версии и могут быть изменены**. Ваши отзывы не только приветствуются, но и имеют решающее значение: только благодаря им мы сможем предоставлять функции, которые **вам** действительно необходимы.
 > 
 > Во время первоначальной предварительной версии доступен только пакет SDK для JavaScript, но вскоре будет получен пакет SDK для .NET.
 
@@ -43,7 +43,7 @@ npm install adaptivecards-templating
 
 В примере ниже предполагается, что вы также установили библиотеку [адаптивекардс](https://www.npmjs.com/package/adaptivecards) , чтобы подготовить карту. 
 
-Если вы не планируете отрисовку карты, то можете удалить `parse` код и. `render` 
+Если вы не планируете рендеринг карты, то можете удалить код `parse` и `render`. 
 
 ```js
 import * as ACData from "adaptivecards-templating";
@@ -82,10 +82,42 @@ adaptiveCard.parse(card);
 var htmlElement = adaptiveCard.render();
 ```
 
-## <a name="net-coming-soon"></a>.NET (*ожидается в ближайшее время*)
-
-ЕЩЕ НЕ РАБОТАЕТ: 
+## <a name="net"></a>.NET 
 
 ```console
-nuget install AdaptiveCards.Templating
+dotnet add package AdaptiveCards.Templating --version 0.1.0-alpha1
+```
+
+> [!NOTE]
+>
+> Попробуйте изменить версию выше до последней опубликованной версии
+
+Импорт библиотеки 
+
+```cs
+using AdaptiveCards.Templating
+```
+
+Используйте модуль шаблонов, передав шаблон JSON и данные JSON.
+
+```cs
+var templateJson = @"
+{
+    ""type"": ""AdaptiveCard"",
+    ""version"": ""1.0"",
+    ""body"": [
+        {
+            ""type"": ""TextBlock"",
+            ""text"": ""Hello {name}""
+        }
+    ]
+}";
+
+var dataJson = @"
+{
+    ""name"": ""Mickey Mouse""
+}";
+
+var transformer = new AdaptiveTransformer();
+var cardJson = transformer.Transform(templateJson, dataJson);
 ```

@@ -4,21 +4,21 @@ author: bekao
 ms.author: bekao
 ms.date: 09/27/2017
 ms.topic: article
-ms.openlocfilehash: ca92f0a2b6ef8a36c5394e4dd9853df59fef22b2
-ms.sourcegitcommit: 8c8067206f283d97a5aa4ec65ba23d3fe18962f1
+ms.openlocfilehash: 9e13ebad04c780db83d25129a9f5829a9d43ef69
+ms.sourcegitcommit: ce044dc969d9b9c47a52bd361bfe2b746071913b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68299555"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72917118"
 ---
 # <a name="extensibility---android"></a>Расширяемость — Android
 
 Модуль подготовки Android можно расширить для поддержки нескольких сценариев, в том числе:
 * [Пользовательский синтаксический анализ элементов карточек](#custom-parsing-of-card-elements)
 * [Пользовательская отрисовка элементов карточек](#custom-rendering-of-card-elements)
-* [Пользовательская отрисовка действий](#custom-rendering-of-actions) (Начиная с версии 1.2)
-* [Пользовательская загрузка образа](#custom-image-loading) (Начиная с v 1.0.1)
-* [Пользовательская загрузка мультимедиа](#custom-media-loading) (Начиная с версии 1.1)
+* [Пользовательская отрисовка действий](#custom-rendering-of-actions) (начиная с версии 1.2)
+* [Пользовательская загрузка образа](#custom-image-loading) (начиная с v 1.0.1)
+* [Пользовательская Загрузка носителя](#custom-media-loading) (начиная с версии 1.1)
 
 ## <a name="custom-parsing-of-card-elements"></a>Пользовательский анализ элементов карточки
 
@@ -122,7 +122,7 @@ RenderedAdaptiveCard renderedCard = AdaptiveCardRenderer.getInstance().render(co
 
 ### <a name="breaking-changes-for-v12"></a>Критические изменения для версии 1.2
 
-Метод был изменен для ```RenderedAdaptiveCard``` включения параметра и ```ContainerStyle``` был изменен для рендераргс, где теперь содержится контаинерстиле, поэтому класс, расширяющий басекарделементрендерер, должен выглядеть следующим образом. ```render```
+Метод ```render``` был изменен для включения параметра ```RenderedAdaptiveCard```, а ```ContainerStyle``` был изменен для Рендераргс, где Контаинерстиле теперь содержится, поэтому класс, расширяющий Басекарделементрендерер, должен выглядеть следующим образом.
 
 ```
 public class MyCardElementRenderer extends BaseCardElementRenderer
@@ -144,7 +144,7 @@ public class MyCardElementRenderer extends BaseCardElementRenderer
 }
 ```
 
-Затем в следующих строках показано, как выполнить синтаксический анализ в Актионелемент, который ```BaseActionElement```расширяется из:
+Затем в следующих строках показано, как проанализировать его в Актионелемент, который расширяется ```BaseActionElement```:
 ```java
 public class MyActionElement extends BaseActionElement
 {
@@ -255,7 +255,7 @@ RenderedAdaptiveCard renderedCard = AdaptiveCardRenderer.getInstance().render(co
 
 ## <a name="custom-rendering-of-actions"></a>Пользовательская визуализация действий
 
-[!IMPORTANT]
+> [!IMPORTANT]
 > Реализация изменений в пользовательской визуализации действий, запланированная в версии 1.2, пока не завершена.
 
 ## <a name="custom-image-loading"></a>Пользовательская загрузка изображений
@@ -380,13 +380,13 @@ public class ResourceResolver implements IResourceResolver
 
 Как можно видеть, наиболее существенными являются следующие изменения:
 
-* ```loadOnlineImage(String, GenericImageLoaderAsync)```был переименован в```resolveImageResource(String, GenericImageLoaderAsync)```
+* ```loadOnlineImage(String, GenericImageLoaderAsync)``` был переименован в ```resolveImageResource(String, GenericImageLoaderAsync)```
 * перегрузка для ```resolveImageResource(String, GenericImageLoaderAsync)``` была добавлена как ```resolveImageResource(String, GenericImageLoaderAsync, int)``` для поддержки сценариев, в которых требуется максимальная ширина.
 
 ## <a name="custom-media-loading"></a>Пользовательская загрузка мультимедиа
 
 > [!IMPORTANT]
-> **```IOnlineMediaLoader``` Необходимо```MediaDataSource``` помнить, что было добавлено на уровне API 23 или Android M.**
+> **Помните, ```IOnlineMediaLoader``` требует ```MediaDataSource```, который был добавлен на уровне API 23 или Android M.**
 
 Вместе с элементом мультимедиа был также добавлен интерфейс IOnlineMediaLoader, который позволяет разработчикам переопределять [MediaDataSource](https://developer.android.com/reference/android/media/MediaDataSource) базового элемента mediaPlayer. **(Требуется Android M)**
 

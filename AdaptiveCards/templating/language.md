@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 08/01/2019
 ms.topic: article
-ms.openlocfilehash: b99a2905fb000653b7ee75204221b832a2b5a907
-ms.sourcegitcommit: ce044dc969d9b9c47a52bd361bfe2b746071913b
+ms.openlocfilehash: 42a1f43fbcfe1416820637af750acc960b9effde
+ms.sourcegitcommit: 16a274ce5596001a1c5ab252d9d2a3db6a5a9a0d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72917126"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73750401"
 ---
 # <a name="adaptive-cards-template-language"></a>Язык шаблона адаптивных карт
 
@@ -135,12 +135,9 @@ var card = template.expand(dataContext);
 
 Конструктор адаптивной карты был обновлен для поддержки шаблонов. 
 
-> Ознакомьтесь с предварительной версией "vNext" по адресу:  **[https://vnext.adaptivecards.io/designer](https://vnext.adaptivecards.io/designer)**
+> Попробуйте:  **[https://adaptivecards.io/designer](https://adaptivecards.io/designer)**
 
-[изображение![](https://user-images.githubusercontent.com/1432195/53214462-88d46980-3601-11e9-908d-253a1bb940a8.png)](http://vnext.adaptivecards.io/designer)
-
- 
-Этот URL-адрес "vNext" содержит ошибки и будет развертываться часто. **Очистите кэш** , чтобы убедиться, что у вас последняя версия, и если вы нашли ошибки, сообщите нам!
+[изображение ![](https://user-images.githubusercontent.com/1432195/53214462-88d46980-3601-11e9-908d-253a1bb940a8.png)](https://adaptivecards.io/designer)
 
 * **Образец редактора данных** . Укажите здесь образец данных, чтобы просмотреть карту с привязкой к данным в режиме предварительного просмотра. В этой панели есть небольшая кнопка для заполнения структуры данных от существующих демонстрационных данных.
 * **Структура данных** — это структура демонстрационных данных. Поля можно перетащить в область конструктора, чтобы создать привязку к ним 
@@ -346,7 +343,4 @@ var card = template.expand(dataContext);
 
 ## <a name="examples"></a>Примеры.
 
-Мы создали только ограниченный объем выборок, но посмотрим здесь, чтобы приступить к работе.
-
-* Загрузите образцы в [конструкторе](http://vnext.adaptivecards.io/designer) , щелкнув **открыть образец** .
-* Или просто [Просматривайте каталог](https://github.com/Microsoft/AdaptiveCards/tree/js/template-engine/samples/v2.0/Scenarios) напрямую
+Перейдите на страницу обновленных [примеров](https://adaptivecards.io/samples) , чтобы просмотреть все виды новых шаблонов карточек.

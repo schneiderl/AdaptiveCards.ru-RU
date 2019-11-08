@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 07/29/2019
 ms.topic: article
-ms.openlocfilehash: fdfe7b46614f046155ab84a5a487105d55afd7cb
-ms.sourcegitcommit: ef03c0eff3272a36cfa88daf99c4d57e4bae9599
+ms.openlocfilehash: 11ade4c2a41111f372873ea9a0677fe823c5b0ab
+ms.sourcegitcommit: 16a274ce5596001a1c5ab252d9d2a3db6a5a9a0d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "72042540"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73750423"
 ---
 # <a name="adaptive-cards-templating-preview"></a>Создание шаблонов адаптивных карточек (ознакомительная версия)
 
@@ -57,13 +57,13 @@ ms.locfileid: "72042540"
 > 
 > Ознакомьтесь с приведенным ниже примером, открыв новую вкладку со страницей
 >
-> **https://vnext.adaptivecards.io/designer**
+> **https://adaptivecards.io/designer**
 > 
 > Нажмите кнопку **режима просмотра**, чтобы переключиться между режимом разработки и режимом просмотра.
 
 ![Снимок экрана конструктора](content/2019-08-01-13-58-27.png)
 
-[Этот конструктор следующего поколения](https://vnext.adaptivecards.io/designer) позволяет создавать шаблоны и предоставлять **примеры данных** для предварительного просмотра карточки во время разработки.
+Обновленный конструктор позволяет создавать шаблоны и предоставлять примеры данных для предварительного просмотра карточки во время разработки.
 
 Вставьте приведенный ниже пример в область **редактора полезных данных карточки**: 
 
@@ -177,7 +177,7 @@ ms.locfileid: "72042540"
 >
 > На этапе ознакомительной версии у вас есть только ограниченный набор пакетов SDK. После выпуска общей версии будут доступны библиотеки шаблонов для каждой поддерживаемой платформы адаптивных карточек.
 
-Платформа | Установка | Документация
+Платформа | Установить | Документация
 --- | --- | ---
 JavaScript | `npm install adaptivecards-templating` | [Документация](https://www.npmjs.com/package/adaptivecards-templating)
 .NET | `nuget install AdaptiveCards.Templating` | [Документация](https://docs.microsoft.com/en-us/adaptive-cards/templating/sdk#net)

@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 9/24/2018
 ms.topic: article
-ms.openlocfilehash: ea662d3c3906c9c83de306d82d2c9e0d4997e6ad
-ms.sourcegitcommit: 48838a50b5f0316e15b48d740a7dd0a5f96ebae4
+ms.openlocfilehash: 92b334a237c56c453a15a8a4a5f1a516c73abc57
+ms.sourcegitcommit: 16a274ce5596001a1c5ab252d9d2a3db6a5a9a0d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70923061"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73750411"
 ---
 # <a name="partners"></a>Партнеры 
 
@@ -21,7 +21,7 @@ ms.locfileid: "70923061"
 
 Платформа | Описание | Документация | Версия
 ---------|-------------|---------------|---------
-[Bot Framework WebChat](https://github.com/Microsoft/BotFramework-WebChat)  | Внедряемый элемент управления для веб-чата для Microsoft Bot Framework. | [Начало работы](https://docs.microsoft.com/en-us/adaptive-cards/get-started/bots) | 1.2 (Web Chat 4.5)
+[Bot Framework Web Chat](https://github.com/Microsoft/BotFramework-WebChat)  | Внедряемый элемент управления для веб-чата для Microsoft Bot Framework. | [Начало работы](https://docs.microsoft.com/en-us/adaptive-cards/get-started/bots) | 1.2 (Web Chat 4.6)
 [Навыки Кортаны](https://docs.microsoft.com/en-us/cortana/skills/adaptive-cards) | Виртуальный помощник для Windows 10. | [Начало работы](https://docs.microsoft.com/en-us/adaptive-cards/get-started/bots) | 1.0
 [Временная шкала Windows](https://blogs.windows.com/windowsexperience/2017/12/19/announcing-windows-10-insider-preview-build-17063-pc/) | Новый способ возобновления действий, которые вы начали выполнять на этом компьютере, других компьютерах с Windows и устройствах iOS или Android. | [Начало работы](https://docs.microsoft.com/en-us/adaptive-cards/get-started/windows) | 1.0
 [Сообщения с действиями Outlook](https://docs.microsoft.com/en-us/outlook/actionable-messages/)  | Вложение сообщения с действиями в письмо. | [Начало работы](https://docs.microsoft.com/en-us/outlook/actionable-messages/) | 1.0

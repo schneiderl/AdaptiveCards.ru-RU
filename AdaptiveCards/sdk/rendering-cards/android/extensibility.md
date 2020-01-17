@@ -1,15 +1,15 @@
 ---
 title: Пакет SDK для Android
-author: bekao
-ms.author: bekao
+author: almedina-ms
+ms.author: almedina
 ms.date: 09/27/2017
 ms.topic: article
-ms.openlocfilehash: 9e13ebad04c780db83d25129a9f5829a9d43ef69
-ms.sourcegitcommit: ce044dc969d9b9c47a52bd361bfe2b746071913b
+ms.openlocfilehash: ae5c1b2addf6fc5bcdda3defebb6de5925b58507
+ms.sourcegitcommit: 9a9973129c36a41f5e4af30d95ffc146820ad173
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72917118"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76145514"
 ---
 # <a name="extensibility---android"></a>Расширяемость — Android
 
@@ -380,7 +380,7 @@ public class ResourceResolver implements IResourceResolver
 
 Как можно видеть, наиболее существенными являются следующие изменения:
 
-* ```loadOnlineImage(String, GenericImageLoaderAsync)``` был переименован в ```resolveImageResource(String, GenericImageLoaderAsync)```
+* Параметр ```loadOnlineImage(String, GenericImageLoaderAsync)``` переименован в ```resolveImageResource(String, GenericImageLoaderAsync)```.
 * перегрузка для ```resolveImageResource(String, GenericImageLoaderAsync)``` была добавлена как ```resolveImageResource(String, GenericImageLoaderAsync, int)``` для поддержки сценариев, в которых требуется максимальная ширина.
 
 ## <a name="custom-media-loading"></a>Пользовательская загрузка мультимедиа

@@ -1,15 +1,15 @@
 ---
 title: Действия — пакет SDK для Android
-author: bekao
-ms.author: bekao
+author: almedina-ms
+ms.author: almedina
 ms.date: 09/27/2017
 ms.topic: article
-ms.openlocfilehash: 49b0b45abeb54381bd7b4b548219a09ad5da10c1
-ms.sourcegitcommit: 8c8067206f283d97a5aa4ec65ba23d3fe18962f1
+ms.openlocfilehash: 680aab595123ce35654d760f0e1dbbe406c8f29d
+ms.sourcegitcommit: 9a9973129c36a41f5e4af30d95ffc146820ad173
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68299528"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76145524"
 ---
 # <a name="actions---android"></a>Действия — Android
 
@@ -19,7 +19,7 @@ ms.locfileid: "68299528"
 > [Критические изменения в v 1.1](#breaking-changes-in-v11)
 > 
 
-Когда выполняется действие карточек, вызывается класс, переданный в вызов прорисовки, который реализует ```ICardActionHandler``` интерфейс. Обработчик действий определяется следующим образом:
+Когда выполняется действие карточек, вызывается класс, переданный в вызов функции Render, который реализует интерфейс ```ICardActionHandler```. Обработчик действий определяется следующим образом:
 
 ```java
 public class ActionHandler implements ICardActionHandler
@@ -118,10 +118,10 @@ public class ActionHandler implements ICardActionHandler
 
 ## <a name="breaking-changes-in-v11"></a>Критические изменения в v 1.1
 
-Для элемента мультимедиа, входящего в эту версию, требуются два новых метода, реализуемых классами, ```ICardActionHandler```которые реализуют эти методы:
+Для элемента мультимедиа, входящего в эту версию, требуется реализовать два новых метода в классах, реализующих ```ICardActionHandler```, следующие методы:
 
-* ```onMediaPlay```вызывается, когда кнопка воспроизведения нажимается в первый раз в любом элементе мультимедиа
-* ```onMediaStop```вызывается, когда носитель достигает конца
+* ```onMediaPlay``` вызывается, когда кнопка воспроизведения нажимается в первый раз в любом элементе мультимедиа
+* ```onMediaStop``` вызывается, когда носитель достигает конца
 
 Для этих методов используются следующие сигнатуры:
 

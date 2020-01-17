@@ -1,15 +1,15 @@
 ---
 title: Визуализация карточки — пакет SDK для Android
-author: bekao
-ms.author: bekao
+author: almedina-ms
+ms.author: almedina
 ms.date: 09/27/2017
 ms.topic: article
-ms.openlocfilehash: 55e0fa828abf3b9af857d1deb7ecd3744b5a7280
-ms.sourcegitcommit: 8c8067206f283d97a5aa4ec65ba23d3fe18962f1
+ms.openlocfilehash: c9fbfa788af0b0c7f16824bf9c369fa59a1b80f5
+ms.sourcegitcommit: 9a9973129c36a41f5e4af30d95ffc146820ad173
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68299522"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76145474"
 ---
 # <a name="render-a-card---android"></a>Визуализация карточки — Android
 
@@ -32,7 +32,7 @@ ParseContext context = new ParseContext(); // Empty parseContext so only known e
 ParseResult parseResult = AdaptiveCard.DeserializeFromString(jsonText, AdaptiveCardRenderer.VERSION, context);
 ```
 
-или диспетчер конфигурации служб
+или
 
 ```java
 ParseContext context = new ParseContext(elementParserRegistration, actionParserRegistration);

@@ -1,25 +1,25 @@
 ---
 title: Действия — пакет SDK для Android
-author: bekao
-ms.author: bekao
+author: almedina-ms
+ms.author: almedina
 ms.date: 09/27/2017
 ms.topic: article
-ms.openlocfilehash: 49b0b45abeb54381bd7b4b548219a09ad5da10c1
-ms.sourcegitcommit: 8c8067206f283d97a5aa4ec65ba23d3fe18962f1
+ms.openlocfilehash: 680aab595123ce35654d760f0e1dbbe406c8f29d
+ms.sourcegitcommit: 9a9973129c36a41f5e4af30d95ffc146820ad173
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68299528"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76145524"
 ---
-# <a name="actions---android"></a><span data-ttu-id="c0256-102">Действия — Android</span><span class="sxs-lookup"><span data-stu-id="c0256-102">Actions - Android</span></span>
+# <a name="actions---android"></a><span data-ttu-id="dfc53-102">Действия — Android</span><span class="sxs-lookup"><span data-stu-id="dfc53-102">Actions - Android</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="c0256-103">**Список критических изменений**</span><span class="sxs-lookup"><span data-stu-id="c0256-103">**List of Breaking changes**</span></span>
+> <span data-ttu-id="dfc53-103">**Список критических изменений**</span><span class="sxs-lookup"><span data-stu-id="dfc53-103">**List of Breaking changes**</span></span>
 > 
-> [<span data-ttu-id="c0256-104">Критические изменения в v 1.1</span><span class="sxs-lookup"><span data-stu-id="c0256-104">Breaking changes in v1.1</span></span>](#breaking-changes-in-v11)
+> [<span data-ttu-id="dfc53-104">Критические изменения в v 1.1</span><span class="sxs-lookup"><span data-stu-id="dfc53-104">Breaking changes in v1.1</span></span>](#breaking-changes-in-v11)
 > 
 
-<span data-ttu-id="c0256-105">Когда выполняется действие карточек, вызывается класс, переданный в вызов прорисовки, который реализует ```ICardActionHandler``` интерфейс.</span><span class="sxs-lookup"><span data-stu-id="c0256-105">When a cards action is executed, the class that was passed to the render call that implements the ```ICardActionHandler``` interface gets invoked.</span></span> <span data-ttu-id="c0256-106">Обработчик действий определяется следующим образом:</span><span class="sxs-lookup"><span data-stu-id="c0256-106">Here is how to define your action handler:</span></span>
+<span data-ttu-id="dfc53-105">Когда выполняется действие карточек, вызывается класс, переданный в вызов функции Render, который реализует интерфейс ```ICardActionHandler```.</span><span class="sxs-lookup"><span data-stu-id="dfc53-105">When a cards action is executed, the class that was passed to the render call that implements the ```ICardActionHandler``` interface gets invoked.</span></span> <span data-ttu-id="dfc53-106">Обработчик действий определяется следующим образом:</span><span class="sxs-lookup"><span data-stu-id="dfc53-106">Here is how to define your action handler:</span></span>
 
 ```java
 public class ActionHandler implements ICardActionHandler
@@ -116,21 +116,21 @@ public class ActionHandler implements ICardActionHandler
 }
 ```
 
-## <a name="breaking-changes-in-v11"></a><span data-ttu-id="c0256-107">Критические изменения в v 1.1</span><span class="sxs-lookup"><span data-stu-id="c0256-107">Breaking changes in v1.1</span></span>
+## <a name="breaking-changes-in-v11"></a><span data-ttu-id="dfc53-107">Критические изменения в v 1.1</span><span class="sxs-lookup"><span data-stu-id="dfc53-107">Breaking changes in v1.1</span></span>
 
-<span data-ttu-id="c0256-108">Для элемента мультимедиа, входящего в эту версию, требуются два новых метода, реализуемых классами, ```ICardActionHandler```которые реализуют эти методы:</span><span class="sxs-lookup"><span data-stu-id="c0256-108">The media element included in this version requires two new methods to be implemented by the classes that implement ```ICardActionHandler```, these methods are:</span></span>
+<span data-ttu-id="dfc53-108">Для элемента мультимедиа, входящего в эту версию, требуется реализовать два новых метода в классах, реализующих ```ICardActionHandler```, следующие методы:</span><span class="sxs-lookup"><span data-stu-id="dfc53-108">The media element included in this version requires two new methods to be implemented by the classes that implement ```ICardActionHandler```, these methods are:</span></span>
 
-* <span data-ttu-id="c0256-109">```onMediaPlay```вызывается, когда кнопка воспроизведения нажимается в первый раз в любом элементе мультимедиа</span><span class="sxs-lookup"><span data-stu-id="c0256-109">```onMediaPlay``` is invoked when the play button is pressed for the first time in any media element</span></span>
-* <span data-ttu-id="c0256-110">```onMediaStop```вызывается, когда носитель достигает конца</span><span class="sxs-lookup"><span data-stu-id="c0256-110">```onMediaStop``` is invoked when the media reaches it's end</span></span>
+* <span data-ttu-id="dfc53-109">```onMediaPlay``` вызывается, когда кнопка воспроизведения нажимается в первый раз в любом элементе мультимедиа</span><span class="sxs-lookup"><span data-stu-id="dfc53-109">```onMediaPlay``` is invoked when the play button is pressed for the first time in any media element</span></span>
+* <span data-ttu-id="dfc53-110">```onMediaStop``` вызывается, когда носитель достигает конца</span><span class="sxs-lookup"><span data-stu-id="dfc53-110">```onMediaStop``` is invoked when the media reaches it's end</span></span>
 
-<span data-ttu-id="c0256-111">Для этих методов используются следующие сигнатуры:</span><span class="sxs-lookup"><span data-stu-id="c0256-111">The signatures for these methods are:</span></span>
+<span data-ttu-id="dfc53-111">Для этих методов используются следующие сигнатуры:</span><span class="sxs-lookup"><span data-stu-id="dfc53-111">The signatures for these methods are:</span></span>
 
 ```java
 public void onMediaPlay(BaseCardElement mediaElement, RenderedAdaptiveCard renderedAdaptiveCard)
 public void onMediaStop(BaseCardElement mediaElement, RenderedAdaptiveCard renderedAdaptiveCard)
 ```
 
-<span data-ttu-id="c0256-112">Реализация ActionHandler из предыдущего примера теперь будет выглядеть примерно так:</span><span class="sxs-lookup"><span data-stu-id="c0256-112">And the implementation for the ActionHandler from the previous example would now look similar to this:</span></span>
+<span data-ttu-id="dfc53-112">Реализация ActionHandler из предыдущего примера теперь будет выглядеть примерно так:</span><span class="sxs-lookup"><span data-stu-id="dfc53-112">And the implementation for the ActionHandler from the previous example would now look similar to this:</span></span>
 
 ```java
 public class ActionHandler implements ICardActionHandler

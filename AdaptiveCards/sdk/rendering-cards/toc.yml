@@ -1,6 +1,6 @@
 - name: Android
   items:
-    - name: начало работы
+    - name: Начало работы
       href: android/getting-started.md
     - name: Отрисовка карточек
       href: android/render-a-card.md
@@ -14,7 +14,7 @@
       href: android/extensibility.md
 - name: iOS
   items:
-    - name: начало работы
+    - name: Начало работы
       href: ios/getting-started.md
     - name: Отрисовка карточек
       href: ios/render-a-card.md
@@ -28,7 +28,7 @@
       href: ios/extensibility.md
 - name: JavaScript
   items:
-    - name: начало работы
+    - name: Начало работы
       href: javascript/getting-started.md
     - name: Отрисовка карточек
       href: javascript/render-a-card.md
@@ -44,7 +44,7 @@
       href: javascript/fabric.md
 - name: .NET HTML
   items:
-    - name: начало работы
+    - name: Начало работы
       href: net-html/getting-started.md
     - name: Отрисовка карточек
       href: net-html/render-a-card.md
@@ -58,7 +58,7 @@
       href: net-html/extensibility.md
 - name: .NET WPF
   items:
-    - name: начало работы
+    - name: Начало работы
       href: net-wpf/getting-started.md
     - name: Отрисовка карточек
       href: net-wpf/render-a-card.md
@@ -72,7 +72,7 @@
       href: net-wpf/extensibility.md
 - name: Изображение .NET
   items:
-    - name: начало работы
+    - name: Начало работы
       href: net-image/getting-started.md
     - name: Отрисовка карточек
       href: net-image/render-a-card.md
@@ -86,7 +86,7 @@
       href: net-image/extensibility.md
 - name: UWP
   items:
-    - name: начало работы
+    - name: Начало работы
       href: uwp/getting-started.md
     - name: Отрисовка карточек
       href: uwp/render-a-card.md
@@ -100,5 +100,17 @@
       href: uwp/extensibility.md
 - name: ReactNative
   items:
-    - name: начало работы
+    - name: Начало работы
       href: react-native/getting-started.md
+- name: Xamarin.Android
+  items:
+    - name: Начало работы
+      href: xamarin/android/getting-started.md
+    - name: Отрисовка карточек
+      href: xamarin/android/render-a-card.md
+    - name: Действия
+      href: xamarin/android/actions.md
+    - name: Конфигурация узла
+      href: xamarin/android/host-config.md
+    - name: Адаптация стиля
+      href: xamarin/android/native-styling.md

@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 05/30/2018
 ms.topic: article
-ms.openlocfilehash: 1acc30c0347ea5527de2af1fe74e605c7589cbc6
-ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
+ms.openlocfilehash: 1c3ad2a4588244a8bd30011a4b6e25e37062624a
+ms.sourcegitcommit: 9a9973129c36a41f5e4af30d95ffc146820ad173
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "59553286"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76145384"
 ---
 # <a name="adaptive-cards-for-bot-developers"></a>Адаптивные карточки для разработчиков ботов
 
@@ -18,7 +18,7 @@ ms.locfileid: "59553286"
 > [!NOTE]
 > В текущей предварительной версии Skype не поддерживается. Новости см. на странице со сведениями о [поддерживаемых платформах](../resources/partners.md).
 
-## <a name="try-it-out"></a>Попробуйте сами
+## <a name="try-it-out"></a>Пробное использование
 
 [Перейдите по этой ссылке и пообщайтесь с нашим ботом-аквалангистом](http://contososcubademo.azurewebsites.net/). Скажите ему: `I'm looking for scuba`, и он поможет вам заказать дайвинг-тур.  
 
@@ -113,10 +113,10 @@ ms.locfileid: "59553286"
 
 Если ваш бот создан с помощью .NET или NodeJS, вы можете воспользоваться библиотеками, упрощающими создание адаптивных карточек.
 
-Платформа|Установка|Узнайте больше
+Платформа|Установить|Дополнительные сведения
 --------|-------|----------
-.NET | `Install-Package AdaptiveCards -IncludePrerelease` | [Документация по .NET Framework для Bot Framework](https://docs.microsoft.com/en-us/bot-framework/dotnet/bot-builder-dotnet-add-rich-card-attachments)
-NodeJS | `npm install adaptivecards` | [Документация по NodeJS для Bot Framework](https://docs.microsoft.com/en-us/bot-framework/nodejs/bot-builder-nodejs-send-rich-cards)
+.NET | `Install-Package AdaptiveCards -IncludePrerelease` | [Документация по .NET Framework для Bot Framework](https://docs.microsoft.com/bot-framework/dotnet/bot-builder-dotnet-add-rich-card-attachments)
+NodeJS | `npm install adaptivecards` | [Документация по NodeJS для Bot Framework](https://docs.microsoft.com/bot-framework/nodejs/bot-builder-nodejs-send-rich-cards)
 
 
 ## <a name="channel-status"></a>Поддержка каналов коммуникации

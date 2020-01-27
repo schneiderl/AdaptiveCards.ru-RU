@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 06/26/2017
 ms.topic: article
-ms.openlocfilehash: b788ecc5c2371d2575e0165296365238535dd7c5
-ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
+ms.openlocfilehash: fa420c0a6e9e9b7e5713b6cc528de39335f0b56c
+ms.sourcegitcommit: 1e18c5dc0cf85d26f66335e312348bbfb903d95a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59553706"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76727482"
 ---
 # <a name="host-config---ios"></a>Конфигурация узла — iOS
 
@@ -27,7 +27,7 @@ ACOHostConfig *defaultConfig = [[ACHostConfig alloc] init];
 
 ## <a name="render-a-card-using-host-config"></a>Подготовка карты с помощью конфигурации узла
 
-Средство визуализации принимает адаптивную карточку и параметр HostConfig. Если HostConfig имеет значение NULL, применяется конфигурация по умолчанию.
+Редерер принимает адаптивную карту и конфигурацию узла. Хостконфиг может быть nil, а если пусто, будет использоваться значение по умолчанию.
 
 ```objective-c
 ACRRenderResult *renderResult;
@@ -35,3 +35,11 @@ renderResult = [ACRRenderer render:cardParseResult.card
                             config:hostconfigParseResult.config
                    widthConstraint:300.0];
 ```
+
+## <a name="customization"></a>Настройка
+
+Существует три способа настройки адаптивной визуализации карт:
+
+1. Конфигурация узла
+2. XIB
+3. Отрисовка пользовательского элемента

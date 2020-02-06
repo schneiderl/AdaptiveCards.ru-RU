@@ -1,31 +1,31 @@
 ---
-title: Пакет SDK для конструктора адаптивных карт
+title: Пакет SDK для конструктора адаптивных карточек
 author: matthidinger
 ms.author: mahiding
 ms.date: 08/15/2019
 ms.topic: article
 ms.openlocfilehash: 285f02be2bc45b280461ff39a0c64b70d7029fc5
 ms.sourcegitcommit: aa044167fd0b32b485ea2ce014afcf0b332bf1a2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/16/2019
 ms.locfileid: "69536823"
 ---
-# <a name="adaptive-cards-designer-sdk"></a>Пакет SDK для конструктора адаптивных карт
+# <a name="adaptive-cards-designer-sdk"></a>Пакет SDK для конструктора адаптивных карточек
 
-Адаптивный конструктор карт предоставляет широкие интерактивные возможности для разработки адаптивных карт.
+Конструктор адаптивных карточек предоставляет широкие интерактивные возможности для их создания во время разработки.
 
-Попробуйте https://adaptivecards.io/designer
+Чтобы поработать с конструктором, перейдите по адресу https://adaptivecards.io/designer.
 
 ![Снимок экрана конструктора](../content/designer.png)
 
-Этот пакет SDK позволяет легко интегрировать конструктор адаптивных карт в свой собственный интерфейс.
+Этот пакет SDK позволит вам без труда интегрировать конструктор адаптивных карточек в свои интерфейсы.
 
 > [!NOTE]
 > 
-> В настоящее время пакет SDK для конструктора находится на этапе предварительной версии и может иметь коренные изменения в общедоступном API, так как мы получаем отзыв.
+> Сейчас предоставляется предварительная версия пакета SDK для конструктора. В общедоступный API могут вноситься критические изменения по мере поступления отзывов.
 
-## <a name="get-started"></a>Начало работы
+## <a name="get-started"></a>Приступая к работе
 
 ### <a name="node"></a>Узел
 
@@ -33,7 +33,7 @@ ms.locfileid: "69536823"
 npm install adaptivecards-designer
 ```
 
-### <a name="cdn"></a>СЕТЬ
+### <a name="cdn"></a>CDN
 
 ```html
 <script src="https://unpkg.com/adaptivecards-designer/dist/adaptivecards-designer.js"></script>
@@ -41,4 +41,4 @@ npm install adaptivecards-designer
 
 ## <a name="documentation"></a>Документация 
 
-Ознакомьтесь с [полной документацией](https://www.npmjs.com/package/adaptivecards-designer) по NPM
+Ознакомьтесь с [подробной документацией](https://www.npmjs.com/package/adaptivecards-designer) на сайте npm.

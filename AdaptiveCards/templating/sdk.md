@@ -6,34 +6,34 @@ ms.date: 08/01/2019
 ms.topic: article
 ms.openlocfilehash: 3a9bfcd1bf8f87959a747997e04f5c5ad2a79980
 ms.sourcegitcommit: 90afb3729931b0e4cae19b17ef9e49453c2d2bf6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/09/2019
 ms.locfileid: "72163613"
 ---
-# <a name="adaptive-card-templating-sdks"></a>Пакеты SDK для адаптивных шаблонов карт
+# <a name="adaptive-card-templating-sdks"></a>Пакеты SDK для работы с шаблонами адаптивных карточек
 
-Пакеты SDK для шаблонов адаптивной карты упрощают заполнение [шаблона карты](language.md) реальными данными на любой поддерживаемой платформе.
+Пакеты SDK для работы с шаблонами адаптивных карточек упрощают заполнение [шаблона карточки](language.md) реальными данными на любой поддерживаемой платформе.
 
-> Дополнительные [сведения о шаблонах адаптивных карт](index.md) см. в этой статье.
+> Ознакомьтесь с [общими сведениями о работе с шаблонами адаптивных карточек](index.md).
 
 > [!IMPORTANT] 
 > 
 > Эти функции предоставляются в **ознакомительной версии и могут быть изменены**. Ваши отзывы не только приветствуются, но и имеют решающее значение: только благодаря им мы сможем предоставлять функции, которые **вам** действительно необходимы.
 > 
-> Во время первоначальной предварительной версии доступен только пакет SDK для JavaScript, но вскоре будет получен пакет SDK для .NET.
+> Во время действия первоначальной предварительной версии доступен только пакет SDK для JavaScript, но скоро будет предоставляться и пакет SDK для .NET.
 
 ## <a name="javascript"></a>JavaScript
 
-Библиотека [адаптивекардс-шаблонов](https://www.npmjs.com/package/adaptivecards-templating) доступна в NPM и с помощью CDN. Полную документацию см. в ссылке на пакет.
+К библиотеке [adaptivecards-templating](https://www.npmjs.com/package/adaptivecards-templating) можно получить с помощью npm и CDN. Полную документацию см. по ссылке на пакет.
 
-### <a name="npm"></a>NPM
+### <a name="npm"></a>npm
 
 ```console
 npm install adaptivecards-templating
 ```
 
-### <a name="cdn"></a>СЕТЬ
+### <a name="cdn"></a>CDN
 
 ```html
 <script src="https://unpkg.com/adaptivecards-templating/dist/adaptivecards-templating.min.js"></script>
@@ -41,9 +41,9 @@ npm install adaptivecards-templating
 
 ### <a name="usage"></a>Использование
 
-В примере ниже предполагается, что вы также установили библиотеку [адаптивекардс](https://www.npmjs.com/package/adaptivecards) , чтобы подготовить карту. 
+В приведенном ниже примере предполагается, что вы также установили библиотеку [adaptivecards](https://www.npmjs.com/package/adaptivecards) для отрисовки карточек. 
 
-Если вы не планируете рендеринг карты, то можете удалить код `parse` и `render`. 
+Если вы не планируете выполнять отрисовку карточек, то можете удалить код `parse` и `render`. 
 
 ```js
 import * as ACData from "adaptivecards-templating";
@@ -90,15 +90,15 @@ dotnet add package AdaptiveCards.Templating --version 0.1.0-alpha1
 
 > [!NOTE]
 >
-> Попробуйте изменить версию выше до последней опубликованной версии
+> Рекомендуем изменить указанную выше версию на последнюю опубликованную версию.
 
-Импорт библиотеки 
+Импортируйте библиотеку. 
 
 ```cs
 using AdaptiveCards.Templating
 ```
 
-Используйте модуль шаблонов, передав шаблон JSON и данные JSON.
+Используйте подсистему работы с шаблонами, передав шаблон и данные в формате JSON.
 
 ```cs
 var templateJson = @"

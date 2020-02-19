@@ -1,6 +1,6 @@
 - name: Обзор
   href: index.md
-- name: начало работы
+- name: Начало работы
   items:
     - name: Для разработчиков ботов
       href: getting-started/bots.md
@@ -10,17 +10,17 @@
       href: getting-started/outlook.md
 - name: Разработка карточек
   items:
-    - name: начало работы
+    - name: Начало работы
       href: authoring-cards/getting-started.md
     - name: Схема карточки
       href: 'https://adaptivecards.io/explorer'
-    - name: Голосовые функции
+    - name: Speech
       href: authoring-cards/speech.md
     - name: Текстовые функции
       href: authoring-cards/text-features.md
 - name: Отрисовка карточек
   items:
-    - name: начало работы
+    - name: Начало работы
       href: rendering-cards/getting-started.md
     - name: Действия
       href: rendering-cards/actions.md

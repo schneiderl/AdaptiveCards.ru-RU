@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 11/28/2017
 ms.topic: article
-ms.openlocfilehash: 4a6030dda12ab8d9a1e5c387cec63d45e84660d8
-ms.sourcegitcommit: aa044167fd0b32b485ea2ce014afcf0b332bf1a2
+ms.openlocfilehash: 29786fe5e533e67558df88f58b1330aa6646b532
+ms.sourcegitcommit: 1e18c5dc0cf85d26f66335e312348bbfb903d95a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69529842"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77454627"
 ---
 # <a name="getting-started---javascript"></a>Приступая к работе — JavaScript
 
@@ -19,13 +19,13 @@ ms.locfileid: "69529842"
 
 ### <a name="node"></a>Узел
 
-[![Установка NPM](https://img.shields.io/npm/v/adaptivecards.svg)](https://www.npmjs.com/package/adaptivecards)
+[![Установка с помощью npm](https://img.shields.io/npm/v/adaptivecards.svg)](https://www.npmjs.com/package/adaptivecards)
 
 ```console
 npm install adaptivecards
 ```
 
-### <a name="cdn"></a>СЕТЬ
+### <a name="cdn"></a>CDN
 
 ```html
 <script src="https://unpkg.com/adaptivecards/dist/adaptivecards.js"></script>

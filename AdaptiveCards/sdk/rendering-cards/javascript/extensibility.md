@@ -4,20 +4,20 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 11/28/2017
 ms.topic: article
-ms.openlocfilehash: 464fda8c83f9943d316f43fec811511ab9696916
-ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
+ms.openlocfilehash: 4c43637d81bcf43251638133c66d1c77b92ace56
+ms.sourcegitcommit: 1e18c5dc0cf85d26f66335e312348bbfb903d95a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59552636"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77454677"
 ---
 # <a name="extensibility---javascript"></a>Расширяемость — JavaScript
 
 ## <a name="implement-and-register-a-custom-element"></a>Реализация и регистрация пользовательского элемента
 
 Порядок создания настраиваемого типа элемента адаптивной карты:
-- Создание нового класса из`CardElement`
-- `getJsonTypeName` Реализуйте`internalRender` методы,, и`renderSpeech` `parse` `toJSON`
+- Создание нового класса из `CardElement`
+- Реализация методов `getJsonTypeName`, `parse`, `toJSON`, `internalRender` и `renderSpeech`
 - Зарегистрируйте его, добавив в реестр элементов модуля подготовки отчетов
 
 Давайте рассмотрим пример и реализую простой элемент индикатора выполнения:
@@ -212,4 +212,4 @@ Adaptive.AdaptiveCard.actionTypeRegistry.registerType("Action.Alert", () => { re
 }
 ```
 
-И вот как это выглядит: ![Image](https://user-images.githubusercontent.com/1334689/52665466-8155e780-2ec0-11e9-841a-7d272ad1d103.png)
+Вот как это выглядит: ![Image](https://user-images.githubusercontent.com/1334689/52665466-8155e780-2ec0-11e9-841a-7d272ad1d103.png)

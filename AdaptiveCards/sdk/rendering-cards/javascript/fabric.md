@@ -4,16 +4,16 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 08/15/2019
 ms.topic: article
-ms.openlocfilehash: 70713c9c6cc7b42f5d95bb19c4ebf7eff7ca724c
-ms.sourcegitcommit: aa044167fd0b32b485ea2ce014afcf0b332bf1a2
+ms.openlocfilehash: 75bdf33a5e281cd322adac16382fe5afdd461d27
+ms.sourcegitcommit: 1e18c5dc0cf85d26f66335e312348bbfb903d95a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69536833"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77454637"
 ---
 # <a name="adaptive-cards-with-fabric-ui"></a>Адаптивные карты с ИНТЕРФЕЙСом Fabric
 
-Пакет «выводит на свет» адаптивный модуль визуализации карт с компонентами [пользовательского интерфейса Microsoft Fabric.](https://developer.microsoft.com/en-us/fabric#/controls/web) `adaptivecards-fabric`
+`adaptivecards-fabric`ный пакет "выводит на свет" адаптивный модуль визуализации карт с компонентами [пользовательского интерфейса Microsoft Fabric](https://developer.microsoft.com/en-us/fabric#/controls/web) .
 
 ![Снимок экрана структуры](https://raw.githubusercontent.com/microsoft/AdaptiveCards/master/source/nodejs/adaptivecards-fabric/adaptivecards-fabric.gif)
 
@@ -27,4 +27,4 @@ npm install adaptivecards-fabric
 
 ## <a name="documentation"></a>Документация 
 
-Ознакомьтесь с [полной документацией](https://www.npmjs.com/package/adaptivecards-fabric) по NPM
+Ознакомьтесь с [подробной документацией](https://www.npmjs.com/package/adaptivecards-fabric) на сайте npm.

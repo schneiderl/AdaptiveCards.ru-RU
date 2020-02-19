@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 08/15/2019
 ms.topic: article
-ms.openlocfilehash: a610d7fca265f98fd0aab495e825575cfbb5c415
-ms.sourcegitcommit: aa044167fd0b32b485ea2ce014afcf0b332bf1a2
+ms.openlocfilehash: fbad29662a96b42eda209e71a471da82c5f23bb3
+ms.sourcegitcommit: 1e18c5dc0cf85d26f66335e312348bbfb903d95a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69520937"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77454187"
 ---
 # <a name="reactnative-renderer"></a>Модуль подготовки отчетов Реактнативе
 
@@ -17,6 +17,6 @@ ms.locfileid: "69520937"
 
 Разработчик | Установка | Документация | Исходный код
 ---|---|---|---
-Представьте себе | `npm install adaptivecards-reactnative` | [Документация](https://www.npmjs.com/package/adaptivecards-reactnative) | [Source](https://github.com/microsoft/AdaptiveCards/tree/master/source/community/reactnative)
-Майкрософт | `npm install react-native-adaptivecards` | [Документация](https://www.npmjs.com/package/react-native-adaptivecards) | [Source](https://github.com/Microsoft/react-native-adaptivecards)
+Представьте себе | `npm install adaptivecards-reactnative` | [Документация](https://www.npmjs.com/package/adaptivecards-reactnative) | [Источник](https://github.com/microsoft/AdaptiveCards/tree/master/source/community/reactnative)
+Майкрософт | `npm install react-native-adaptivecards` | [Документация](https://www.npmjs.com/package/react-native-adaptivecards) | [Источник](https://github.com/Microsoft/react-native-adaptivecards)
 

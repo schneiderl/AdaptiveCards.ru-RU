@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 11/28/2017
 ms.topic: article
-ms.openlocfilehash: 6f086d268abcaeb7fa159b74708597e89aafaf53
-ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
+ms.openlocfilehash: 687a90dd572ba2df786816fdd9dc313746cca982
+ms.sourcegitcommit: 1e18c5dc0cf85d26f66335e312348bbfb903d95a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59552896"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77454647"
 ---
 # <a name="native-styling---javascript"></a>Собственный стиль — JavaScript
 
@@ -19,13 +19,13 @@ ms.locfileid: "59552896"
 
 | Класс CSS | Использование |
 |---|---|
-| . AC-контейнер | контейнера |
-| . AC — выбираемый  | элементы с`selectAction` |
+| . AC-контейнер | контейнеры |
+| . AC — выбираемый  | элементы с `selectAction` |
 | . AC-образ | image |
 | . AC-кнопка | действия, отображаемые как кнопки |
 | . AC-linkButton  | действия, отображаемые как ссылки |
-| . AC-вход | элементы управления вводом|
-| . AC-textInput| Ввод текста |
+| . AC-вход | элементы управления для ввода|
+| . AC-textInput| ввод текста |
 | . AC — многострочный | Многострочный ввод текста |
 | . AC-Нумберинпут | Ввод числа|
 | . AC-Датеинпут | Ввод даты|

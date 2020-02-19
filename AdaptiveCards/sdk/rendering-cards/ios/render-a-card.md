@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 06/26/2017
 ms.topic: article
-ms.openlocfilehash: 7d8d8410c030584dc5a518af7e6473d1d51f3991
-ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
+ms.openlocfilehash: d47b94595c22afa51a0d4cf9666771203cd79c7e
+ms.sourcegitcommit: 1e18c5dc0cf85d26f66335e312348bbfb903d95a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "67134327"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77454747"
 ---
 # <a name="render-a-card---ios"></a>Визуализация карточки — iOS
 
@@ -31,7 +31,7 @@ NSArray<ACRParseWarning *> warnings = cardPraseResult.parseWarnings;
 
 ## <a name="render-a-card"></a>Отрисовка карточек
 
-Средство визуализации принимает адаптивную карточку и параметр HostConfig. Если HostConfig имеет значение NULL, применяется конфигурация по умолчанию.
+Редерер принимает адаптивную карту и конфигурацию узла. Хостконфиг может быть nil, а если пусто, будет использоваться значение по умолчанию.
 Полученный параметр UIView использует автоматический макет. Ширина ограничивается значением, задаваемым параметром widthConstraint. Если задано значение 0, ширина не ограничивается.
 Высота не ограничивается, и ее полученное значение является суммой значений высоты всего визуализируемого содержимого. Для ограничения размеров представления следует использовать параметр NSLayoutConstraint. Точный размер предоставляется контекстом viewDidLayoutSubview из контролера представления или соответствующего одноименного метода, если используется ACRViewController.
 

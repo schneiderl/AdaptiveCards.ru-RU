@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 10/19/2017
 ms.topic: article
-ms.openlocfilehash: 7de33dbf0fed79e1e9a0e6e34a757b41865a8d4c
-ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
+ms.openlocfilehash: e3623e2a47a7a778124c69fe433af9810708487c
+ms.sourcegitcommit: 1e18c5dc0cf85d26f66335e312348bbfb903d95a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59552606"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77454557"
 ---
 # <a name="getting-started---net-html"></a>Начало работы — HTML-код .NET
 
@@ -17,7 +17,7 @@ ms.locfileid: "59552606"
 
 ## <a name="nuget-install"></a>Установка NuGet
 
-[![Установка NuGet](https://img.shields.io/nuget/vpre/AdaptiveCards.Rendering.Html.svg)](https://www.nuget.org/packages/AdaptiveCards.Rendering.Html)
+[![Установка с помощью NuGet](https://img.shields.io/nuget/vpre/AdaptiveCards.Rendering.Html.svg)](https://www.nuget.org/packages/AdaptiveCards.Rendering.Html)
 
 ```console
 Install-Package AdaptiveCards.Rendering.Html -IncludePrerelease

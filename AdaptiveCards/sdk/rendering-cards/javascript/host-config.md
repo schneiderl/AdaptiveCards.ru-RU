@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 11/28/2017
 ms.topic: article
-ms.openlocfilehash: 1809a022481e4fb28d2db454cfe90e07d09279ff
-ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
+ms.openlocfilehash: a011ffc43c2990cd8eb568b9f1c449cf541f9a70
+ms.sourcegitcommit: 1e18c5dc0cf85d26f66335e312348bbfb903d95a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59553606"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77454620"
 ---
 # <a name="host-config---javascript"></a>Конфигурация узла — JavaScript
 
@@ -35,7 +35,7 @@ var renderedCard = adaptiveCard.render();
 2. Стилизация CSS
 3. Отрисовка пользовательского элемента
 
-### <a name="hostconfig"></a>хостконфиг 
+### <a name="hostconfig"></a>HostConfig 
 
 [HostConfig](../../../rendering-cards/host-config.md) — это объект общей конфигурации, распознаваемый разными средствами визуализации. Он позволяет определять общие стили (семейство шрифтов, размеры шрифтов, интервалы) и функции (например максимальное количество действий), которые автоматически интерпретируются средством визуализации той или иной платформы. 
 

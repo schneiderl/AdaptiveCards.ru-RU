@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 06/26/2017
 ms.topic: article
-ms.openlocfilehash: c3dcae7ef2347201b5f7ce02baf3204db7ee27d6
-ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
+ms.openlocfilehash: 13245ced3f4f657e13793bfdf1d212e44d2b6a41
+ms.sourcegitcommit: 1e18c5dc0cf85d26f66335e312348bbfb903d95a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59553566"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77454767"
 ---
 # <a name="extensibility---ios"></a>Расширяемость — iOS
 

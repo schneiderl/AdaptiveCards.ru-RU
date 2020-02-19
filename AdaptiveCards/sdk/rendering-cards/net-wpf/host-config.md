@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 10/19/2017
 ms.topic: article
-ms.openlocfilehash: 9ca540cbbb445f306f073f1936af46f8c2def99b
-ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
+ms.openlocfilehash: 65e68c2c3e7fa244ba790afc3749912937ea8470
+ms.sourcegitcommit: 1e18c5dc0cf85d26f66335e312348bbfb903d95a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "67134306"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77454037"
 ---
 # <a name="host-config---net-wpf"></a>HostConfig — .NET WPF
 

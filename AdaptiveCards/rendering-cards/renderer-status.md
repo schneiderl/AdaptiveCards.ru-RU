@@ -4,26 +4,26 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 10/12/2018
 ms.topic: article
-ms.openlocfilehash: bffa49012a8ebe686fc033f98b2438d2e9e959cc
-ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
+ms.openlocfilehash: 63426b2250407cc40af8c46975c10f57d1028a40
+ms.sourcegitcommit: 1e18c5dc0cf85d26f66335e312348bbfb903d95a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "67138037"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77454907"
 ---
 # <a name="renderer-status"></a>Состояние отрисовщика
 В таблицах ниже показан текущий статус отрисовщиков в соответствии с их опубликованными общедоступными версиями.
 
 ### <a name="parsing"></a>Анализ
 
-|Функция | HTML | .NET | UWP | iOS | Android |
+|Функции | HTML | .NET | UWP | iOS | Android |
 |--- | --- | --- | --- | --- | --- | --- |
 |Возврат ошибок при проверке | ✅ | ✅ | ✅ | ✅ | ✅ |
 |Анализ неизвестных свойств | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 ### <a name="card-rendering"></a>Отображение карточек
 
-|Функция | HTML | .NET | UWP | iOS | Android |
+|Функции | HTML | .NET | UWP | iOS | Android |
 |--- | --- | --- | --- | --- | --- | --- |
 |Проверка поддерживаемой версии | ✅ | ✅ | ✅ | ✅ | ✅  |
 |Отображение полной схемы | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -34,7 +34,7 @@ ms.locfileid: "67138037"
 
 ### <a name="element-rendering"></a>Отображение элементов
 
-|Функция | HTML | .NET | UWP | iOS | Android |
+|Функции | HTML | .NET | UWP | iOS | Android |
 |--- | --- | --- | --- | --- | --- | --- |
 |Интервалы и разделители | ✅ | ✅ | ✅ | ✅ | ✅ |
 |[Форматирование даты и времени в TextBlock](../authoring-cards/text-features.md#datetime-formatting-and-localization) | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -45,7 +45,7 @@ ms.locfileid: "67138037"
 
 ### <a name="extensibility"></a>Расширяемость
 
-|Функция | HTML | .NET | UWP | iOS | Android |
+|Функции | HTML | .NET | UWP | iOS | Android |
 |--- | --- | --- | --- | --- | --- | --- |
 |Переопределение отрисовщика элементов | ✅ | ✅ | ✅ | ✅ | ✅ |
 |Добавление нового отрисовщика элементов | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -54,16 +54,16 @@ ms.locfileid: "67138037"
 
 ### <a name="actions"></a>Действия
 
-| Функция | HTML | .NET | UWP | iOS | Android |
+| Функции | HTML | .NET | UWP | iOS | Android |
 |--- | --- | --- | --- | --- | --- | --- |
 | Поддержка Action.OpenUrl | ✅ | ✅ | ✅ | ✅ | ✅  |
 | Поддержка Action.ShowCard  | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Поддержка Action.Submit  | ✅ | ✅ | ✅ | ✅ | ✅  |
 | Поддержка selectAction | ✅ | ✅ | ✅ | ✅ | ✅ |
 
-### <a name="events"></a>Мероприятия
+### <a name="events"></a>События
 
-|       Функция        | HTML | .NET | UWP | iOS | Android | 
+|       Функции        | HTML | .NET | UWP | iOS | Android | 
 |----------------------------|------|------|-----|-----|---------|
 | Изменение видимости элемента |  ✅   |  ❌   |  ❌  |  ❌  | ❌ |
 

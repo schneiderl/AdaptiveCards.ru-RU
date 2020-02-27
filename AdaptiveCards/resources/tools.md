@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 03/14/2019
 ms.topic: article
-ms.openlocfilehash: ad520693224509deaf0ea1c2cd6a837089dbf2d5
-ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
+ms.openlocfilehash: f0c5a61d3406e1defffefc575ee0a6ec78fba93d
+ms.sourcegitcommit: 1e18c5dc0cf85d26f66335e312348bbfb903d95a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "67137987"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77454837"
 ---
 # <a name="tools-and-samples"></a>Инструменты и примеры
 

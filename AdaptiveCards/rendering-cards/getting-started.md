@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 06/26/2017
 ms.topic: article
-ms.openlocfilehash: 0a5f99268ce483fddd99f4493b386db796c3e9d2
-ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
+ms.openlocfilehash: a562a05a91676dc5e6d8b51690acc4788802fb99
+ms.sourcegitcommit: 1e18c5dc0cf85d26f66335e312348bbfb903d95a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "67138097"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77454937"
 ---
 # <a name="rendering-cards-inside-your-application"></a>Отрисовка карточек в приложении
 
@@ -21,7 +21,7 @@ ms.locfileid: "67138097"
 
 ## <a name="adaptive-cards-sdks"></a>Пакеты SDK адаптивных карточек
 
-|Платформа|Установка|Сборка|Документы|Состояние|
+|Платформа|Установить|Создание|Docs|Состояние|
 |---|---|---|---|---|
 | JavaScript | [![Установка с помощью npm](https://img.shields.io/npm/v/adaptivecards.svg)](https://www.npmjs.com/package/adaptivecards) | [Источник](https://github.com/Microsoft/AdaptiveCards/tree/master/source/nodejs)| [Документация](../sdk/rendering-cards/javascript/getting-started.md) | ![Состояние сборки](https://img.shields.io/vso/build/Microsoft/56cf629e-8f3a-4412-acbc-bf69366c552c/20564.svg) |
 | .NET WPF | [![Установка с помощью NuGet](https://img.shields.io/nuget/vpre/AdaptiveCards.Rendering.Wpf.svg)](https://www.nuget.org/packages/AdaptiveCards.Rendering.Wpf) | [Источник](https://github.com/Microsoft/AdaptiveCards/tree/master/source/dotnet)| [Документация](../sdk/rendering-cards/net-wpf/getting-started.md) | ![Состояние сборки](https://img.shields.io/vso/build/Microsoft/56cf629e-8f3a-4412-acbc-bf69366c552c/20596.svg) |

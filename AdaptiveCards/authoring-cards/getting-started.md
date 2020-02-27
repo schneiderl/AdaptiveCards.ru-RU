@@ -1,17 +1,17 @@
 ---
-title: начало работы
+title: Начало работы
 author: matthidinger
 ms.author: mahiding
 ms.date: 11/9/2017
 ms.topic: article
-ms.openlocfilehash: 9d363da0c10b242e23d2594984292fcc1f31382f
-ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
+ms.openlocfilehash: c9a0ad07ba5fefbcdc35239591c02fe0720b5b66
+ms.sourcegitcommit: 1e18c5dc0cf85d26f66335e312348bbfb903d95a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "59552686"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77454847"
 ---
-# <a name="getting-started"></a>начало работы 
+# <a name="getting-started"></a>Начало работы 
 
 Адаптивная карточка — это объектная модель карточки с сериализацией в формате JSON.
 
@@ -87,7 +87,7 @@ ms.locfileid: "59552686"
 
 > **Пример использования Action.Submit**. С помощью Skype и Action.Submit данные о действиях бота Bot Framework возвращаются боту со свойством **Value**, содержащим объект со всеми данными, введенными пользователями.
 
-## <a name="learn-more"></a>Подробнее
+## <a name="learn-more"></a>Дополнительные сведения
 
 * [Ознакомьтесь с примерами адаптивных карточек](http://adaptivecards.io/samples/).
 * Воспользуйтесь [обозревателем схемы](http://adaptivecards.io/explorer), чтобы найти доступные элементы.

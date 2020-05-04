@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 08/01/2019
 ms.topic: article
-ms.openlocfilehash: 8ccccd3c3e67324acf123e03b947372e1517faab
-ms.sourcegitcommit: 1e18c5dc0cf85d26f66335e312348bbfb903d95a
+ms.openlocfilehash: db211fc3bac27dc980ae87983a918a35730f8e5e
+ms.sourcegitcommit: e6418d692296e06be7412c95c689843f9db5240d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "77454987"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "82136190"
 ---
 # <a name="adaptive-cards-template-service"></a>Служба шаблонов адаптивных карточек
 
@@ -85,7 +85,7 @@ ms.locfileid: "77454987"
 
 #### <a name="example"></a>Пример
 
-Предположим, что пользователь открывает конечную точку [Microsoft Graph](https://graph.microsoft.com) для получения данных организации о себе.
+Предположим, что пользователь обращается к конечной точке [Microsoft Graph](https://graph.microsoft.com) для получения корпоративных сведений о себе.
 
 > `HTTP GET https://graph.microsoft.com/v1.0/me/`
 
@@ -222,7 +222,7 @@ HTTP POST https://templates.adaptivecards.io/graph.microsoft.com/Profile.json
 
 ## <a name="contributing-templates"></a>Участие в разработке шаблонов
 
-Служба шаблонов работает на основе репозитория GitHub, который сейчас является **закрытым**, но будет открыт сразу после устранения наиболее очевидных проблем.
+Шаблоны размещаются на сайте GitHub в репозитории [adaptivecards-templates](https://github.com/microsoft/adaptivecards-templates).
 
 Мы надеемся, что использование GitHub в качестве резервного хранилища для шаблонов позволит нам сделать более "демократичными" процессы создания, развития и совместного использования шаблонов. Любой желающий может отправить запрос на вытягивание для нового шаблона или внести улучшения в существующие, используя удобный и привычный для разработчика интерфейс GitHub.
 
@@ -230,6 +230,6 @@ HTTP POST https://templates.adaptivecards.io/graph.microsoft.com/Profile.json
 
 Не все типы данных можно размещать в "централизованной" службе шаблонов адаптивных карт на `https://templates.adaptivecards.io`. 
 
-Мы сделаем так, что любой желающий сможет разместить службу шаблонов в пределах своей организации. Для этого мы не только откроем исходный код службы, но и создадим очень простые методы для развертывания в Azure или на клиентском оборудовании.
+Мы хотим убедиться, что любой пользователь может разместить службу шаблонов в вашей организации, поэтому на сайте GitHub мы предоставили исходный код, который можно легко развернуть в вашей Функции Azure. 
 
-Дополнительная информация об этом будет доступна позже.
+Начало работы ➡ [adaptivecards-templates](https://github.com/microsoft/adaptivecards-templates)

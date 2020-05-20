@@ -40,7 +40,7 @@
       href: sdk/rendering-cards/toc.yml
     - name: Пакет SDK для конструктора
       href: sdk/designer.md
-- name: Создание шаблонов (ознакомительная версия)
+- name: Создание шаблонов
   items:
     - name: Обзор
       href: templating/index.md

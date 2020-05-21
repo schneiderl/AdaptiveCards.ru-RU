@@ -2,22 +2,32 @@
 title: Общие сведения о создании шаблонов
 author: matthidinger
 ms.author: mahiding
-ms.date: 07/29/2019
+ms.date: 05/18/2020
 ms.topic: article
-ms.openlocfilehash: ab3a3f335b52a06dbb2219159e15e5033e715ba1
-ms.sourcegitcommit: e6418d692296e06be7412c95c689843f9db5240d
+ms.openlocfilehash: db1f44c4465db88d375dec728bcb32d5933ef702
+ms.sourcegitcommit: c921a7bb15a95c0ceb803ad375501ee3b8bef028
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "82136170"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83631370"
 ---
-# <a name="adaptive-cards-templating-preview"></a>Создание шаблонов адаптивных карточек (ознакомительная версия)
+# <a name="adaptive-cards-templating"></a>Создание шаблонов адаптивных карточек
 
 Мы рады представить ознакомительную версию новых средств, которые позволяют **создавать** и **повторно использовать** карточки, а также **делиться** ими. 
 
 > [!IMPORTANT] 
 > 
-> Эти функции предоставляются в **ознакомительной версии и могут быть изменены**. Ваши отзывы не только приветствуются, но и имеют решающее значение: только благодаря им мы сможем предоставлять функции, которые **вам** действительно необходимы.
+> **Критические изменения** в **релиз-кандидате за май 2020 г.**
+>
+> Релиз-кандидат для создания шаблонов включает небольшие критические изменения, которые следует учитывать, если вы используете старые пакеты. Подробности см. ниже.
+
+
+## <a name="breaking-changes-as-of-may-2020"></a>Критические изменения в версии за май 2020 г.
+
+1. Синтаксис привязки изменен с `{...}` на `${...}`. 
+    * Например, вместо `"text": "Hello {name}"` теперь используется `"text": "Hello ${name}"`.
+2. API JavaScript больше не содержит объект `EvaluationContext`. Просто передайте данные в функцию `expand`. Дополнительные сведения см. на [странице о пакете SDK](sdk.md).
+3. Интерфейс API .NET был модернизирован для более точного соответствия API JavaScript. Дополнительные сведения см. на [странице о пакете SDK](sdk.md).
 
 ## <a name="how-can-templating-help-you"></a>Преимущества создания шаблонов
 
@@ -85,7 +95,7 @@ ms.locfileid: "82136170"
                     "items": [
                         {
                             "type": "Image",
-                            "url": "{photo}",
+                            "url": "${photo}",
                             "altText": "Profile picture",
                             "size": "Small",
                             "style": "Person"
@@ -98,7 +108,7 @@ ms.locfileid: "82136170"
                     "items": [
                         {
                             "type": "TextBlock",
-                            "text": "Hi {name}!",
+                            "text": "Hi ${name}!",
                             "size": "Medium"
                         },
                         {
@@ -112,7 +122,7 @@ ms.locfileid: "82136170"
         },
         {
             "type": "TextBlock",
-            "text": "Your manager is: **{manager.name}**"
+            "text": "Your manager is: **${manager.name}**"
         },
         {
             "type": "TextBlock",
@@ -122,9 +132,9 @@ ms.locfileid: "82136170"
             "type": "FactSet",
             "facts": [
                 {
-                    "$data": "{peers}",
-                    "title": "{name}",
-                    "value": "{title}"
+                    "$data": "${peers}",
+                    "title": "${name}",
+                    "value": "${title}"
                 }
             ]
         }
@@ -175,12 +185,12 @@ ms.locfileid: "82136170"
 
 > [!NOTE]
 >
-> На этапе ознакомительной версии у вас есть только ограниченный набор пакетов SDK. После выпуска общей версии будут доступны библиотеки шаблонов для каждой поддерживаемой платформы адаптивных карточек.
+> Сейчас для .NET и NodeJS доступны пакеты SDK для создания шаблонов. В перспективе мы намерены выпускать такие пакеты SDK для всех неохваченных платформ адаптивных карточек, таких как iOS, Android, UWP и т. д.
 
-Платформа | Установить | Документация
---- | --- | ---
-JavaScript | `npm install adaptivecards-templating` | [Документация](https://www.npmjs.com/package/adaptivecards-templating)
-.NET | `nuget install AdaptiveCards.Templating` | [Документация](https://docs.microsoft.com/adaptive-cards/templating/sdk#net)
+Платформа | Пакет | Установить | Документация
+--- | --- | --- | ---
+JavaScript | [![Установка с помощью npm](https://img.shields.io/npm/v/adaptivecards-templating.svg)](https://www.npmjs.com/package/adaptivecards-templating) | `npm install adaptivecards-templating` | [Документация](https://www.npmjs.com/package/adaptivecards-templating)
+.NET | [![Установка с помощью NuGet](https://img.shields.io/nuget/vpre/AdaptiveCards.Templating.svg)](https://www.nuget.org/packages/AdaptiveCards.Templating) | `dotnet add package AdaptiveCards.Templating` | [Документация](https://docs.microsoft.com/adaptive-cards/templating/sdk#net)
 
 ### <a name="javascript-example"></a>Пример JavaScript
 
@@ -191,12 +201,11 @@ var template = new ACData.Template({
     // EmployeeCardTemplate goes here
 });
 
-var dataContext = new ACData.EvaluationContext();
-dataContext.$root = {
-    // Data goes here
-};
-
-var card = template.expand(dataContext);
+var card = template.expand({
+    $root: {
+        // Your data goes here
+    }
+});
 // Now you have an AdaptiveCard ready to render!
 ```
 
@@ -218,6 +227,4 @@ API для получения шаблона достаточно прост, н
 
 ## <a name="whats-next-and-sending-feedback"></a>Дальнейшие действия и отправка отзыва
 
-Создание шаблонов и отделение представления от данных значительно приближают нас к нашей миссии: "формированию экосистемы для обмена содержимым карточек привычным и согласованным образом".
-
-Мы стремимся выпускать новые возможности как можно скорее. А пока оставляйте отзывы здесь, на сайте [GitHub](https://github.com/microsoft/AdaptiveCards) или в Twitter **[@MattHidinger](https://twitter.com/matthidinger)** / **#AdaptiveCards**. 
+Создание шаблонов и отделение представления от данных значительно приближают нас к нашей миссии, то есть стандартизированной экосистеме для обмена содержимым между приложениями и службами. У нас есть много интересного в этой сфере, так что оставайтесь в курсе и сообщите нам на [GitHub](https://github.com/Microsoft/AdaptiveCards/issues), как все работает!

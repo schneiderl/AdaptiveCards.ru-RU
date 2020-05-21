@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 06/26/2017
 ms.topic: article
-ms.openlocfilehash: fa420c0a6e9e9b7e5713b6cc528de39335f0b56c
-ms.sourcegitcommit: 1e18c5dc0cf85d26f66335e312348bbfb903d95a
+ms.openlocfilehash: 614fc4a91941f59e422470c37ee90faa547bcede
+ms.sourcegitcommit: c921a7bb15a95c0ceb803ad375501ee3b8bef028
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76727482"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83631307"
 ---
 # <a name="host-config---ios"></a>Конфигурация узла — iOS
 
@@ -27,7 +27,7 @@ ACOHostConfig *defaultConfig = [[ACHostConfig alloc] init];
 
 ## <a name="render-a-card-using-host-config"></a>Подготовка карты с помощью конфигурации узла
 
-Редерер принимает адаптивную карту и конфигурацию узла. Хостконфиг может быть nil, а если пусто, будет использоваться значение по умолчанию.
+Модуль подготовки отчетов использует адаптивную карту и конфигурацию узла. Хостконфиг может быть nil, а если пусто, будет использоваться значение по умолчанию.
 
 ```objective-c
 ACRRenderResult *renderResult;

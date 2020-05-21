@@ -1,21 +1,21 @@
 ---
-title: Пакет SDK для Android
+title: Расширяемость пакет SDK для Android
 author: almedina-ms
 ms.author: almedina
 ms.date: 09/27/2017
 ms.topic: article
-ms.openlocfilehash: ae5c1b2addf6fc5bcdda3defebb6de5925b58507
-ms.sourcegitcommit: 9a9973129c36a41f5e4af30d95ffc146820ad173
+ms.openlocfilehash: 1281a31c333474c1899831acab28c962ce8e4514
+ms.sourcegitcommit: c921a7bb15a95c0ceb803ad375501ee3b8bef028
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76145514"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83631309"
 ---
 # <a name="extensibility---android"></a>Расширяемость — Android
 
 Модуль подготовки Android можно расширить для поддержки нескольких сценариев, в том числе:
-* [Пользовательский синтаксический анализ элементов карточек](#custom-parsing-of-card-elements)
-* [Пользовательская отрисовка элементов карточек](#custom-rendering-of-card-elements)
+* [Пользовательский анализ элементов карточки](#custom-parsing-of-card-elements)
+* [Пользовательская визуализация элементов карточки](#custom-rendering-of-card-elements)
 * [Пользовательская отрисовка действий](#custom-rendering-of-actions) (начиная с версии 1.2)
 * [Пользовательская загрузка образа](#custom-image-loading) (начиная с v 1.0.1)
 * [Пользовательская Загрузка носителя](#custom-media-loading) (начиная с версии 1.1)
@@ -91,7 +91,7 @@ AdaptiveCard adaptiveCard = AdaptiveCard.DeserializeFromString(jsonText, element
 >
 > [Критические изменения в версии 1.2](#breaking-changes-for-v12)
 
-Чтобы определить собственный пользовательский модуль подготовки отчетов для нашего типа, сначала необходимо создать класс, который расширяется из ```BaseCardElementRenderer```:
+Чтобы определить собственный пользовательский модуль подготовки отчетов для нашего типа, сначала необходимо создать класс, который расширяется из ```BaseCardElementRenderer``` :
 ```java
 public class MyCardElementRenderer extends BaseCardElementRenderer
 {
@@ -120,9 +120,9 @@ CardRendererRegistration.getInstance().registerRenderer("MyType", new CustomBlah
 RenderedAdaptiveCard renderedCard = AdaptiveCardRenderer.getInstance().render(context, fragmentManager, adaptiveCard, cardActionHandler,  hostConfig);
 ```
 
-### <a name="breaking-changes-for-v12"></a>Критические изменения для версии 1.2
+### <a name="breaking-changes-for-v12"></a>Критические изменения в версии 1.2
 
-Метод ```render``` был изменен для включения параметра ```RenderedAdaptiveCard```, а ```ContainerStyle``` был изменен для Рендераргс, где Контаинерстиле теперь содержится, поэтому класс, расширяющий Басекарделементрендерер, должен выглядеть следующим образом.
+```render```Метод был изменен для включения ```RenderedAdaptiveCard``` параметра и ```ContainerStyle``` был изменен для рендераргс, где теперь содержится контаинерстиле, поэтому класс, расширяющий басекарделементрендерер, должен выглядеть следующим образом.
 
 ```
 public class MyCardElementRenderer extends BaseCardElementRenderer
@@ -144,7 +144,7 @@ public class MyCardElementRenderer extends BaseCardElementRenderer
 }
 ```
 
-Затем в следующих строках показано, как проанализировать его в Актионелемент, который расширяется ```BaseActionElement```:
+Затем в следующих строках показано, как выполнить синтаксический анализ в Актионелемент, который расширяется из ```BaseActionElement``` :
 ```java
 public class MyActionElement extends BaseActionElement
 {
@@ -216,7 +216,7 @@ ParseResult parseResult = AdaptiveCard.DeserializeFromString(jsonText, AdaptiveC
 
 ## <a name="custom-rendering-of-actions"></a>Пользовательская отрисовка действий
 
-Чтобы определить собственный обработчик настраиваемых действий для нашего типа, сначала необходимо создать класс, который расширяется из ```BaseActionElementRenderer```:
+Чтобы определить собственный обработчик настраиваемых действий для нашего типа, сначала необходимо создать класс, который расширяется из ```BaseActionElementRenderer``` :
 ```java
 public class MyActionRenderer extends BaseActionElementRenderer
 {
@@ -281,11 +281,11 @@ public class OnlineImageLoader implements IOnlineImageLoader
     @Override
     public HttpRequestResult<Bitmap> loadOnlineImage(String url, GenericImageLoaderAsync loader) throws IOException, URISyntaxException
     {
-        String catImnageUri = "http://adaptivecards.io/content/cats/1.png";
-        byte[] bytes = HttpRequestHelper.get(catImnageUri);
+        String catImageUri = "http://adaptivecards.io/content/cats/1.png";
+        byte[] bytes = HttpRequestHelper.get(catImageUri);
         if (bytes == null)
         {
-            throw new IOException("Failed to retrieve content from " + catImnageUri);
+            throw new IOException("Failed to retrieve content from " + catImageUri);
         }
 
         Bitmap bitmap = BitmapFactory.decodeByteArray(bytes, 0, bytes.length);
@@ -381,12 +381,12 @@ public class ResourceResolver implements IResourceResolver
 Как можно видеть, наиболее существенными являются следующие изменения:
 
 * Параметр ```loadOnlineImage(String, GenericImageLoaderAsync)``` переименован в ```resolveImageResource(String, GenericImageLoaderAsync)```.
-* перегрузка для ```resolveImageResource(String, GenericImageLoaderAsync)``` была добавлена как ```resolveImageResource(String, GenericImageLoaderAsync, int)``` для поддержки сценариев, в которых требуется максимальная ширина.
+* перегрузка для ```resolveImageResource(String, GenericImageLoaderAsync)``` была добавлена как для ```resolveImageResource(String, GenericImageLoaderAsync, int)``` поддержки сценариев, в которых требуется максимальная ширина.
 
 ## <a name="custom-media-loading"></a>Пользовательская загрузка мультимедиа
 
 > [!IMPORTANT]
-> **Помните, ```IOnlineMediaLoader``` требует ```MediaDataSource```, который был добавлен на уровне API 23 или Android M.**
+> **```IOnlineMediaLoader```Необходимо помнить ```MediaDataSource``` , что было добавлено на уровне API 23 или Android M.**
 
 Вместе с элементом мультимедиа был также добавлен интерфейс IOnlineMediaLoader, который позволяет разработчикам переопределять [MediaDataSource](https://developer.android.com/reference/android/media/MediaDataSource) базового элемента mediaPlayer. **(Требуется Android M)**
 

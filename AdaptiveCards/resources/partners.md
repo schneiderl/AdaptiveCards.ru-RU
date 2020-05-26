@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 9/24/2018
 ms.topic: article
-ms.openlocfilehash: f214e15396200438d8dd2c173a004a728d3ff3a4
-ms.sourcegitcommit: e6418d692296e06be7412c95c689843f9db5240d
+ms.openlocfilehash: 53c9446b67db354dd3246534fe97d6a810fc61c8
+ms.sourcegitcommit: c921a7bb15a95c0ceb803ad375501ee3b8bef028
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "82136160"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83631385"
 ---
 # <a name="partners"></a>Партнеры 
 
@@ -21,7 +21,7 @@ ms.locfileid: "82136160"
 
 Платформа | Описание | Документация | Версия
 ---------|-------------|---------------|---------
-[Bot Framework Web Chat](https://github.com/Microsoft/BotFramework-WebChat)  | Внедряемый элемент управления для веб-чата для Microsoft Bot Framework. | [Приступая к работе](https://docs.microsoft.com/adaptive-cards/get-started/bots) | 1.2.3 (Web Chat 4.7.1)
+[Bot Framework Web Chat](https://github.com/Microsoft/BotFramework-WebChat)  | Внедряемый элемент управления для веб-чата для Microsoft Bot Framework. | [Приступая к работе](https://docs.microsoft.com/adaptive-cards/get-started/bots) | 1.2.5 (Web Chat 4.9.0)
 [Сообщения с действиями Outlook](https://docs.microsoft.com/outlook/actionable-messages/)  | Вложение сообщения с действиями в письмо. | [Приступая к работе](https://docs.microsoft.com/outlook/actionable-messages/) | 1.0
 [Microsoft Teams](https://products.office.com/microsoft-teams/group-chat-software) | Платформа, которая сочетает рабочий чат, собрания и заметки. | [Приступая к работе](https://docs.microsoft.com/microsoftteams/platform/concepts/cards/cards-reference#adaptive-card) | 1.2
 [Навыки Кортаны](https://docs.microsoft.com/cortana/skills/adaptive-cards) | Виртуальный помощник для Windows 10. | [Приступая к работе](https://docs.microsoft.com/adaptive-cards/get-started/bots) | 1.0

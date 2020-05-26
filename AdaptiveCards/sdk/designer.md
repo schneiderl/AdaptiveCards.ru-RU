@@ -4,18 +4,18 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 08/15/2019
 ms.topic: article
-ms.openlocfilehash: 8b961380a62e9704128d9ba1112d5e2c13a34e7e
-ms.sourcegitcommit: e6418d692296e06be7412c95c689843f9db5240d
+ms.openlocfilehash: 06e70d5f8acd801a39c6448f1d138ca53bf841f0
+ms.sourcegitcommit: c921a7bb15a95c0ceb803ad375501ee3b8bef028
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "77454797"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83631362"
 ---
 # <a name="adaptive-cards-designer-sdk"></a>Пакет SDK для конструктора адаптивных карточек
 
 Конструктор адаптивных карточек предоставляет широкие интерактивные возможности для их создания во время разработки.
 
-Чтобы поработать с конструктором, перейдите по адресу https://adaptivecards.io/designer.
+Чтобы поработать с конструктором, перейдите по адресу [https://adaptivecards.io/designer](https://adaptivecards.io/designer).
 
 ![Снимок экрана конструктора](../content/designer.png)
 

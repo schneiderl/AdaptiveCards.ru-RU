@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 06/26/2017
 ms.topic: article
-ms.openlocfilehash: 39bdc64ed3244aca68d36c886a9562d964ded217
-ms.sourcegitcommit: e6418d692296e06be7412c95c689843f9db5240d
+ms.openlocfilehash: f6ae9b99decf8176af68334a681eb9e370f04484
+ms.sourcegitcommit: c921a7bb15a95c0ceb803ad375501ee3b8bef028
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "76145394"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83631328"
 ---
 # <a name="adaptive-cards-for-windows-developers"></a>Адаптивные карточки для разработчиков Windows
 
@@ -41,7 +41,7 @@ await userActivity.SaveAsync();
 
 ### <a name="learn-more"></a>Дополнительные сведения
 
-Презентация, представленная на конференции Microsoft Build 2017, подробно описывает действия пользователей.
+Презентация, представленная на конференции Build 2017, подробно описывает действия пользователей.
 
 <iframe src="https://channel9.msdn.com/Events/Build/2017/B8108/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
 

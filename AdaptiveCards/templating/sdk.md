@@ -2,48 +2,58 @@
 title: Пакеты SDK для создания шаблонов
 author: matthidinger
 ms.author: mahiding
-ms.date: 08/01/2019
+ms.date: 05/15/2020
 ms.topic: article
-ms.openlocfilehash: 3a9bfcd1bf8f87959a747997e04f5c5ad2a79980
-ms.sourcegitcommit: e6418d692296e06be7412c95c689843f9db5240d
+ms.openlocfilehash: dc20c22995bb0a259bc801a6ffcd674967bbe78f
+ms.sourcegitcommit: c921a7bb15a95c0ceb803ad375501ee3b8bef028
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "72163613"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83631353"
 ---
-# <a name="adaptive-card-templating-sdks"></a><span data-ttu-id="34aff-102">Пакеты SDK для работы с шаблонами адаптивных карточек</span><span class="sxs-lookup"><span data-stu-id="34aff-102">Adaptive Card Templating SDKs</span></span>
+# <a name="adaptive-card-templating-sdks"></a><span data-ttu-id="c1c42-102">Пакеты SDK для работы с шаблонами адаптивных карточек</span><span class="sxs-lookup"><span data-stu-id="c1c42-102">Adaptive Card Templating SDKs</span></span>
 
-<span data-ttu-id="34aff-103">Пакеты SDK для работы с шаблонами адаптивных карточек упрощают заполнение [шаблона карточки](language.md) реальными данными на любой поддерживаемой платформе.</span><span class="sxs-lookup"><span data-stu-id="34aff-103">The Adaptive Card Templating SDKs make it easy to populate a [card template](language.md) with real data on any supported platform.</span></span>
+<span data-ttu-id="c1c42-103">Пакеты SDK для работы с шаблонами адаптивных карточек упрощают заполнение [шаблона карточки](language.md) реальными данными на любой поддерживаемой платформе.</span><span class="sxs-lookup"><span data-stu-id="c1c42-103">The Adaptive Card Templating SDKs make it easy to populate a [card template](language.md) with real data on any supported platform.</span></span>
 
-> <span data-ttu-id="34aff-104">Ознакомьтесь с [общими сведениями о работе с шаблонами адаптивных карточек](index.md).</span><span class="sxs-lookup"><span data-stu-id="34aff-104">Please read this for an [overview of Adaptive Card Templating](index.md)</span></span>
+> <span data-ttu-id="c1c42-104">Ознакомьтесь с [общими сведениями о работе с шаблонами адаптивных карточек](index.md).</span><span class="sxs-lookup"><span data-stu-id="c1c42-104">Please read this for an [overview of Adaptive Card Templating](index.md)</span></span>
 
 > [!IMPORTANT] 
 > 
-> <span data-ttu-id="34aff-105">Эти функции предоставляются в **ознакомительной версии и могут быть изменены**.</span><span class="sxs-lookup"><span data-stu-id="34aff-105">These features are **in preview and subject to change**.</span></span> <span data-ttu-id="34aff-106">Ваши отзывы не только приветствуются, но и имеют решающее значение: только благодаря им мы сможем предоставлять функции, которые **вам** действительно необходимы.</span><span class="sxs-lookup"><span data-stu-id="34aff-106">Your feedback is not only welcome, but  critical to ensure we deliver the features **you** need.</span></span>
-> 
-> <span data-ttu-id="34aff-107">Во время действия первоначальной предварительной версии доступен только пакет SDK для JavaScript, но скоро будет предоставляться и пакет SDK для .NET.</span><span class="sxs-lookup"><span data-stu-id="34aff-107">During the initial preview only the JavaScript SDK is available, but a .NET SDK should arrive shortly.</span></span>
+> <span data-ttu-id="c1c42-105">**Критические изменения** в **версии-кандидате за май 2020 г.**</span><span class="sxs-lookup"><span data-stu-id="c1c42-105">**Breaking changes** in the **May 2020 Release Candidate**</span></span>
+>
+> <span data-ttu-id="c1c42-106">Мы приложили немало усилий, чтобы этот выпуск увидел свет, и уже находимся на финишной прямой.</span><span class="sxs-lookup"><span data-stu-id="c1c42-106">We've been hard at work getting templating released, and we're finally in the home stretch!</span></span> <span data-ttu-id="c1c42-107">В окончательную версию нам пришлось внести небольшие критические изменения.</span><span class="sxs-lookup"><span data-stu-id="c1c42-107">We had to make some minor breaking changes as we close on the release.</span></span>
 
-## <a name="javascript"></a><span data-ttu-id="34aff-108">JavaScript</span><span class="sxs-lookup"><span data-stu-id="34aff-108">JavaScript</span></span>
+## <a name="breaking-changes-as-of-may-2020"></a><span data-ttu-id="c1c42-108">Критические изменения в версии за май 2020 г.</span><span class="sxs-lookup"><span data-stu-id="c1c42-108">Breaking changes as of May 2020</span></span>
 
-<span data-ttu-id="34aff-109">К библиотеке [adaptivecards-templating](https://www.npmjs.com/package/adaptivecards-templating) можно получить с помощью npm и CDN.</span><span class="sxs-lookup"><span data-stu-id="34aff-109">The [adaptivecards-templating](https://www.npmjs.com/package/adaptivecards-templating) library is available on npm and via CDN.</span></span> <span data-ttu-id="34aff-110">Полную документацию см. по ссылке на пакет.</span><span class="sxs-lookup"><span data-stu-id="34aff-110">See the package link for full documentation.</span></span>
+1. <span data-ttu-id="c1c42-109">Синтаксис привязки изменен с `{...}` на `${...}`.</span><span class="sxs-lookup"><span data-stu-id="c1c42-109">The binding syntax changed from `{...}` to `${...}`.</span></span> 
+    * <span data-ttu-id="c1c42-110">Например, вместо `"text": "Hello {name}"` теперь используется `"text": "Hello ${name}"`.</span><span class="sxs-lookup"><span data-stu-id="c1c42-110">For Example: `"text": "Hello {name}"` becomes `"text": "Hello ${name}"`</span></span>
+2. <span data-ttu-id="c1c42-111">API JavaScript больше не содержит объект `EvaluationContext`.</span><span class="sxs-lookup"><span data-stu-id="c1c42-111">The JavaScript API no longer contains an `EvaluationContext` object.</span></span> <span data-ttu-id="c1c42-112">Просто передайте данные в функцию `expand`.</span><span class="sxs-lookup"><span data-stu-id="c1c42-112">Simply pass your data to the `expand` function.</span></span> <span data-ttu-id="c1c42-113">Дополнительные сведения см. на [странице с описанием пакета SDK](sdk.md).</span><span class="sxs-lookup"><span data-stu-id="c1c42-113">Please see the [SDK page](sdk.md) for full details.</span></span>
+3. <span data-ttu-id="c1c42-114">API .NET был модернизирован для обеспечения более точного соответствия API JavaScript.</span><span class="sxs-lookup"><span data-stu-id="c1c42-114">The .NET API was redesigned to more closely match the JavaScript API.</span></span> <span data-ttu-id="c1c42-115">Полные сведения см. ниже.</span><span class="sxs-lookup"><span data-stu-id="c1c42-115">Please below for full details.</span></span>
 
-### <a name="npm"></a><span data-ttu-id="34aff-111">npm</span><span class="sxs-lookup"><span data-stu-id="34aff-111">npm</span></span>
+## <a name="javascript"></a><span data-ttu-id="c1c42-116">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c1c42-116">JavaScript</span></span>
+
+<span data-ttu-id="c1c42-117">К библиотеке [adaptivecards-templating](https://www.npmjs.com/package/adaptivecards-templating) можно получить с помощью npm и CDN.</span><span class="sxs-lookup"><span data-stu-id="c1c42-117">The [adaptivecards-templating](https://www.npmjs.com/package/adaptivecards-templating) library is available on npm and via CDN.</span></span> <span data-ttu-id="c1c42-118">Полную документацию см. по ссылке на пакет.</span><span class="sxs-lookup"><span data-stu-id="c1c42-118">See the package link for full documentation.</span></span>
+
+### <a name="npm"></a><span data-ttu-id="c1c42-119">npm</span><span class="sxs-lookup"><span data-stu-id="c1c42-119">npm</span></span>
+
+<span data-ttu-id="c1c42-120">[![Установка с помощью npm](https://img.shields.io/npm/v/adaptivecards-templating.svg)](https://www.npmjs.com/package/adaptivecards-templating)</span><span class="sxs-lookup"><span data-stu-id="c1c42-120">[![npm install](https://img.shields.io/npm/v/adaptivecards-templating.svg)](https://www.npmjs.com/package/adaptivecards-templating)</span></span>
 
 ```console
 npm install adaptivecards-templating
 ```
 
-### <a name="cdn"></a><span data-ttu-id="34aff-112">CDN</span><span class="sxs-lookup"><span data-stu-id="34aff-112">CDN</span></span>
+### <a name="cdn"></a><span data-ttu-id="c1c42-121">CDN</span><span class="sxs-lookup"><span data-stu-id="c1c42-121">CDN</span></span>
 
 ```html
 <script src="https://unpkg.com/adaptivecards-templating/dist/adaptivecards-templating.min.js"></script>
 ``` 
 
-### <a name="usage"></a><span data-ttu-id="34aff-113">Использование</span><span class="sxs-lookup"><span data-stu-id="34aff-113">Usage</span></span>
 
-<span data-ttu-id="34aff-114">В приведенном ниже примере предполагается, что вы также установили библиотеку [adaptivecards](https://www.npmjs.com/package/adaptivecards) для отрисовки карточек.</span><span class="sxs-lookup"><span data-stu-id="34aff-114">The sample below assumes you've also installed the [adaptivecards](https://www.npmjs.com/package/adaptivecards) library in order to render the card.</span></span> 
+### <a name="usage"></a><span data-ttu-id="c1c42-122">Использование</span><span class="sxs-lookup"><span data-stu-id="c1c42-122">Usage</span></span>
 
-<span data-ttu-id="34aff-115">Если вы не планируете выполнять отрисовку карточек, то можете удалить код `parse` и `render`.</span><span class="sxs-lookup"><span data-stu-id="34aff-115">If you don't plan on rendering the card then you can remove the `parse` and `render` code.</span></span> 
+<span data-ttu-id="c1c42-123">В приведенном ниже примере предполагается, что вы также установили библиотеку [adaptivecards](https://www.npmjs.com/package/adaptivecards) для отрисовки карточек.</span><span class="sxs-lookup"><span data-stu-id="c1c42-123">The sample below assumes you've also installed the [adaptivecards](https://www.npmjs.com/package/adaptivecards) library in order to render the card.</span></span> 
+
+<span data-ttu-id="c1c42-124">Если вы не планируете выполнять отрисовку карточек, то можете удалить код `parse` и `render`.</span><span class="sxs-lookup"><span data-stu-id="c1c42-124">If you don't plan on rendering the card then you can remove the `parse` and `render` code.</span></span> 
 
 ```js
 import * as ACData from "adaptivecards-templating";
@@ -56,7 +66,7 @@ var templatePayload = {
     "body": [
         {
             "type": "TextBlock",
-            "text": "Hello {name}!"
+            "text": "Hello ${name}!"
         }
     ]
 };
@@ -64,60 +74,127 @@ var templatePayload = {
 // Create a Template instamce from the template payload
 var template = new ACData.Template(templatePayload);
  
-// Create a data binding context, and set its $root property to the
-// data object to bind the template to
-var context = new ACData.EvaluationContext();
-context.$root = {
-    "name": "Mickey Mouse"
-};
+// Expand the template with your `$root` data object.
+// This binds it to the data and produces the final Adaptive Card payload
+var cardPayload = template.expand({
+   $root: {
+      name: "Matt Hidinger"
+   }
+});
  
-// "Expand" the template - this generates the final Adaptive Card,
-// ready to render
-var card = template.expand(context);
- 
-// Render the card
+// OPTIONAL: Render the card (required the adaptivecards library loaded)
 var adaptiveCard = new AdaptiveCards.AdaptiveCard();
-adaptiveCard.parse(card);
+adaptiveCard.parse(cardPayload);
  
 var htmlElement = adaptiveCard.render();
 ```
 
-## <a name="net"></a><span data-ttu-id="34aff-116">.NET</span><span class="sxs-lookup"><span data-stu-id="34aff-116">.NET</span></span> 
+## <a name="net"></a><span data-ttu-id="c1c42-125">.NET</span><span class="sxs-lookup"><span data-stu-id="c1c42-125">.NET</span></span> 
+
+> [!IMPORTANT] 
+> 
+> <span data-ttu-id="c1c42-126">Версия-кандидат .NET станет доступной предположительно 23 мая.</span><span class="sxs-lookup"><span data-stu-id="c1c42-126">The .NET Release Candidate will be available around 05/23.</span></span> <span data-ttu-id="c1c42-127">Ищите версию `1.0.0-RC1`.</span><span class="sxs-lookup"><span data-stu-id="c1c42-127">Look for version `1.0.0-RC1`</span></span>
+>
+
+<span data-ttu-id="c1c42-128">[![Установка с помощью NuGet](https://img.shields.io/nuget/vpre/AdaptiveCards.Templating.svg)](https://www.nuget.org/packages/AdaptiveCards.Templating)</span><span class="sxs-lookup"><span data-stu-id="c1c42-128">[![Nuget install](https://img.shields.io/nuget/vpre/AdaptiveCards.Templating.svg)](https://www.nuget.org/packages/AdaptiveCards.Templating)</span></span>
 
 ```console
-dotnet add package AdaptiveCards.Templating --version 0.1.0-alpha1
+dotnet add package AdaptiveCards.Templating
 ```
 
-> [!NOTE]
->
-> <span data-ttu-id="34aff-117">Рекомендуем изменить указанную выше версию на последнюю опубликованную версию.</span><span class="sxs-lookup"><span data-stu-id="34aff-117">Consider changing the version above to the latest published version</span></span>
-
-<span data-ttu-id="34aff-118">Импортируйте библиотеку.</span><span class="sxs-lookup"><span data-stu-id="34aff-118">Import the library</span></span> 
+### <a name="usage"></a><span data-ttu-id="c1c42-129">Использование</span><span class="sxs-lookup"><span data-stu-id="c1c42-129">Usage</span></span>
 
 ```cs
-using AdaptiveCards.Templating
+// Import the library 
+using AdaptiveCards.Templating;
 ```
-
-<span data-ttu-id="34aff-119">Используйте подсистему работы с шаблонами, передав шаблон и данные в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="34aff-119">Use the templating engine by passing in your template JSON and data JSON.</span></span>
 
 ```cs
 var templateJson = @"
 {
     ""type"": ""AdaptiveCard"",
-    ""version"": ""1.0"",
+    ""version"": ""1.2"",
     ""body"": [
         {
             ""type"": ""TextBlock"",
-            ""text"": ""Hello {name}""
+            ""text"": ""Hello ${name}!""
         }
     ]
 }";
 
-var dataJson = @"
+// Create a Template instance from the template payload
+AdaptiveCardTemplate template = new AdaptiveCardTemplate(templateJson);
+
+// You can use any serializable object as your data
+var myData = new
 {
-    ""name"": ""Mickey Mouse""
+    Name = "Matt Hidinger"
+};
+
+// "Expand" the template - this generates the final Adaptive Card payload
+string cardJson = template.Expand(myData);
+```
+
+### <a name="custom-functions"></a><span data-ttu-id="c1c42-130">Пользовательские функции</span><span class="sxs-lookup"><span data-stu-id="c1c42-130">Custom Functions</span></span>
+
+<span data-ttu-id="c1c42-131">В дополнение к предварительно созданным функциям в адаптивную библиотеку выражений можно добавлять пользовательские функции.</span><span class="sxs-lookup"><span data-stu-id="c1c42-131">Custom functions can be added to Adaptive Expression Library in addition to the prebuilt functions.</span></span>
+
+<span data-ttu-id="c1c42-132">В примере ниже показано, как добавить пользовательскую функцию stringFormat для форматирования строки.</span><span class="sxs-lookup"><span data-stu-id="c1c42-132">In the below example, stringFormat custom function is added, and the funtion is used to format a string.</span></span>
+```cs
+string jsonTemplate = @"{
+    ""type"": ""AdaptiveCard"",
+    ""version"": ""1.0"",
+    ""body"": [{
+        ""type"": ""TextBlock"",
+        ""text"": ""${stringFormat(strings.myName, person.firstName, person.lastName)}""
+    }]
 }";
 
-var transformer = new AdaptiveTransformer();
-var cardJson = transformer.Transform(templateJson, dataJson);
+string jsonData = @"{
+    ""strings"": {
+        ""myName"": ""My name is {0} {1}""
+    },
+    ""person"": {
+        ""firstName"": ""Andrew"",
+        ""lastName"": ""Leader""
+    }
+}";
+
+AdaptiveCardTemplate template = new AdaptiveCardTemplate(jsonTemplate);
+
+var context = new EvaluationContext
+{
+    Root = jsonData
+};
+
+// a custom function is added
+AdaptiveExpressions.Expression.Functions.Add("stringFormat", (args) =>
+{
+    string formattedString = "";
+
+    // argument is packed in sequential order as defined in the template
+    // For example, suppose we have "${stringFormat(strings.myName, person.firstName, person.lastName)}"
+    // args will have following entries
+    // args[0]: strings.myName
+    // args[1]: person.firstName
+    // args[2]: strings.lastName
+    if (args[0] != null && args[1] != null && args[2] != null) 
+    {
+        string formatString = args[0];
+        string[] stringArguments = {args[1], args[2] };
+        formattedString = string.Format(formatString, stringArguments);
+    }
+    return formattedString;
+});
+
+string cardJson = template.Expand(context);
 ```
+
+## <a name="troubleshooting"></a><span data-ttu-id="c1c42-133">Диагностика</span><span class="sxs-lookup"><span data-stu-id="c1c42-133">Troubleshooting</span></span>
+<span data-ttu-id="c1c42-134">Вопрос.</span><span class="sxs-lookup"><span data-stu-id="c1c42-134">Q.</span></span> <span data-ttu-id="c1c42-135">Почему AdaptiveTemplateException вызывает ```expand()```?</span><span class="sxs-lookup"><span data-stu-id="c1c42-135">Why am I running into an AdaptiveTemplateException calling ```expand()```?</span></span>   
+<span data-ttu-id="c1c42-136">А)</span><span class="sxs-lookup"><span data-stu-id="c1c42-136">A.</span></span> <span data-ttu-id="c1c42-137">Вы можете получить такое сообщение об ошибке: "\<элемент, вызывающий неполадку> в строке \<номер строки> **неправильно сформирован для пары $data**".</span><span class="sxs-lookup"><span data-stu-id="c1c42-137">If your error message looks like '\<offending item>' at line, '\<line number>' is **malformed for '$data : ' pair**".</span></span>   
+<span data-ttu-id="c1c42-138">Убедитесь, что заданное для $data значение является допустимым в JSON (числовым или логическим значением, объектом или массивом) или соответствует правильному синтаксису для языка шаблона адаптивных карточек, а запись существует в контексте данных по номеру строки.</span><span class="sxs-lookup"><span data-stu-id="c1c42-138">Please ensure that value provided for "$data" is valid json such as number, boolean, object, and array, or follows correct syntax for Adaptive Template language,  and the entry exists in the data context at the line number.</span></span> <span data-ttu-id="c1c42-139">Обратите внимание, что значения ${LineItem} и 8 могут меняться.</span><span class="sxs-lookup"><span data-stu-id="c1c42-139">Please note that ${LineItem} and '8' can change.</span></span>
+
+<span data-ttu-id="c1c42-140">Вопрос.</span><span class="sxs-lookup"><span data-stu-id="c1c42-140">Q.</span></span> <span data-ttu-id="c1c42-141">Почему ArgumentNullException вызывает ```expand()```?</span><span class="sxs-lookup"><span data-stu-id="c1c42-141">Why am I running into an ArgumentNullException calling ```expand()```?</span></span>   
+<span data-ttu-id="c1c42-142">А)</span><span class="sxs-lookup"><span data-stu-id="c1c42-142">A.</span></span> <span data-ttu-id="c1c42-143">Вы можете получить такое сообщение об ошибке: "**Проверьте, установлен ли родительский контекст данных, или введите значение, отличающееся от NULL, для** \<элемент, вызывающий неполадку> в строке \<номер строки>".</span><span class="sxs-lookup"><span data-stu-id="c1c42-143">If your error message looks like" **Check if parent data context is set, or please enter a non-null value for** '\<offending item>' at line, '\<line number>'".</span></span>   
+<span data-ttu-id="c1c42-144">Это свидетельствует о том, что контекст данных для запрошенной привязки данных отсутствует.</span><span class="sxs-lookup"><span data-stu-id="c1c42-144">It indicates that there doesn't exist data context for the requested data binding.</span></span> <span data-ttu-id="c1c42-145">Убедитесь, что задан корневой контекст данных, если он существует, и что для текущей привязки доступен любой контекст данных в соответствии с номером строки.</span><span class="sxs-lookup"><span data-stu-id="c1c42-145">Please ensure that root data context is set, if exists, ensure that any data context is available for current binding as indicated by the line number.</span></span>

@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 05/18/2020
 ms.topic: article
-ms.openlocfilehash: 1b5a7df25eedb96ec6edfe02912d328ab59d2801
-ms.sourcegitcommit: c921a7bb15a95c0ceb803ad375501ee3b8bef028
+ms.openlocfilehash: 98ab88d541916198b9a027a54fb70ee4502e63f7
+ms.sourcegitcommit: eb71aebe40a592649461e468a87993a10cbe6187
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83631347"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84318194"
 ---
 # <a name="adaptive-cards-template-language"></a>Язык шаблонов адаптивных карточек
 
@@ -260,7 +260,7 @@ var card = template.expand({
 
 **Мы рассмотрели лишь небольшую часть встроенных функций.**
 
-Ознакомьтесь с полным списком [предварительно созданных функций для языка адаптивных выражений](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-concept-adaptive-expressions?view=azure-bot-service-4.0).
+Ознакомьтесь с полным списком [предварительно созданных функций для языка адаптивных выражений](https://docs.microsoft.com/azure/bot-service/bot-builder-concept-adaptive-expressions?view=azure-bot-service-4.0).
 
 ### <a name="conditional-evaluation"></a>Условная оценка:
 

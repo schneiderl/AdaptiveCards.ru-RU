@@ -4,12 +4,12 @@ author: paulcam206
 ms.author: paulcam
 ms.date: 09/18/2018
 ms.topic: reference
-ms.openlocfilehash: 848ce3dd2ccca1f975dfd330c1c88292c753641d
-ms.sourcegitcommit: e6418d692296e06be7412c95c689843f9db5240d
+ms.openlocfilehash: d7fda209e6c470659d2fb2b66ac982e9c7183367
+ms.sourcegitcommit: eb71aebe40a592649461e468a87993a10cbe6187
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "77454927"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84318204"
 ---
 # <a name="what-is-hostconfig"></a>Что такое HostConfig?
 `HostConfig` — это **кроссплатформенный объект конфигурации**, указывающий, как отрисовщик адаптивных карточек создает пользовательский интерфейс.
@@ -35,7 +35,7 @@ ms.locfileid: "77454927"
    * [`SpacingsConfig`](#schema-spacingsconfig): управляет расположением элементов.
    * [`TextBlockConfig`](#schema-textblockconfig): параметры, управляющие отображением текста.
 
-# <a name="card-configuration"></a>Конфигурация карточки
+## <a name="card-configuration"></a>Конфигурация карточки
 
 <a name="schema-adaptivecardconfig"></a>
 ## <a name="adaptivecardconfig"></a>AdaptiveCardConfig

@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 05/15/2020
 ms.topic: article
-ms.openlocfilehash: dc20c22995bb0a259bc801a6ffcd674967bbe78f
-ms.sourcegitcommit: c921a7bb15a95c0ceb803ad375501ee3b8bef028
+ms.openlocfilehash: d04b38d6b2a389ca31b690d3298f64b3fced7c9a
+ms.sourcegitcommit: eb71aebe40a592649461e468a87993a10cbe6187
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83631353"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84318184"
 ---
 # <a name="adaptive-card-templating-sdks"></a>Пакеты SDK для работы с шаблонами адаптивных карточек
 
@@ -71,7 +71,7 @@ var templatePayload = {
     ]
 };
  
-// Create a Template instamce from the template payload
+// Create a Template instance from the template payload
 var template = new ACData.Template(templatePayload);
  
 // Expand the template with your `$root` data object.
@@ -82,11 +82,10 @@ var cardPayload = template.expand({
    }
 });
  
-// OPTIONAL: Render the card (required the adaptivecards library loaded)
+// OPTIONAL: Render the card (requires that the adaptivecards library be loaded)
 var adaptiveCard = new AdaptiveCards.AdaptiveCard();
 adaptiveCard.parse(cardPayload);
- 
-var htmlElement = adaptiveCard.render();
+document.getElementById('exampleDiv').appendChild(adaptiveCard.render());
 ```
 
 ## <a name="net"></a>.NET 
@@ -192,9 +191,9 @@ string cardJson = template.Expand(context);
 
 ## <a name="troubleshooting"></a>Диагностика
 Вопрос. Почему AdaptiveTemplateException вызывает ```expand()```?   
-А) Вы можете получить такое сообщение об ошибке: "\<элемент, вызывающий неполадку> в строке \<номер строки> **неправильно сформирован для пары $data**".   
+А) Вы можете получить такое сообщение об ошибке: "\<offending item>" в строке \<line number> **неправильно сформирован для пары "$data:"** .   
 Убедитесь, что заданное для $data значение является допустимым в JSON (числовым или логическим значением, объектом или массивом) или соответствует правильному синтаксису для языка шаблона адаптивных карточек, а запись существует в контексте данных по номеру строки. Обратите внимание, что значения ${LineItem} и 8 могут меняться.
 
 Вопрос. Почему ArgumentNullException вызывает ```expand()```?   
-А) Вы можете получить такое сообщение об ошибке: "**Проверьте, установлен ли родительский контекст данных, или введите значение, отличающееся от NULL, для** \<элемент, вызывающий неполадку> в строке \<номер строки>".   
+А) Вы можете получить такое сообщение об ошибке: "**Проверьте, установлен ли родительский контекст данных, или введите значение, отличающееся от NULL, для** "\<offending item>" в строке \<line number>.   
 Это свидетельствует о том, что контекст данных для запрошенной привязки данных отсутствует. Убедитесь, что задан корневой контекст данных, если он существует, и что для текущей привязки доступен любой контекст данных в соответствии с номером строки.

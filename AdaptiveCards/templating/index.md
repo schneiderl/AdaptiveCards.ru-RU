@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 05/18/2020
 ms.topic: article
-ms.openlocfilehash: db1f44c4465db88d375dec728bcb32d5933ef702
-ms.sourcegitcommit: c921a7bb15a95c0ceb803ad375501ee3b8bef028
+ms.openlocfilehash: 41eb972603b1688a1f1857cec83208b9b55b02c3
+ms.sourcegitcommit: fec0fd2c23293127e8e8f7ca7821c04d46987f37
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83631370"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "86417617"
 ---
 # <a name="adaptive-cards-templating"></a>Создание шаблонов адаптивных карточек
 
@@ -26,7 +26,7 @@ ms.locfileid: "83631370"
 
 1. Синтаксис привязки изменен с `{...}` на `${...}`. 
     * Например, вместо `"text": "Hello {name}"` теперь используется `"text": "Hello ${name}"`.
-2. API JavaScript больше не содержит объект `EvaluationContext`. Просто передайте данные в функцию `expand`. Дополнительные сведения см. на [странице о пакете SDK](sdk.md).
+2. API JavaScript больше не содержит объект `EvaluationContext`. Просто передайте данные в функцию `expand`. Дополнительные сведения см. на [странице с описанием пакета SDK](sdk.md).
 3. Интерфейс API .NET был модернизирован для более точного соответствия API JavaScript. Дополнительные сведения см. на [странице о пакете SDK](sdk.md).
 
 ## <a name="how-can-templating-help-you"></a>Преимущества создания шаблонов
@@ -198,14 +198,27 @@ JavaScript | [![Установка с помощью npm](https://img.shields.io
 
 ```js
 var template = new ACData.Template({ 
-    // EmployeeCardTemplate goes here
+    // Card Template JSON
 });
 
 var card = template.expand({
     $root: {
-        // Your data goes here
+        // Data Fields
     }
 });
+
+// Now you have an AdaptiveCard ready to render!
+```
+
+### <a name="c-example"></a>Пример для C#
+
+В приведенном ниже коде на C# показан общий шаблон, который будет использоваться для заполнения шаблона данными.
+
+```csharp
+var template = new AdaptiveCards.Templating.AdaptiveCardTemplate(cardJson);
+   
+var card = template.Expand(new {Key="Value"});
+
 // Now you have an AdaptiveCard ready to render!
 ```
 

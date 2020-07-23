@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 05/30/2018
 ms.topic: article
-ms.openlocfilehash: 1c3ad2a4588244a8bd30011a4b6e25e37062624a
-ms.sourcegitcommit: e6418d692296e06be7412c95c689843f9db5240d
+ms.openlocfilehash: e460bf50cdb4f0c1af54f5c7ad6c1d02db9af746
+ms.sourcegitcommit: fec0fd2c23293127e8e8f7ca7821c04d46987f37
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "76145384"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "86417501"
 ---
 # <a name="adaptive-cards-for-bot-developers"></a>Адаптивные карточки для разработчиков ботов
 
@@ -107,7 +107,7 @@ ms.locfileid: "76145384"
 * добавлять разные типы `Actions`;
 * собирать `Input`, предоставляемые пользователями;
 * выполнять в карточке действие `show another card`.
-* [Ознакомьтесь с исчерпывающим обозревателем схемы](http://adaptivecards.io/explorer/). 
+* [Ознакомьтесь с исчерпывающим обозревателем схемы](https://adaptivecards.io/explorer/). 
 
 ## <a name="platform-sdks"></a>Пакеты SDK для платформ
 
@@ -128,7 +128,7 @@ Bot Framework позволяет публиковать бота в нескол
 
 В этом руководстве мы предоставили только общие сведения, поэтому почаще проверяйте ссылки ниже, чтобы узнать о том, как можно улучшить ботов с помощью адаптивных карточек.
 
-* [Ознакомьтесь с примерами адаптивных карточек](http://adaptivecards.io/samples/).
-* Воспользуйтесь [обозревателем схемы](http://adaptivecards.io/explorer), чтобы узнать о доступных элементах.
-* Создайте адаптивную карточку с помощью [интерактивного визуализатора](http://adaptivecards.io/visualizer/index.html?hostApp=Skype).
-* [Свяжитесь с нами](http://adaptivecards.io/connect), чтобы оставить свой отзыв.
+* [Ознакомьтесь с примерами адаптивных карточек](https://adaptivecards.io/samples/).
+* Воспользуйтесь [обозревателем схемы](https://adaptivecards.io/explorer), чтобы узнать о доступных элементах.
+* Создайте адаптивную карточку с помощью [интерактивного визуализатора](https://adaptivecards.io/visualizer/index.html?hostApp=Skype).
+* [Свяжитесь с нами](https://adaptivecards.io/connect), чтобы оставить свой отзыв.

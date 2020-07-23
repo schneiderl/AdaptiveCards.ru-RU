@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 06/26/2017
 ms.topic: article
-ms.openlocfilehash: f6ae9b99decf8176af68334a681eb9e370f04484
-ms.sourcegitcommit: c921a7bb15a95c0ceb803ad375501ee3b8bef028
+ms.openlocfilehash: 8a73bcaf52e838453c6484ecd210d8ad7a577113
+ms.sourcegitcommit: fec0fd2c23293127e8e8f7ca7821c04d46987f37
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83631328"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "86417556"
 ---
 # <a name="adaptive-cards-for-windows-developers"></a>Адаптивные карточки для разработчиков Windows
 
@@ -52,7 +52,7 @@ await userActivity.SaveAsync();
 
 В этом руководстве мы предоставили только общие сведения, поэтому почаще проверяйте ссылки ниже, чтобы узнать больше об адаптивных карточках.
 
-* [Ознакомьтесь с примерами адаптивных карточек](http://adaptivecards.io/samples/).
-* Воспользуйтесь [обозревателем схемы](http://adaptivecards.io/explorer), чтобы узнать о доступных элементах.
-* Создайте адаптивную карточку с помощью [интерактивного визуализатора](http://adaptivecards.io/visualizer/index.html?hostApp=Skype).
-* [Свяжитесь с нами](http://adaptivecards.io/connect), чтобы оставить свой отзыв.
+* [Ознакомьтесь с примерами адаптивных карточек](https://adaptivecards.io/samples/).
+* Воспользуйтесь [обозревателем схемы](https://adaptivecards.io/explorer), чтобы узнать о доступных элементах.
+* Создайте адаптивную карточку с помощью [интерактивного визуализатора](https://adaptivecards.io/visualizer/index.html?hostApp=Skype).
+* [Свяжитесь с нами](https://adaptivecards.io/connect), чтобы оставить свой отзыв.

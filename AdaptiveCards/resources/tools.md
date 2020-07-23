@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 03/14/2019
 ms.topic: article
-ms.openlocfilehash: f0c5a61d3406e1defffefc575ee0a6ec78fba93d
-ms.sourcegitcommit: e6418d692296e06be7412c95c689843f9db5240d
+ms.openlocfilehash: f26550a73610073000166357df5b70c1bd8ccdc8
+ms.sourcegitcommit: fec0fd2c23293127e8e8f7ca7821c04d46987f37
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "77454837"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "86417587"
 ---
 # <a name="tools-and-samples"></a>Инструменты и примеры
 
@@ -29,7 +29,7 @@ ms.locfileid: "77454837"
 
 Проверка схемы — это эффективный способ упрощения процесса разработки и добавления инструментов.
 
-Мы предоставили полный [JSON-файл](http://adaptivecards.io/schemas/1.2.0/adaptive-card.json) для редактирования и проверки адаптивных карт на основе JSON. Обратите внимание на то, что URL-адрес схемы соответствует версии, поэтому более новые версии адаптивных карточек будут иметь соответствующий URL-адрес.
+Мы предоставили полный [JSON-файл](https://adaptivecards.io/schemas/1.2.0/adaptive-card.json) для редактирования и проверки адаптивных карт на основе JSON. Обратите внимание на то, что URL-адрес схемы соответствует версии, поэтому более новые версии адаптивных карточек будут иметь соответствующий URL-адрес.
 
 В Visual Studio и Visual Studio Code можно включить автоматическую функцию IntelliSense, добавив ссылку `$schema`.
 

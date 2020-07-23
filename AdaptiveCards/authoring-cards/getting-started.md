@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 11/9/2017
 ms.topic: article
-ms.openlocfilehash: c9a0ad07ba5fefbcdc35239591c02fe0720b5b66
-ms.sourcegitcommit: e6418d692296e06be7412c95c689843f9db5240d
+ms.openlocfilehash: 9cc7344ac357dcb95c7e47e377dbb12fbcd66957
+ms.sourcegitcommit: fec0fd2c23293127e8e8f7ca7821c04d46987f37
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "77454847"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "86417483"
 ---
 # <a name="getting-started"></a>Начало работы 
 
@@ -89,7 +89,7 @@ ms.locfileid: "77454847"
 
 ## <a name="learn-more"></a>Дополнительные сведения
 
-* [Ознакомьтесь с примерами адаптивных карточек](http://adaptivecards.io/samples/).
-* Воспользуйтесь [обозревателем схемы](http://adaptivecards.io/explorer), чтобы найти доступные элементы.
-* Создайте адаптивную карточку с помощью [интерактивного визуализатора](http://adaptivecards.io/visualizer/).
-* [Свяжитесь с нами](http://adaptivecards.io/connect), чтобы оставить свой отзыв.
+* [Ознакомьтесь с примерами адаптивных карточек](https://adaptivecards.io/samples/).
+* Воспользуйтесь [обозревателем схемы](https://adaptivecards.io/explorer), чтобы найти доступные элементы.
+* Создайте адаптивную карточку с помощью [интерактивного визуализатора](https://adaptivecards.io/visualizer/).
+* [Свяжитесь с нами](https://adaptivecards.io/connect), чтобы оставить свой отзыв.

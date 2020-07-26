@@ -4,12 +4,12 @@ author: dclaux
 ms.author: dclaux
 ms.date: 5/10/2018
 ms.topic: article
-ms.openlocfilehash: 3bf8f04307e0ad65cae609e56295269254ca1e06
-ms.sourcegitcommit: e6418d692296e06be7412c95c689843f9db5240d
+ms.openlocfilehash: 891b9ca4e1682d4249963f6ceb3da7dab026addc
+ms.sourcegitcommit: fec0fd2c23293127e8e8f7ca7821c04d46987f37
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "76145424"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "86417571"
 ---
 # <a name="adaptive-cards-for-outlook-actionable-message-developers"></a>Адаптивные карточки для разработчиков сообщений с действиями Outlook
 
@@ -28,4 +28,4 @@ ms.locfileid: "76145424"
 
 - Ознакомьтесь со статьей https://docs.microsoft.com/outlook/actionable-messages/, в которой описаны сценарии использования сообщений с действиями.
 - Воспользуйтесь средством Actionable Message Card Playground, чтобы ознакомиться с примерами карточек, самостоятельно создать карточки, отправить их в свою учетную запись Office 365 и просмотреть их в службе [Outlook в Интернете](https://outlook.office.com).
-- Предпочитаете не писать код JSON самостоятельно? [Конструктор адаптивных карточек (предварительная версия)](https://acdesignerbeta.azurewebsites.net) позволяет создавать адаптивные карточки без необходимости писать код.
+- Предпочитаете не писать код JSON самостоятельно? [Конструктор адаптивных карточек](https://adaptivecards.io/designer/) позволяет создавать адаптивные карточки без необходимости писать код JSON.

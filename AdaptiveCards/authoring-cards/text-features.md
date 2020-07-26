@@ -2,21 +2,26 @@
 title: Текстовые функции
 author: matthidinger
 ms.author: mahiding
-ms.date: 11/09/2017
+ms.date: 06/18/2020
 ms.topic: article
-ms.openlocfilehash: f7ea40b80df4d976c0a8a86b15254018fdf2fac6
-ms.sourcegitcommit: e6418d692296e06be7412c95c689843f9db5240d
+ms.openlocfilehash: d685007cb24e7fa8ef15b53ee5547708fba6b490
+ms.sourcegitcommit: fec0fd2c23293127e8e8f7ca7821c04d46987f37
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "77454877"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "86417510"
 ---
 # <a name="text-features"></a>Текстовые функции
 
-`TextBlock` предоставляет некоторые дополнительные функции для форматирования и локализации текста.
+[TextBlock](https://adaptivecards.io/explorer/TextBlock.html) предоставляет некоторые дополнительные функции для форматирования и локализации текста.
 
-## <a name="markdown"></a>Markdown
-Встроенная функция разметки адаптивных карточек реализована за счет поддержки **соответствующих компонентов** синтаксиса Markdown.
+## <a name="markdown-commonmark-subset"></a>Markdown (вариант CommonMark)
+
+Встроенная функция разметки адаптивных карточек реализована за счет поддержки [CommonMark](https://commonmark.org/help/), **разновидности** синтаксиса Markdown.
+
+> [!NOTE]
+>
+> [RichTextBlock](https://adaptivecards.io/explorer/RichTextBlock.html) не поддерживает Markdown, но предлагает широкий набор параметров конфигурации текста непосредственно в [TextRun](https://adaptivecards.io/explorer/TextRun.html).
 
 _Поддерживается_
 
@@ -67,7 +72,7 @@ _Не поддерживается_
         },
         {
             "type": "TextBlock",
-            "text": "Check out [Adaptive Cards](http://adaptivecards.io)"
+            "text": "Check out [Adaptive Cards](https://adaptivecards.io)"
         }
     ]
 }
@@ -118,7 +123,7 @@ _Не поддерживается_
 Для отображения даты можно использовать дополнительные параметры форматирования.
 
 
-|       Форматирование        |            Пример            |
+|       Формат        |            Пример            |
 |---------------------|-------------------------------|
 | `COMPACT` (по умолчанию) |          "13.02.2017"          |
 |       `SHORT`       |     "Пн 13 февраля 2017 г."     |

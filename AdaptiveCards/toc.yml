@@ -1,6 +1,6 @@
 - name: Обзор
   href: index.md
-- name: Начало работы
+- name: Приступая к работе
   items:
     - name: Для разработчиков ботов
       href: getting-started/bots.md
@@ -18,6 +18,8 @@
       href: authoring-cards/speech.md
     - name: Текстовые функции
       href: authoring-cards/text-features.md
+    - name: Проверка входных данных
+      href: authoring-cards/input-validation.md
 - name: Отрисовка карточек
   items:
     - name: Начало работы

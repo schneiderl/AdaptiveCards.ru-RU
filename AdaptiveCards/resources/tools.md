@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 03/14/2019
 ms.topic: article
-ms.openlocfilehash: f26550a73610073000166357df5b70c1bd8ccdc8
-ms.sourcegitcommit: fec0fd2c23293127e8e8f7ca7821c04d46987f37
+ms.openlocfilehash: 819788313d78b4057fb5d3dc4d5a9be658566642
+ms.sourcegitcommit: 996fc604e59f72ba1dd96c29f4b517862a5264e9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "86417587"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "87566028"
 ---
 # <a name="tools-and-samples"></a>Инструменты и примеры
 
@@ -48,7 +48,18 @@ ms.locfileid: "86417587"
 }
 ```
 
-## <a name="visual-studio-code-extension"></a>Расширение Visual Studio Code
+## <a name="visual-studio-code-extensions"></a>Расширения Visual Studio Code
+
+### <a name="adaptive-cards-studio"></a>**Студия адаптивных карточек**
+
+![магазин](https://madewithcards.blob.core.windows.net/uploads/29bb3d02-2158-40b8-8420-4dd1f15da34c-acstudio.png)
+
+С помощью Студии адаптивных карточек можно создавать карточки непосредственно в Visual Studio Code. Расширение автоматически обнаруживает все адаптивные карточки в рабочем пространстве и позволяет легко изменять шаблон карточки, а также примеры данных.
+
+[Дополнительные сведения и установка из Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=madewithcardsio.adaptivecardsstudiobeta)
+
+
+### <a name="adaptive-card-viewer"></a>**Средство просмотра адаптивных карточек**
 
 Мы создали расширение Visual Studio Code, которое позволяет визуализировать редактируемую карту в реальном времени в самом редакторе. 
 

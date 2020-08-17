@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 10/12/2018
 ms.topic: article
-ms.openlocfilehash: 63426b2250407cc40af8c46975c10f57d1028a40
-ms.sourcegitcommit: e6418d692296e06be7412c95c689843f9db5240d
+ms.openlocfilehash: 1042fd862990a79c77110ebdf5d804eadcc606ea
+ms.sourcegitcommit: 19c08b1370305fb2965de0140c5e632356e78513
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "77454907"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87879148"
 ---
 # <a name="renderer-status"></a>Состояние отрисовщика
 В таблицах ниже показан текущий статус отрисовщиков в соответствии с их опубликованными общедоступными версиями.
@@ -30,7 +30,7 @@ ms.locfileid: "77454907"
 |Отображение панели действий | ✅ | ✅ | ✅ | ✅ | ✅ |
 |Игнорирование неизвестных элементов | ✅ | ✅ | ✅ | ✅ | ✅ |
 |Поддержка HostConfig | ✅ | ✅ | ✅ | ✅ | ✅ |
-|Стиль собственной платформы | ✅ | ✅ | ✅ | ✅ | ✅ |
+|Стиль собственной платформы | ✅ | ✅ | ✅ | ✅ | ❌ |
 
 ### <a name="element-rendering"></a>Отображение элементов
 
@@ -38,8 +38,9 @@ ms.locfileid: "77454907"
 |--- | --- | --- | --- | --- | --- | --- |
 |Интервалы и разделители | ✅ | ✅ | ✅ | ✅ | ✅ |
 |[Форматирование даты и времени в TextBlock](../authoring-cards/text-features.md#datetime-formatting-and-localization) | ✅ | ✅ | ✅ | ✅ | ✅ |
-|[Поддержка Markdown в TextBlock](../authoring-cards/text-features.md#markdown) | ✅* | ✅ | ✅ | ✅ | ✅ |
-|Полная поддержка ввода | ✅ | ✅ | ✅ | ✅ | ✅ |
+|[Поддержка Markdown в TextBlock](../authoring-cards/text-features.md#markdown-commonmark-subset) | ✅* | ✅ | ✅ | ✅ | ✅ |
+|Проверка входных данных и метки | ❌ | ✅ | ✅ | ✅ | ✅ |
+
 
 \* Отрисовщик HTML не включает в себя встроенную поддержку Markdown, чтобы свести к минимуму размер библиотеки и позволить приложениям использовать предпочтительный обработчик Markdown. Однако отрисовщик HTML автоматически использует анализатор Markdown-It, если он загружен.
 

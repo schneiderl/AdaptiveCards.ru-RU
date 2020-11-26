@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 10/12/2018
 ms.topic: article
-ms.openlocfilehash: 1042fd862990a79c77110ebdf5d804eadcc606ea
-ms.sourcegitcommit: 19c08b1370305fb2965de0140c5e632356e78513
+ms.openlocfilehash: 2b4f9d9ab376839a309a312e9846c45b0fc6cdff
+ms.sourcegitcommit: 65b792d73c264c943036343e05b75f2b0488e6e9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87879148"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "95001801"
 ---
 # <a name="renderer-status"></a>Состояние отрисовщика
 В таблицах ниже показан текущий статус отрисовщиков в соответствии с их опубликованными общедоступными версиями.
@@ -41,7 +41,6 @@ ms.locfileid: "87879148"
 |[Поддержка Markdown в TextBlock](../authoring-cards/text-features.md#markdown-commonmark-subset) | ✅* | ✅ | ✅ | ✅ | ✅ |
 |Проверка входных данных и метки | ❌ | ✅ | ✅ | ✅ | ✅ |
 
-
 \* Отрисовщик HTML не включает в себя встроенную поддержку Markdown, чтобы свести к минимуму размер библиотеки и позволить приложениям использовать предпочтительный обработчик Markdown. Однако отрисовщик HTML автоматически использует анализатор Markdown-It, если он загружен.
 
 ### <a name="extensibility"></a>Расширяемость
@@ -51,7 +50,7 @@ ms.locfileid: "87879148"
 |Переопределение отрисовщика элементов | ✅ | ✅ | ✅ | ✅ | ✅ |
 |Добавление нового отрисовщика элементов | ✅ | ✅ | ✅ | ✅ | ✅ |
 |Удаление отрисовщика элементов | ✅ | ✅ | ✅ | ✅ | ✅ |
-|[Переопределение, добавление или удаление отрисовщика действий](https://github.com/Microsoft/AdaptiveCards/issues/1671) | ✅ | ✅ | ❌ | ✅ | ✅ |
+|[Переопределение, добавление или удаление отрисовщика действий](https://github.com/Microsoft/AdaptiveCards/issues/1671) | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 ### <a name="actions"></a>Действия
 

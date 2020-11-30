@@ -4,35 +4,35 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 05/18/2020
 ms.topic: article
-ms.openlocfilehash: 98ab88d541916198b9a027a54fb70ee4502e63f7
-ms.sourcegitcommit: eb71aebe40a592649461e468a87993a10cbe6187
+ms.openlocfilehash: c03ed2c18039d199f37b9cbd52814f4561dad199
+ms.sourcegitcommit: 65b792d73c264c943036343e05b75f2b0488e6e9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84318194"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "95001861"
 ---
-# <a name="adaptive-cards-template-language"></a><span data-ttu-id="8ad83-102">Язык шаблонов адаптивных карточек</span><span class="sxs-lookup"><span data-stu-id="8ad83-102">Adaptive Cards Template Language</span></span>
+# <a name="adaptive-cards-template-language"></a><span data-ttu-id="fee0d-102">Язык шаблонов адаптивных карточек</span><span class="sxs-lookup"><span data-stu-id="fee0d-102">Adaptive Cards Template Language</span></span>
 
-<span data-ttu-id="8ad83-103">При работе с шаблонами можно отделить **данные** от **макета** в адаптивной карточке.</span><span class="sxs-lookup"><span data-stu-id="8ad83-103">Templating enables the separation of **data** from **layout** in your Adaptive Card.</span></span> <span data-ttu-id="8ad83-104">Язык шаблонов — это синтаксис, используемый для создания такого шаблона.</span><span class="sxs-lookup"><span data-stu-id="8ad83-104">The template langauge is the syntax used to author a template.</span></span> 
+<span data-ttu-id="fee0d-103">При работе с шаблонами можно отделить **данные** от **макета** в адаптивной карточке.</span><span class="sxs-lookup"><span data-stu-id="fee0d-103">Templating enables the separation of **data** from **layout** in your Adaptive Card.</span></span> <span data-ttu-id="fee0d-104">Язык шаблонов — это синтаксис, используемый для создания такого шаблона.</span><span class="sxs-lookup"><span data-stu-id="fee0d-104">The template language is the syntax used to author a template.</span></span> 
 
-> <span data-ttu-id="8ad83-105">Ознакомьтесь с [общими сведениями о работе с шаблонами адаптивных карточек](index.md).</span><span class="sxs-lookup"><span data-stu-id="8ad83-105">Please read this for an [overview of Adaptive Card Templating](index.md)</span></span>
+> <span data-ttu-id="fee0d-105">Ознакомьтесь с [общими сведениями о работе с шаблонами адаптивных карточек](index.md).</span><span class="sxs-lookup"><span data-stu-id="fee0d-105">Please read this for an [overview of Adaptive Card Templating](index.md)</span></span>
 
 > [!IMPORTANT] 
 > 
-> <span data-ttu-id="8ad83-106">**Критические изменения** в **версии-кандидате за май 2020 г.**</span><span class="sxs-lookup"><span data-stu-id="8ad83-106">**Breaking changes** in the **May 2020 Release Candidate**</span></span>
+> <span data-ttu-id="fee0d-106">**Критические изменения** в **версии-кандидате за май 2020 г.**</span><span class="sxs-lookup"><span data-stu-id="fee0d-106">**Breaking changes** in the **May 2020 Release Candidate**</span></span>
 >
-> <span data-ttu-id="8ad83-107">Мы приложили немало усилий, чтобы этот выпуск увидел свет, и уже находимся на финишной прямой.</span><span class="sxs-lookup"><span data-stu-id="8ad83-107">We've been hard at work getting templating released, and we're finally in the home stretch!</span></span> <span data-ttu-id="8ad83-108">В окончательную версию нам пришлось внести небольшие критические изменения.</span><span class="sxs-lookup"><span data-stu-id="8ad83-108">We had to make some minor breaking changes as we close on the release.</span></span>
+> <span data-ttu-id="fee0d-107">Мы приложили немало усилий, чтобы этот выпуск увидел свет, и уже находимся на финишной прямой.</span><span class="sxs-lookup"><span data-stu-id="fee0d-107">We've been hard at work getting templating released, and we're finally in the home stretch!</span></span> <span data-ttu-id="fee0d-108">В окончательную версию нам пришлось внести небольшие критические изменения.</span><span class="sxs-lookup"><span data-stu-id="fee0d-108">We had to make some minor breaking changes as we close on the release.</span></span>
 
-## <a name="breaking-changes-as-of-may-2020"></a><span data-ttu-id="8ad83-109">Критические изменения в версии за май 2020 г.</span><span class="sxs-lookup"><span data-stu-id="8ad83-109">Breaking changes as of May 2020</span></span>
+## <a name="breaking-changes-as-of-may-2020"></a><span data-ttu-id="fee0d-109">Критические изменения в версии за май 2020 г.</span><span class="sxs-lookup"><span data-stu-id="fee0d-109">Breaking changes as of May 2020</span></span>
 
-1. <span data-ttu-id="8ad83-110">Синтаксис привязки изменен с `{...}` на `${...}`.</span><span class="sxs-lookup"><span data-stu-id="8ad83-110">The binding syntax changed from `{...}` to `${...}`</span></span>
-    * <span data-ttu-id="8ad83-111">Например, вместо `"text": "Hello {name}"` теперь используется `"text": "Hello ${name}"`.</span><span class="sxs-lookup"><span data-stu-id="8ad83-111">For Example: `"text": "Hello {name}"` becomes `"text": "Hello ${name}"`</span></span>
+1. <span data-ttu-id="fee0d-110">Синтаксис привязки изменен с `{...}` на `${...}`.</span><span class="sxs-lookup"><span data-stu-id="fee0d-110">The binding syntax changed from `{...}` to `${...}`</span></span>
+    * <span data-ttu-id="fee0d-111">Например, вместо `"text": "Hello {name}"` теперь используется `"text": "Hello ${name}"`.</span><span class="sxs-lookup"><span data-stu-id="fee0d-111">For Example: `"text": "Hello {name}"` becomes `"text": "Hello ${name}"`</span></span>
     
-## <a name="binding-to-data"></a><span data-ttu-id="8ad83-112">Привязка к данным</span><span class="sxs-lookup"><span data-stu-id="8ad83-112">Binding to data</span></span>
+## <a name="binding-to-data"></a><span data-ttu-id="fee0d-112">Привязка к данным</span><span class="sxs-lookup"><span data-stu-id="fee0d-112">Binding to data</span></span>
 
-<span data-ttu-id="8ad83-113">Создать шаблон так же просто, как заменить нестатическое содержимое карточки на выражения привязки.</span><span class="sxs-lookup"><span data-stu-id="8ad83-113">Writing a template is as simple as replacing the "non-static" content of your card with "binding expressions".</span></span>
+<span data-ttu-id="fee0d-113">Создать шаблон так же просто, как заменить нестатическое содержимое карточки на выражения привязки.</span><span class="sxs-lookup"><span data-stu-id="fee0d-113">Writing a template is as simple as replacing the "non-static" content of your card with "binding expressions".</span></span>
 
-### <a name="static-card-payload"></a><span data-ttu-id="8ad83-114">Полезные данные статической карточки</span><span class="sxs-lookup"><span data-stu-id="8ad83-114">Static card payload</span></span>
+### <a name="static-card-payload"></a><span data-ttu-id="fee0d-114">Полезные данные статической карточки</span><span class="sxs-lookup"><span data-stu-id="fee0d-114">Static card payload</span></span>
 
 ```json
 {
@@ -41,7 +41,7 @@ ms.locfileid: "84318194"
 }
 ```
 
-### <a name="template-payload"></a><span data-ttu-id="8ad83-115">Полезные данные шаблона</span><span class="sxs-lookup"><span data-stu-id="8ad83-115">Template payload</span></span>
+### <a name="template-payload"></a><span data-ttu-id="fee0d-115">Полезные данные шаблона</span><span class="sxs-lookup"><span data-stu-id="fee0d-115">Template payload</span></span>
 
 ```json
 {
@@ -50,20 +50,20 @@ ms.locfileid: "84318194"
 }
 ```
 
-* <span data-ttu-id="8ad83-116">Выражения привязки можно размещать везде, где может находиться статическое содержимое.</span><span class="sxs-lookup"><span data-stu-id="8ad83-116">Binding expressions can be placed just about anywhere that static content can be</span></span>
-* <span data-ttu-id="8ad83-117">Синтаксис привязки начинается с `${` и заканчивается на `}`.</span><span class="sxs-lookup"><span data-stu-id="8ad83-117">The binding syntax starts with `${` and ends with `}`.</span></span> <span data-ttu-id="8ad83-118">Например, так: `${myProperty}`.</span><span class="sxs-lookup"><span data-stu-id="8ad83-118">E.g., `${myProperty}`</span></span>
-* <span data-ttu-id="8ad83-119">Используйте *запись через точку* для доступа к вложенным объектам в иерархии объектов.</span><span class="sxs-lookup"><span data-stu-id="8ad83-119">Use *Dot-notation* to access sub-objects of an object hierarchy.</span></span> <span data-ttu-id="8ad83-120">Например, так: `${myParent.myChild}`.</span><span class="sxs-lookup"><span data-stu-id="8ad83-120">E.g., `${myParent.myChild}`</span></span>
-* <span data-ttu-id="8ad83-121">Правильная обработка значений NULL гарантирует отсутствие исключений при доступе к свойству NULL в графе объектов.</span><span class="sxs-lookup"><span data-stu-id="8ad83-121">Graceful null handling ensures you won't get exceptions if you access a null property in an object graph</span></span>
-* <span data-ttu-id="8ad83-122">Используйте *синтаксис индексатора* для получения свойств по ключу или элементам в массиве.</span><span class="sxs-lookup"><span data-stu-id="8ad83-122">Use *Indexer syntax* to retrieve properties by key or items in an array.</span></span> <span data-ttu-id="8ad83-123">Например, так: `${myArray[0]}`.</span><span class="sxs-lookup"><span data-stu-id="8ad83-123">E.g., `${myArray[0]}`</span></span>
+* <span data-ttu-id="fee0d-116">Выражения привязки можно размещать везде, где может находиться статическое содержимое.</span><span class="sxs-lookup"><span data-stu-id="fee0d-116">Binding expressions can be placed just about anywhere that static content can be</span></span>
+* <span data-ttu-id="fee0d-117">Синтаксис привязки начинается с `${` и заканчивается на `}`.</span><span class="sxs-lookup"><span data-stu-id="fee0d-117">The binding syntax starts with `${` and ends with `}`.</span></span> <span data-ttu-id="fee0d-118">Например, так: `${myProperty}`.</span><span class="sxs-lookup"><span data-stu-id="fee0d-118">E.g., `${myProperty}`</span></span>
+* <span data-ttu-id="fee0d-119">Используйте *запись через точку* для доступа к вложенным объектам в иерархии объектов.</span><span class="sxs-lookup"><span data-stu-id="fee0d-119">Use *Dot-notation* to access sub-objects of an object hierarchy.</span></span> <span data-ttu-id="fee0d-120">Например, так: `${myParent.myChild}`.</span><span class="sxs-lookup"><span data-stu-id="fee0d-120">E.g., `${myParent.myChild}`</span></span>
+* <span data-ttu-id="fee0d-121">Правильная обработка значений NULL гарантирует отсутствие исключений при доступе к свойству NULL в графе объектов.</span><span class="sxs-lookup"><span data-stu-id="fee0d-121">Graceful null handling ensures you won't get exceptions if you access a null property in an object graph</span></span>
+* <span data-ttu-id="fee0d-122">Используйте *синтаксис индексатора* для получения свойств по ключу или элементам в массиве.</span><span class="sxs-lookup"><span data-stu-id="fee0d-122">Use *Indexer syntax* to retrieve properties by key or items in an array.</span></span> <span data-ttu-id="fee0d-123">Например, так: `${myArray[0]}`.</span><span class="sxs-lookup"><span data-stu-id="fee0d-123">E.g., `${myArray[0]}`</span></span>
 
-## <a name="providing-the-data"></a><span data-ttu-id="8ad83-124">Предоставление данных</span><span class="sxs-lookup"><span data-stu-id="8ad83-124">Providing the data</span></span>
+## <a name="providing-the-data"></a><span data-ttu-id="fee0d-124">Предоставление данных</span><span class="sxs-lookup"><span data-stu-id="fee0d-124">Providing the data</span></span>
 
-<span data-ttu-id="8ad83-125">Теперь, когда у вас есть шаблон, можно внести в него данные.</span><span class="sxs-lookup"><span data-stu-id="8ad83-125">Now that you have a template, you'll want to provide the data that makes it complete.</span></span> <span data-ttu-id="8ad83-126">Это можно сделать одним из двух способов:</span><span class="sxs-lookup"><span data-stu-id="8ad83-126">You have two options to do this:</span></span>
+<span data-ttu-id="fee0d-125">Теперь, когда у вас есть шаблон, можно внести в него данные.</span><span class="sxs-lookup"><span data-stu-id="fee0d-125">Now that you have a template, you'll want to provide the data that makes it complete.</span></span> <span data-ttu-id="fee0d-126">Это можно сделать одним из двух способов:</span><span class="sxs-lookup"><span data-stu-id="fee0d-126">You have two options to do this:</span></span>
 
-1. <span data-ttu-id="8ad83-127">**Вариант A — встроив данные в полезные данные шаблона**.</span><span class="sxs-lookup"><span data-stu-id="8ad83-127">**Option A: Inline within the template payload**.</span></span> <span data-ttu-id="8ad83-128">Данные можно встроить в полезные данные шаблона `AdaptiveCard`.</span><span class="sxs-lookup"><span data-stu-id="8ad83-128">You can provide the data inline within the `AdaptiveCard` template payload.</span></span> <span data-ttu-id="8ad83-129">Для этого просто добавьте атрибут `$data` в корневой объект `AdaptiveCard`.</span><span class="sxs-lookup"><span data-stu-id="8ad83-129">To do so, simply add a `$data` attribute to the root `AdaptiveCard` object.</span></span>
-2. <span data-ttu-id="8ad83-130">**Вариант Б — внеся данные в качестве отдельного объекта данных**.</span><span class="sxs-lookup"><span data-stu-id="8ad83-130">**Option B: As a separate data object**.</span></span> <span data-ttu-id="8ad83-131">В этом случае вы предоставляете два отдельных объекта [пакету SDK для создания шаблонов](sdk.md) во время его выполнения: `template` и `data`.</span><span class="sxs-lookup"><span data-stu-id="8ad83-131">With this option you provide two separate objects to the [Templating SDK](sdk.md) at runtime: the `template` and the `data`.</span></span> <span data-ttu-id="8ad83-132">Такой подход более популярен, так как обычно создается шаблон, динамические данные в который добавляются позже.</span><span class="sxs-lookup"><span data-stu-id="8ad83-132">This will be the more common approach, since typically you will create a template and want to provide dynamic data later.</span></span>
+1. <span data-ttu-id="fee0d-127">**Вариант A — встроив данные в полезные данные шаблона**.</span><span class="sxs-lookup"><span data-stu-id="fee0d-127">**Option A: Inline within the template payload**.</span></span> <span data-ttu-id="fee0d-128">Данные можно встроить в полезные данные шаблона `AdaptiveCard`.</span><span class="sxs-lookup"><span data-stu-id="fee0d-128">You can provide the data inline within the `AdaptiveCard` template payload.</span></span> <span data-ttu-id="fee0d-129">Для этого просто добавьте атрибут `$data` в корневой объект `AdaptiveCard`.</span><span class="sxs-lookup"><span data-stu-id="fee0d-129">To do so, simply add a `$data` attribute to the root `AdaptiveCard` object.</span></span>
+2. <span data-ttu-id="fee0d-130">**Вариант Б — внеся данные в качестве отдельного объекта данных**.</span><span class="sxs-lookup"><span data-stu-id="fee0d-130">**Option B: As a separate data object**.</span></span> <span data-ttu-id="fee0d-131">В этом случае вы предоставляете два отдельных объекта [пакету SDK для создания шаблонов](sdk.md) во время его выполнения: `template` и `data`.</span><span class="sxs-lookup"><span data-stu-id="fee0d-131">With this option you provide two separate objects to the [Templating SDK](sdk.md) at runtime: the `template` and the `data`.</span></span> <span data-ttu-id="fee0d-132">Такой подход более популярен, так как обычно создается шаблон, динамические данные в который добавляются позже.</span><span class="sxs-lookup"><span data-stu-id="fee0d-132">This will be the more common approach, since typically you will create a template and want to provide dynamic data later.</span></span>
 
-### <a name="option-a-inline-data"></a><span data-ttu-id="8ad83-133">Вариант A — встроенные данные</span><span class="sxs-lookup"><span data-stu-id="8ad83-133">Option A: Inline data</span></span>
+### <a name="option-a-inline-data"></a><span data-ttu-id="fee0d-133">Вариант A — встроенные данные</span><span class="sxs-lookup"><span data-stu-id="fee0d-133">Option A: Inline data</span></span>
 
 ```json
 {
@@ -100,11 +100,11 @@ ms.locfileid: "84318194"
 }
 ```
 
-### <a name="option-b-separating-the-template-from-the-data"></a><span data-ttu-id="8ad83-134">Вариант Б — Отделение шаблона от данных</span><span class="sxs-lookup"><span data-stu-id="8ad83-134">Option B: Separating the template from the data</span></span>
+### <a name="option-b-separating-the-template-from-the-data"></a><span data-ttu-id="fee0d-134">Вариант Б — Отделение шаблона от данных</span><span class="sxs-lookup"><span data-stu-id="fee0d-134">Option B: Separating the template from the data</span></span>
 
-<span data-ttu-id="8ad83-135">Вы можете выбрать другой, более распространенный подход: создать многократно используемый шаблон адаптивной карточки, не включая в него данные.</span><span class="sxs-lookup"><span data-stu-id="8ad83-135">Alternatively (and more likely), you'll create a re-usable card template without including the data.</span></span> <span data-ttu-id="8ad83-136">Такой шаблон можно сохранить в файле и добавить в систему управления версиями.</span><span class="sxs-lookup"><span data-stu-id="8ad83-136">This template could be stored as a file and added to source control.</span></span>
+<span data-ttu-id="fee0d-135">Вы можете выбрать другой, более распространенный подход: создать многократно используемый шаблон адаптивной карточки, не включая в него данные.</span><span class="sxs-lookup"><span data-stu-id="fee0d-135">Alternatively (and more likely), you'll create a re-usable card template without including the data.</span></span> <span data-ttu-id="fee0d-136">Такой шаблон можно сохранить в файле и добавить в систему управления версиями.</span><span class="sxs-lookup"><span data-stu-id="fee0d-136">This template could be stored as a file and added to source control.</span></span>
 
-<span data-ttu-id="8ad83-137">**Файл EmployeeCardTemplate.json**</span><span class="sxs-lookup"><span data-stu-id="8ad83-137">**EmployeeCardTemplate.json**</span></span>
+<span data-ttu-id="fee0d-137">**Файл EmployeeCardTemplate.json**</span><span class="sxs-lookup"><span data-stu-id="fee0d-137">**EmployeeCardTemplate.json**</span></span>
 
 ```json
 {
@@ -126,11 +126,11 @@ ms.locfileid: "84318194"
 }
 ```
 
-<span data-ttu-id="8ad83-138">Затем вы загружаете его и предоставляете данные во время выполнения с помощью [пакетов SDK для работы с шаблонами](sdk.md).</span><span class="sxs-lookup"><span data-stu-id="8ad83-138">Then load it up and provide the data at runtime using the [Templating SDKs](sdk.md).</span></span>
+<span data-ttu-id="fee0d-138">Затем вы загружаете его и предоставляете данные во время выполнения с помощью [пакетов SDK для работы с шаблонами](sdk.md).</span><span class="sxs-lookup"><span data-stu-id="fee0d-138">Then load it up and provide the data at runtime using the [Templating SDKs](sdk.md).</span></span>
 
-<span data-ttu-id="8ad83-139">**Пример JavaScript**</span><span class="sxs-lookup"><span data-stu-id="8ad83-139">**JavaScript example**</span></span>
+<span data-ttu-id="fee0d-139">**Пример JavaScript**</span><span class="sxs-lookup"><span data-stu-id="fee0d-139">**JavaScript example**</span></span>
 
-<span data-ttu-id="8ad83-140">Использование пакета [adaptivecards-templating](https://npmjs.com/package/adaptivecards-templating).</span><span class="sxs-lookup"><span data-stu-id="8ad83-140">Using the [adaptivecards-templating](https://npmjs.com/package/adaptivecards-templating) package.</span></span>
+<span data-ttu-id="fee0d-140">Использование пакета [adaptivecards-templating](https://npmjs.com/package/adaptivecards-templating).</span><span class="sxs-lookup"><span data-stu-id="fee0d-140">Using the [adaptivecards-templating](https://npmjs.com/package/adaptivecards-templating) package.</span></span>
 
 ```js
 var template = new ACData.Template({ 
@@ -159,23 +159,23 @@ var card = template.expand({
 // Now you have an AdaptiveCard ready to render!
 ```
 
-## <a name="designer-support"></a><span data-ttu-id="8ad83-141">Поддержка конструктора</span><span class="sxs-lookup"><span data-stu-id="8ad83-141">Designer Support</span></span>
+## <a name="designer-support"></a><span data-ttu-id="fee0d-141">Поддержка конструктора</span><span class="sxs-lookup"><span data-stu-id="fee0d-141">Designer Support</span></span>
 
-<span data-ttu-id="8ad83-142">Конструктор адаптивных карт теперь включает поддержку шаблонов.</span><span class="sxs-lookup"><span data-stu-id="8ad83-142">The Adaptive Card Designer has been updated to support templating.</span></span> 
+<span data-ttu-id="fee0d-142">Конструктор адаптивных карт теперь включает поддержку шаблонов.</span><span class="sxs-lookup"><span data-stu-id="fee0d-142">The Adaptive Card Designer has been updated to support templating.</span></span> 
 
-> <span data-ttu-id="8ad83-143">Чтобы поработать с конструктором, перейдите по адресу **[https://adaptivecards.io/designer](https://adaptivecards.io/designer)** .</span><span class="sxs-lookup"><span data-stu-id="8ad83-143">Try it out at: **[https://adaptivecards.io/designer](https://adaptivecards.io/designer)**</span></span>
+> <span data-ttu-id="fee0d-143">Чтобы поработать с конструктором, перейдите по адресу **[https://adaptivecards.io/designer](https://adaptivecards.io/designer)** .</span><span class="sxs-lookup"><span data-stu-id="fee0d-143">Try it out at: **[https://adaptivecards.io/designer](https://adaptivecards.io/designer)**</span></span>
 
-<span data-ttu-id="8ad83-144">[![Образ](https://user-images.githubusercontent.com/1432195/53214462-88d46980-3601-11e9-908d-253a1bb940a8.png)](https://adaptivecards.io/designer)</span><span class="sxs-lookup"><span data-stu-id="8ad83-144">[![image](https://user-images.githubusercontent.com/1432195/53214462-88d46980-3601-11e9-908d-253a1bb940a8.png)](https://adaptivecards.io/designer)</span></span>
+<span data-ttu-id="fee0d-144">[![Образ](https://user-images.githubusercontent.com/1432195/53214462-88d46980-3601-11e9-908d-253a1bb940a8.png)](https://adaptivecards.io/designer)</span><span class="sxs-lookup"><span data-stu-id="fee0d-144">[![image](https://user-images.githubusercontent.com/1432195/53214462-88d46980-3601-11e9-908d-253a1bb940a8.png)](https://adaptivecards.io/designer)</span></span>
 
-* <span data-ttu-id="8ad83-145">**Sample Data Editor** (Редактор примера данных) — введите здесь пример данных, чтобы оценить карту с привязкой к данным в режиме предварительного просмотра.</span><span class="sxs-lookup"><span data-stu-id="8ad83-145">**Sample Data Editor** - Specify sample data here to view the data-bound card when in "Preview Mode."</span></span> <span data-ttu-id="8ad83-146">На этой панели есть небольшая кнопка для заполнения структуры данных из существующего примера данных.</span><span class="sxs-lookup"><span data-stu-id="8ad83-146">There is a small button in this pane to populate the Data Structure from the existing sample data.</span></span>
-* <span data-ttu-id="8ad83-147">**Preview Mode** (Режим предварительного просмотра) — нажмите кнопку на панели инструментов, чтобы переключиться между режимами редактирования и предварительного просмотра данных.</span><span class="sxs-lookup"><span data-stu-id="8ad83-147">**Preview Mode** - Press the toolbar button to toggle between the edit-experience and the sample-data-preview experience</span></span>
-* <span data-ttu-id="8ad83-148">**Open Sample** (Открыть пример) — нажмите эту кнопку, чтобы открыть примеры полезных данных.</span><span class="sxs-lookup"><span data-stu-id="8ad83-148">**Open Sample** - click this button to open various sample payloads</span></span>
+* <span data-ttu-id="fee0d-145">**Sample Data Editor** (Редактор примера данных) — введите здесь пример данных, чтобы оценить карту с привязкой к данным в режиме предварительного просмотра.</span><span class="sxs-lookup"><span data-stu-id="fee0d-145">**Sample Data Editor** - Specify sample data here to view the data-bound card when in "Preview Mode."</span></span> <span data-ttu-id="fee0d-146">На этой панели есть небольшая кнопка для заполнения структуры данных из существующего примера данных.</span><span class="sxs-lookup"><span data-stu-id="fee0d-146">There is a small button in this pane to populate the Data Structure from the existing sample data.</span></span>
+* <span data-ttu-id="fee0d-147">**Preview Mode** (Режим предварительного просмотра) — нажмите кнопку на панели инструментов, чтобы переключиться между режимами редактирования и предварительного просмотра данных.</span><span class="sxs-lookup"><span data-stu-id="fee0d-147">**Preview Mode** - Press the toolbar button to toggle between the edit-experience and the sample-data-preview experience</span></span>
+* <span data-ttu-id="fee0d-148">**Open Sample** (Открыть пример) — нажмите эту кнопку, чтобы открыть примеры полезных данных.</span><span class="sxs-lookup"><span data-stu-id="fee0d-148">**Open Sample** - click this button to open various sample payloads</span></span>
 
-## <a name="advanced-binding"></a><span data-ttu-id="8ad83-149">Расширенная привязка</span><span class="sxs-lookup"><span data-stu-id="8ad83-149">Advanced binding</span></span>
+## <a name="advanced-binding"></a><span data-ttu-id="fee0d-149">Расширенная привязка</span><span class="sxs-lookup"><span data-stu-id="fee0d-149">Advanced binding</span></span>
 
-### <a name="binding-scopes"></a><span data-ttu-id="8ad83-150">Области привязки</span><span class="sxs-lookup"><span data-stu-id="8ad83-150">Binding scopes</span></span>
+### <a name="binding-scopes"></a><span data-ttu-id="fee0d-150">Области привязки</span><span class="sxs-lookup"><span data-stu-id="fee0d-150">Binding scopes</span></span>
 
-<span data-ttu-id="8ad83-151">Есть несколько зарезервированных ключевых слов для доступа к разным областям привязки.</span><span class="sxs-lookup"><span data-stu-id="8ad83-151">There are a few reserved keywords to access various binding scopes.</span></span> 
+<span data-ttu-id="fee0d-151">Есть несколько зарезервированных ключевых слов для доступа к разным областям привязки.</span><span class="sxs-lookup"><span data-stu-id="fee0d-151">There are a few reserved keywords to access various binding scopes.</span></span> 
 
 ```json
 {
@@ -186,9 +186,9 @@ var card = template.expand({
 }
 ```
 
-### <a name="assigning-a-data-context-to-elements"></a><span data-ttu-id="8ad83-152">Назначение элементам контекста данных</span><span class="sxs-lookup"><span data-stu-id="8ad83-152">Assigning a data context to elements</span></span>
+### <a name="assigning-a-data-context-to-elements"></a><span data-ttu-id="fee0d-152">Назначение элементам контекста данных</span><span class="sxs-lookup"><span data-stu-id="fee0d-152">Assigning a data context to elements</span></span>
 
-<span data-ttu-id="8ad83-153">Чтобы назначить любому элементу "контекст данных", добавьте к нужному элементу атрибут `$data`.</span><span class="sxs-lookup"><span data-stu-id="8ad83-153">To assign a "data context" to any element add a `$data` attribute to the element.</span></span>
+<span data-ttu-id="fee0d-153">Чтобы назначить любому элементу "контекст данных", добавьте к нужному элементу атрибут `$data`.</span><span class="sxs-lookup"><span data-stu-id="fee0d-153">To assign a "data context" to any element add a `$data` attribute to the element.</span></span>
 
 ```json
 {
@@ -207,13 +207,13 @@ var card = template.expand({
 }
 ```
 
-## <a name="repeating-items-in-an-array"></a><span data-ttu-id="8ad83-154">Повторяющиеся элементы в массиве</span><span class="sxs-lookup"><span data-stu-id="8ad83-154">Repeating items in an array</span></span>
+## <a name="repeating-items-in-an-array"></a><span data-ttu-id="fee0d-154">Повторяющиеся элементы в массиве</span><span class="sxs-lookup"><span data-stu-id="fee0d-154">Repeating items in an array</span></span>
 
-* <span data-ttu-id="8ad83-155">Если свойство `$data` в элементе адаптивной карточки привязано к **массиву**, то такой элемент **будет повторяться для каждого элемента массива**.</span><span class="sxs-lookup"><span data-stu-id="8ad83-155">If an Adaptive Card element's `$data` property is bound to an **array**, then the **element itself will be repeated for each item in the array.**</span></span> 
-* <span data-ttu-id="8ad83-156">Любые выражения привязки (`${myProperty}`) в значениях свойств будут относиться к **отдельному элементу** в массиве.</span><span class="sxs-lookup"><span data-stu-id="8ad83-156">Any binding expressions (`${myProperty}`) used in property values will be scoped to the **individual item** within the array.</span></span>
-* <span data-ttu-id="8ad83-157">Если выполнена привязка к массиву строк, для доступа к отдельному строковому элементу используйте `${$data}`.</span><span class="sxs-lookup"><span data-stu-id="8ad83-157">If binding to an array of strings, use `${$data}` to access the individual string element.</span></span> <span data-ttu-id="8ad83-158">Например, так: `"text": "${$data}"`.</span><span class="sxs-lookup"><span data-stu-id="8ad83-158">E.g., `"text": "${$data}"`</span></span>
+* <span data-ttu-id="fee0d-155">Если свойство `$data` в элементе адаптивной карточки привязано к **массиву**, то такой элемент **будет повторяться для каждого элемента массива**.</span><span class="sxs-lookup"><span data-stu-id="fee0d-155">If an Adaptive Card element's `$data` property is bound to an **array**, then the **element itself will be repeated for each item in the array.**</span></span> 
+* <span data-ttu-id="fee0d-156">Любые выражения привязки (`${myProperty}`) в значениях свойств будут относиться к **отдельному элементу** в массиве.</span><span class="sxs-lookup"><span data-stu-id="fee0d-156">Any binding expressions (`${myProperty}`) used in property values will be scoped to the **individual item** within the array.</span></span>
+* <span data-ttu-id="fee0d-157">Если выполнена привязка к массиву строк, для доступа к отдельному строковому элементу используйте `${$data}`.</span><span class="sxs-lookup"><span data-stu-id="fee0d-157">If binding to an array of strings, use `${$data}` to access the individual string element.</span></span> <span data-ttu-id="fee0d-158">Например, так: `"text": "${$data}"`.</span><span class="sxs-lookup"><span data-stu-id="fee0d-158">E.g., `"text": "${$data}"`</span></span>
 
-<span data-ttu-id="8ad83-159">Например, элемент `TextBlock` в приведенном ниже примере будет повторяться три раза, так как `$data` является массивом.</span><span class="sxs-lookup"><span data-stu-id="8ad83-159">For example, the `TextBlock` below will be repeated 3 times since it's `$data` is an array.</span></span> <span data-ttu-id="8ad83-160">Обратите внимание, что свойство `text` привязано к свойству `name` отдельного объекта в этом массиве.</span><span class="sxs-lookup"><span data-stu-id="8ad83-160">Notice how the `text` property is bound to the `name` property of an individual object within the array.</span></span> 
+<span data-ttu-id="fee0d-159">Например, элемент `TextBlock` в приведенном ниже примере будет повторяться три раза, так как `$data` является массивом.</span><span class="sxs-lookup"><span data-stu-id="fee0d-159">For example, the `TextBlock` below will be repeated 3 times since it's `$data` is an array.</span></span> <span data-ttu-id="fee0d-160">Обратите внимание, что свойство `text` привязано к свойству `name` отдельного объекта в этом массиве.</span><span class="sxs-lookup"><span data-stu-id="fee0d-160">Notice how the `text` property is bound to the `name` property of an individual object within the array.</span></span> 
 
 ```json
 {
@@ -232,7 +232,7 @@ var card = template.expand({
 }
 ```
 
-<span data-ttu-id="8ad83-161">**Результат:**</span><span class="sxs-lookup"><span data-stu-id="8ad83-161">**Resulting in:**</span></span>
+<span data-ttu-id="fee0d-161">**Результат:**</span><span class="sxs-lookup"><span data-stu-id="fee0d-161">**Resulting in:**</span></span>
 
 ```json
 {
@@ -254,19 +254,19 @@ var card = template.expand({
 }
 ```
 
-## <a name="built-in-functions"></a><span data-ttu-id="8ad83-162">Встроенные функции</span><span class="sxs-lookup"><span data-stu-id="8ad83-162">Built-in functions</span></span>
+## <a name="built-in-functions"></a><span data-ttu-id="fee0d-162">Встроенные функции</span><span class="sxs-lookup"><span data-stu-id="fee0d-162">Built-in functions</span></span>
 
-<span data-ttu-id="8ad83-163">Язык шаблонов нельзя считать полноценным без разнообразных вспомогательных функций.</span><span class="sxs-lookup"><span data-stu-id="8ad83-163">No templating language is complete without a rich suite of helper functions.</span></span> <span data-ttu-id="8ad83-164">Решение для создания шаблонов адаптивных карточек основано на [языке адаптивных выражений](https://aka.ms/adaptive-expressions) (AEL), который является открытым стандартом для объявления выражений с возможностью их оценки на разных платформах.</span><span class="sxs-lookup"><span data-stu-id="8ad83-164">Adaptive Card Templating is built on top of the [Adaptive Expression Language](https://aka.ms/adaptive-expressions) (AEL), which is an open standard for declaring expressions that can be evaluated on many different platforms.</span></span> <span data-ttu-id="8ad83-165">Это — расширенный набор Logic Apps, поэтому вы можете использовать такой же синтаксис, как, например, в Power Automate.</span><span class="sxs-lookup"><span data-stu-id="8ad83-165">And it's a proper superset of "Logic Apps", so you can use similar syntax as Power Automate, etc.</span></span>
+<span data-ttu-id="fee0d-163">Язык шаблонов нельзя считать полноценным без разнообразных вспомогательных функций.</span><span class="sxs-lookup"><span data-stu-id="fee0d-163">No templating language is complete without a rich suite of helper functions.</span></span> <span data-ttu-id="fee0d-164">Решение для создания шаблонов адаптивных карточек основано на [языке адаптивных выражений](https://aka.ms/adaptive-expressions) (AEL), который является открытым стандартом для объявления выражений с возможностью их оценки на разных платформах.</span><span class="sxs-lookup"><span data-stu-id="fee0d-164">Adaptive Card Templating is built on top of the [Adaptive Expression Language](https://aka.ms/adaptive-expressions) (AEL), which is an open standard for declaring expressions that can be evaluated on many different platforms.</span></span> <span data-ttu-id="fee0d-165">Это — расширенный набор Logic Apps, поэтому вы можете использовать такой же синтаксис, как, например, в Power Automate.</span><span class="sxs-lookup"><span data-stu-id="fee0d-165">And it's a proper superset of "Logic Apps", so you can use similar syntax as Power Automate, etc.</span></span>
 
-<span data-ttu-id="8ad83-166">**Мы рассмотрели лишь небольшую часть встроенных функций.**</span><span class="sxs-lookup"><span data-stu-id="8ad83-166">**This is just a small sampling of the built-in functions.**</span></span>
+<span data-ttu-id="fee0d-166">**Мы рассмотрели лишь небольшую часть встроенных функций.**</span><span class="sxs-lookup"><span data-stu-id="fee0d-166">**This is just a small sampling of the built-in functions.**</span></span>
 
-<span data-ttu-id="8ad83-167">Ознакомьтесь с полным списком [предварительно созданных функций для языка адаптивных выражений](https://docs.microsoft.com/azure/bot-service/bot-builder-concept-adaptive-expressions?view=azure-bot-service-4.0).</span><span class="sxs-lookup"><span data-stu-id="8ad83-167">Check out the full list of [Adaptive Expression Language Pre-built functions](https://docs.microsoft.com/azure/bot-service/bot-builder-concept-adaptive-expressions?view=azure-bot-service-4.0).</span></span>
+<span data-ttu-id="fee0d-167">Ознакомьтесь с полным списком [предварительно созданных функций для языка адаптивных выражений](https://docs.microsoft.com/azure/bot-service/bot-builder-concept-adaptive-expressions?view=azure-bot-service-4.0).</span><span class="sxs-lookup"><span data-stu-id="fee0d-167">Check out the full list of [Adaptive Expression Language Pre-built functions](https://docs.microsoft.com/azure/bot-service/bot-builder-concept-adaptive-expressions?view=azure-bot-service-4.0).</span></span>
 
-### <a name="conditional-evaluation"></a><span data-ttu-id="8ad83-168">Условная оценка:</span><span class="sxs-lookup"><span data-stu-id="8ad83-168">Conditional evaluation</span></span>
+### <a name="conditional-evaluation"></a><span data-ttu-id="fee0d-168">Условная оценка:</span><span class="sxs-lookup"><span data-stu-id="fee0d-168">Conditional evaluation</span></span>
 
-* <span data-ttu-id="8ad83-169">if(*выражение*, *если_истина*, *если_ложь*).</span><span class="sxs-lookup"><span data-stu-id="8ad83-169">if(*expression*, *trueValue*, *falseValue*)</span></span>
+* <span data-ttu-id="fee0d-169">if(*выражение*, *если_истина*, *если_ложь*).</span><span class="sxs-lookup"><span data-stu-id="fee0d-169">if(*expression*, *trueValue*, *falseValue*)</span></span>
 
-<span data-ttu-id="8ad83-170">**Пример для `if`**</span><span class="sxs-lookup"><span data-stu-id="8ad83-170">**`if` example**</span></span>
+<span data-ttu-id="fee0d-170">**Пример для `if`**</span><span class="sxs-lookup"><span data-stu-id="fee0d-170">**`if` example**</span></span>
 
 ```json
 {
@@ -275,15 +275,15 @@ var card = template.expand({
 }
 ```
 
-### <a name="parsing-json"></a><span data-ttu-id="8ad83-171">Анализ JSON</span><span class="sxs-lookup"><span data-stu-id="8ad83-171">Parsing JSON</span></span>
+### <a name="parsing-json"></a><span data-ttu-id="fee0d-171">Анализ JSON</span><span class="sxs-lookup"><span data-stu-id="fee0d-171">Parsing JSON</span></span>
 
-* <span data-ttu-id="8ad83-172">json(*jsonString*) — анализ строки JSON</span><span class="sxs-lookup"><span data-stu-id="8ad83-172">json(*jsonString*) - Parse a JSON string</span></span>
+* <span data-ttu-id="fee0d-172">json(*jsonString*) — анализ строки JSON</span><span class="sxs-lookup"><span data-stu-id="fee0d-172">json(*jsonString*) - Parse a JSON string</span></span>
 
-<span data-ttu-id="8ad83-173">**Пример для `json`**</span><span class="sxs-lookup"><span data-stu-id="8ad83-173">**`json` example**</span></span>
+<span data-ttu-id="fee0d-173">**Пример для `json`**</span><span class="sxs-lookup"><span data-stu-id="fee0d-173">**`json` example**</span></span>
 
-<span data-ttu-id="8ad83-174">Это ответ Azure DevOps для ситуации, когда свойство `message` содержит сериализованную строку в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="8ad83-174">This is an Azure DevOps response where the `message` property is a JSON-serialized string.</span></span> <span data-ttu-id="8ad83-175">Для обращения к значениям в этой строке следует использовать в шаблоне функцию `json`.</span><span class="sxs-lookup"><span data-stu-id="8ad83-175">In order to access values within the string, we need to use the `json` function in our template.</span></span>
+<span data-ttu-id="fee0d-174">Это ответ Azure DevOps для ситуации, когда свойство `message` содержит сериализованную строку в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="fee0d-174">This is an Azure DevOps response where the `message` property is a JSON-serialized string.</span></span> <span data-ttu-id="fee0d-175">Для обращения к значениям в этой строке следует использовать в шаблоне функцию `json`.</span><span class="sxs-lookup"><span data-stu-id="fee0d-175">In order to access values within the string, we need to use the `json` function in our template.</span></span>
 
-<span data-ttu-id="8ad83-176">**Данные**</span><span class="sxs-lookup"><span data-stu-id="8ad83-176">**Data**</span></span> 
+<span data-ttu-id="fee0d-176">**Данные**</span><span class="sxs-lookup"><span data-stu-id="fee0d-176">**Data**</span></span> 
 
 ```json
 {
@@ -296,7 +296,7 @@ var card = template.expand({
 }
 ```
 
-<span data-ttu-id="8ad83-177">**Использование**</span><span class="sxs-lookup"><span data-stu-id="8ad83-177">**Usage**</span></span>
+<span data-ttu-id="fee0d-177">**Использование**</span><span class="sxs-lookup"><span data-stu-id="fee0d-177">**Usage**</span></span>
 
 ```json
 {
@@ -305,7 +305,7 @@ var card = template.expand({
 }
 ```
 
-<span data-ttu-id="8ad83-178">**Результат**</span><span class="sxs-lookup"><span data-stu-id="8ad83-178">**Resulting In**</span></span>
+<span data-ttu-id="fee0d-178">**Результат**</span><span class="sxs-lookup"><span data-stu-id="fee0d-178">**Resulting In**</span></span>
 
 ```json
 {
@@ -314,13 +314,13 @@ var card = template.expand({
 }
 ```
 
-### <a name="custom-functions"></a><span data-ttu-id="8ad83-179">Пользовательские функции</span><span class="sxs-lookup"><span data-stu-id="8ad83-179">Custom functions</span></span>
+### <a name="custom-functions"></a><span data-ttu-id="fee0d-179">Пользовательские функции</span><span class="sxs-lookup"><span data-stu-id="fee0d-179">Custom functions</span></span>
 
-<span data-ttu-id="8ad83-180">Пользовательские функции поддерживаются через API в [пакетах SDK для создания шаблонов](sdk.md).</span><span class="sxs-lookup"><span data-stu-id="8ad83-180">Custom functions are supported via APIs in the [Templating SDKs](sdk.md).</span></span> 
+<span data-ttu-id="fee0d-180">Пользовательские функции поддерживаются через API в [пакетах SDK для создания шаблонов](sdk.md).</span><span class="sxs-lookup"><span data-stu-id="fee0d-180">Custom functions are supported via APIs in the [Templating SDKs](sdk.md).</span></span> 
 
-## <a name="conditional-layout-with-when"></a><span data-ttu-id="8ad83-181">Условный макет с `$when`</span><span class="sxs-lookup"><span data-stu-id="8ad83-181">Conditional layout with `$when`</span></span>
+## <a name="conditional-layout-with-when"></a><span data-ttu-id="fee0d-181">Условный макет с `$when`</span><span class="sxs-lookup"><span data-stu-id="fee0d-181">Conditional layout with `$when`</span></span>
 
-<span data-ttu-id="8ad83-182">Чтобы игнорировать элемент целиком при выполнении определенного условия, используйте свойство `$when`.</span><span class="sxs-lookup"><span data-stu-id="8ad83-182">To drop an entire element if a condition is met, use the `$when` property.</span></span> <span data-ttu-id="8ad83-183">Если `$when` имеет значение `false`, такой элемент не будет отображаться для пользователя.</span><span class="sxs-lookup"><span data-stu-id="8ad83-183">If `$when` evaluates to `false` the element will not appear to the user.</span></span>
+<span data-ttu-id="fee0d-182">Чтобы игнорировать элемент целиком при выполнении определенного условия, используйте свойство `$when`.</span><span class="sxs-lookup"><span data-stu-id="fee0d-182">To drop an entire element if a condition is met, use the `$when` property.</span></span> <span data-ttu-id="fee0d-183">Если `$when` имеет значение `false`, такой элемент не будет отображаться для пользователя.</span><span class="sxs-lookup"><span data-stu-id="fee0d-183">If `$when` evaluates to `false` the element will not appear to the user.</span></span>
 
 ```json
 {
@@ -345,10 +345,10 @@ var card = template.expand({
 }
 ```
 
-### <a name="composing-templates"></a><span data-ttu-id="8ad83-184">Компоновка шаблонов</span><span class="sxs-lookup"><span data-stu-id="8ad83-184">Composing templates</span></span>
+### <a name="composing-templates"></a><span data-ttu-id="fee0d-184">Компоновка шаблонов</span><span class="sxs-lookup"><span data-stu-id="fee0d-184">Composing templates</span></span>
 
-<span data-ttu-id="8ad83-185">Сейчас не поддерживается компоновка шаблона из отдельных частей.</span><span class="sxs-lookup"><span data-stu-id="8ad83-185">Currently there is no support for composing template "parts" together.</span></span> <span data-ttu-id="8ad83-186">Но мы рассматриваем варианты такого механизма и скоро сообщим вам о результатах.</span><span class="sxs-lookup"><span data-stu-id="8ad83-186">But we are exploring options and hope to share more soon.</span></span> <span data-ttu-id="8ad83-187">Мы будем рады любым вашим идеям!</span><span class="sxs-lookup"><span data-stu-id="8ad83-187">Any thoughts here welcome!</span></span>
+<span data-ttu-id="fee0d-185">Сейчас не поддерживается компоновка шаблона из отдельных частей.</span><span class="sxs-lookup"><span data-stu-id="fee0d-185">Currently there is no support for composing template "parts" together.</span></span> <span data-ttu-id="fee0d-186">Но мы рассматриваем варианты такого механизма и скоро сообщим вам о результатах.</span><span class="sxs-lookup"><span data-stu-id="fee0d-186">But we are exploring options and hope to share more soon.</span></span> <span data-ttu-id="fee0d-187">Мы будем рады любым вашим идеям!</span><span class="sxs-lookup"><span data-stu-id="fee0d-187">Any thoughts here welcome!</span></span>
 
-## <a name="examples"></a><span data-ttu-id="8ad83-188">Примеры</span><span class="sxs-lookup"><span data-stu-id="8ad83-188">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="fee0d-188">Примеры</span><span class="sxs-lookup"><span data-stu-id="fee0d-188">Examples</span></span>
 
-<span data-ttu-id="8ad83-189">Изучите обновленную [страницу примеров](https://adaptivecards.io/samples), где представлены новые виды шаблонов карточек.</span><span class="sxs-lookup"><span data-stu-id="8ad83-189">Browse the updated [Samples page](https://adaptivecards.io/samples) to explore all sorts of new templated cards.</span></span>
+<span data-ttu-id="fee0d-189">Изучите обновленную [страницу примеров](https://adaptivecards.io/samples), где представлены новые виды шаблонов карточек.</span><span class="sxs-lookup"><span data-stu-id="fee0d-189">Browse the updated [Samples page](https://adaptivecards.io/samples) to explore all sorts of new templated cards.</span></span>
